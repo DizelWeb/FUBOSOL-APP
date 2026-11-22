@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<head><script type='text/javascript' nonce='QmmF+Eygzs7T9ex9xohvTA==' src='https://contribution.usercontent.google.com/NFn7nGychw2-dyoDza43gVUSgmWgZEDfm6S15MWWCdsrnJb7BGKJ65RSOOYnmp9zT7v4n6tljYGdSNWPoCHa_nea5amW_ZO5eo1n5ITrNDgR_iyk2Ht4TnkW5DZJJZ0KmPzGeKRzvkRCnhaqvX13hgNEVO4h0nmv_AVAx1kMoVsGicL_jTmec_VDb9393iJ8dPtjatWKHBlgqH5kXA2Rpv0FszGBJKoc9xV7ezlcLsQ0GDKqSw2ve_X77Vjnt_Lb39YNLnRlRjPMr5T_FjMZULfYz208w-1CoIt0fwJSXwxb1NBZ8W8sIiY-AQIrRb3EJbu9PV4dnvQ5H37dBb2PAiA3EqjtUO2NGeIfRg396D8oSqr2uqjIcSZOeFtI_QrdOAIsljomoqZtCKMuMPv0ZkpkefUnmpuZEC1ys9Zn9MiprpgBmfOYktYcu2dsObKRmKDlyAmt8g7lJYyUPUk-pMI51g8z2k3ixDSjl9k-UZwngEhg-AQvahC8AP1KTmUW9zqPD14vNh13IxemNEAK7JWnQGN381-UiHFdtVnRKncIIEe5hilcPIxnQrLCnTSMt33kcOySST0qoL4dABtDOhphWEmyiNu3F1z3Z2IBxE-j2JftM6UzoEfdx3NVQPHjDq65I3PhMzB_Me9U1Bl4gG2Obk_iKpRQ1Q0NBYzYBGY2CCEJuJWamgAJQBwP9NqudO8WBPJwLLRYGXU66PLlbpJMuEH9RZJWQeI32h_grcA7K2VuLQ'></script>
+<head><script type='text/javascript' nonce='yymZrIZ9rlbf7X1u9mgHFQ==' src='https://contribution.usercontent.google.com/fpS1S0vvvzE79LE7NsJ_KqgUKbbI5IaUbR5Ixge9j48V6N5gw6plytBa5RDioGqM-eUEgxyRjxYQXoIFKpcPqSicQ3-k4Q6bzHtGGZD2sOxZq7Z2A4TCtPwjha-ioDx5GttD4lDBqm9bUWdMqfo129AVw_DgwGMJlCg88me89-TvvkTsUfxx5lKGpyu1IuSo5bDHLrKga6YDh8QIzQzXNoIyOD_7YhxE3Q0fWZCBQ2Bd4MNEZUms3Hb0_c2wMhr1LLRyBx4YdHjJb7N4h2TOzhLDrZzU37fOBkWHCyteGvocJ2IiRYN7cB6vZqLf-C4jebMLVjbi-ijxf-WwqdSb-aBXt8Mh60BCrGLDXtraJQksaOkpb7RiIuFLV0zn9--GhW5nxKz9p7GQK2rGJx19Nb91rl2PP41STa1TjUom9UnxxvXtO8wnGQuH6_-YN9DeoR9bfDAYgD77ICgcgIGJ4vzl1e0BD3exuqB8yd3s39ayQuIbPIoOWT6QlQYaBdb6UAiNpQKr9lYadRu7Sqp617RO75xTrVAutTvxHm-GhzI0MjEf_o5hocsxfkZDO1a5DSIbhqs-xCpZvNgcABjpHcEiNqZgSs9wUyHLMbgrJrONq6bPattecCBjpaTUYW9ECd-3Wxijl3bSMZr05suwBBbV1-SMYpDrrKyVljGDpGqo9DDPptqPnc8eBD_lREMGcZ_U41h2U8JqIa13UU3LQKPD0NYy56hjTjb8jYyJvK4FGbU5EQ'></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="application-name" content="FUBOSOL APP">
@@ -150,6 +150,7 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
     <button class="secondary" id="clearBtn">Dokument leeren</button>
     <button class="secondary" id="printBtn">Drucken</button>
     <button class="secondary" id="savePdfBtn">PDF speichern</button>
+    <button class="secondary" id="whatsappBtn" style="background:#e7f8ee;color:#126b36;font-weight:600">WhatsApp</button>
     <button class="primary" id="emailBtn">PDF per E-Mail</button>
   </div>
 </header>
@@ -937,40 +938,85 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    catch(e){alert('PDF konnte nicht erstellt werden. Bitte versuchen Sie es erneut oder nutzen Sie „Drucken“.')}
  });
 
- document.getElementById('emailBtn').addEventListener('click',async()=>{
+ function buildMailSubject(pdfName){
+   const base=pdfName.replace(/\.pdf$/i,'').replace(/[^A-Za-z0-9äöüÄÖÜß._ -]/g,' ').replace(/\s+/g,' ').trim();
+   return (base||'Arbeits- und Regiebericht').slice(0,120);
+ }
+
+ async function sendReportViaEmail(){
    const client=document.getElementById('clientEmail').value.trim();
    const recipients=[OFFICE_EMAIL,client].filter(Boolean);
    const clipboardRecipients=recipients.join(', ');
    const name=filename();
-   const copied=await copyToClipboard(clipboardRecipients);
-   if(copied){
-     showToast('📋 Kopiert: '+clipboardRecipients+' (In Gmail im Feld „An“ einfügen)');
-   }
+   const mailSubject=buildMailSubject(name);
+   const mailBody='Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.';
+
+   await copyToClipboard(clipboardRecipients);
+   showToast('📋 Kopiert: '+clipboardRecipients+' (Im Feld „An“ einfügen)');
+
    try{
      const {blob,pagesCount}=await makePdfBlob();
      await recordPdfInHistory(blob,name,pagesCount);
      const file=new File([blob],name,{type:'application/pdf'});
+
      if(navigator.canShare&&navigator.canShare({files:[file]})){
        await navigator.share({
          files:[file],
-         title:name.replace(/\.pdf$/,''),
-         text:'Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.\n\nEmpfänger (bereits in die Zwischenablage kopiert):\n'+clipboardRecipients
+         title:mailSubject,
+         text:mailBody+'\n\nEmpfänger: '+clipboardRecipients
        });
        clearSignatureOnly();
        showToast('E-Mail vorbereitet & in Historie abgelegt. Unterschrift gelöscht.');
        return;
      }
+
      downloadBlob(blob,name);
-     const subject=encodeURIComponent(name.replace(/\.pdf$/,''));
-     const body=encodeURIComponent('Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.\n\n(Bitte fügen Sie die heruntergeladene PDF-Datei als Anhang hinzu.)\n');
-     window.location.href='mailto:'+recipients.join(',')+'?subject='+subject+'&body='+body;
-     alert('Die PDF wurde heruntergeladen und die Empfänger ('+clipboardRecipients+') wurden kopiert. Ihr E-Mail-Programm wird geöffnet.');
+     const subjectParam=encodeURIComponent(mailSubject);
+     const bodyParam=encodeURIComponent(mailBody+'\n(Bitte die PDF-Datei als Anhang hinzufügen.)');
+     const mailtoUrl='mailto:'+recipients.map(r=>encodeURIComponent(r)).join(',')+'?subject='+subjectParam+'&body='+bodyParam;
+     window.location.href=mailtoUrl;
      clearSignatureOnly();
    }catch(e){
      if(e&&e.name==='AbortError')return;
      alert('Die E-Mail-Freigabe war nicht möglich. Empfänger in Zwischenablage: '+clipboardRecipients);
    }
- });
+ }
+
+ async function sendReportViaWhatsApp(){
+   const name=filename();
+   const title=buildMailSubject(name);
+   const msgText='Arbeits- und Regiebericht: '+title+' ('+OFFICE_EMAIL+')';
+
+   try{
+     const {blob,pagesCount}=await makePdfBlob();
+     await recordPdfInHistory(blob,name,pagesCount);
+     const file=new File([blob],name,{type:'application/pdf'});
+
+     if(navigator.canShare&&navigator.canShare({files:[file]})){
+       await navigator.share({
+         files:[file],
+         title:title,
+         text:msgText
+       });
+       clearSignatureOnly();
+       showToast('WhatsApp-Freigabe geöffnet & in Historie abgelegt. Unterschrift gelöscht.');
+       return;
+     }
+
+     downloadBlob(blob,name);
+     const waUrl='https://wa.me/?text='+encodeURIComponent(msgText+' — Bitte heruntergeladene PDF anhängen.');
+     window.open(waUrl,'_blank','noopener');
+     clearSignatureOnly();
+     showToast('PDF heruntergeladen & WhatsApp geöffnet. Unterschrift gelöscht.');
+   }catch(e){
+     if(e&&e.name==='AbortError')return;
+     const waUrl='https://wa.me/?text='+encodeURIComponent(msgText);
+     window.open(waUrl,'_blank','noopener');
+   }
+ }
+
+ document.getElementById('emailBtn').addEventListener('click',sendReportViaEmail);
+ document.getElementById('whatsappBtn').addEventListener('click',sendReportViaWhatsApp);
 
  const zoom=document.getElementById('zoomScale'),zoomValue=document.getElementById('zoomValue'),sheetWrap=document.getElementById('sheetWrap');
  function applyZoom(){

@@ -1,0 +1,589 @@
+﻿<!doctype html>
+<html lang="de">
+<head><script type='text/javascript' nonce='DwZN6rGF/jXWswJjC3jkQg==' src='https://contribution.usercontent.google.com/7kDbJUOZWfvO_3sM7vk-Mswe6Ii9xdBWno1z9-7jMhhw_FmX-R-x_sfb7Z0hVGwDgYP1L-ttpso8H1ENsWw9Ik0k-4kXo8YSmorI1dVJW6gy2V3lp7VDnQ1IgBxbs1B-NZCuqyvlmzQS4ZRhuOCqLeiQ0ctumcpDoB_7UcDntTCOJU5o4SU7Gx1olHfPDwuJUcz8FFJNz3PR7yVLd8bELZLqq3aNOctYCLkckVM3pWCatnHAFWRHBc02Ko0xWDLBaPMVkJIiSvoCDkRazbrNZCQU1V3qKVhNDG7giLC-vYYn6MxSPeshKne5JQAdL2RtdVKPdYnTkGR8kO59-9oHSqbSDcy0EgTNGEav7IR2lQt1HdyoZS-9wk82YlA93IBLCVX8f1wjN8kKMxeGGWRboRdfWhMQJG4R6mas20lfZYn6oVDMJPJUOCh-guDrqDwvMb1T0Liz7nl4xo85N23XqIKnBeMkJeyVg5QP5hFMMBQbFhg3rYlpET2j3slKYGR2kPcIJoIAUzKGAi-IyS4tO_34eaAPpZ9xYtpi5SxRalGvCuxn9Caf9NspJbnE3ykz3TeZmLjr3sKpyKXFmYErpT-GKihbD1DFtfl7v7DHzMyemUmQxnP5vuz3C6xTE9ZT0z28RvamT1y87-bmUyjwFyq68vI0m6knvLBWVS1N0jBOSGv-tBu3ePCZwZG3IdpY-IhVpAl6S0bTAoTHZN5xFL-aRzkx4Qn5xkdxaPq55Sfu'></script><script type="text/javascript" nonce="e2G2vMNxxaUIckWG/XLvfg==" src="https://contribution.usercontent.google.com/wGLRtNH5EV0aq1rS-SdpF_WMAUt22RrX1SG214voRjHv3SFJRmbvE8mipCfVe7D3N14BOnKM3mWXKanwXhfYAF_LYFt-nJ3JXD1P8Fn66TUTCL1eukOp5Mmdt2zt9cal0L3A4yY81anfGkNqN2HphLXO4mkaTIJR9Ti5mUHkGiGz9B13MIk7X6ZtX4_SZnOVMHcAwAwqagx14VlMxEhAjAll3XIBM9UJzqjlDS9P4R-W-DsOhb0OOtUDgAyaG0zSigZNciz9v0U7V1PWmHxi2RKWAWfmGlkXUXbF59UAYNPp0njMOW97aRzuqtd_PDdkm6D752aebrSsDcURXWGWG9ClNyl5ZqAv-l10MyhRPXCNd6ee0Fe0oXlXrSQ8ks51ea5dLj-lpNrtA6nQcr6pJTwDhvfx-Zay4_ee-1ravKS-CuJxh8dyfpgCYxlOcCdqu4jPd5mXw7ZCodU8jHKynQlIxtBmPufN_rWmPhpnlf7J2QZceIbOvgWYpxHTMDByXuwa0-m3uzvD_u0lvLJr5JbMgaItct_UkbPU81Wc5Qd071H0nh0zZqvS4vpxRYqNnsweOvIKwyTuddwaE60hzdhMegz5sB-EK1u4XBsalV1z0hTfnzmIj9ydtnHg9JqcJBBTgYsjwAphkyxfD1Gi-jOjl-Lokp419YSqvTSYyJUJtFo2JALoZYM2GLLzllULvTACt6yJknV8RXuigDUvTfdhBmyjaJ7YCJ8IJnrH0UmQojVKkqu1QDmaB9VhuNRB"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="application-name" content="FUBOSOL APP">
+<meta name="apple-mobile-web-app-title" content="FUBOSOL APP">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#d91e79">
+<title>FUBOSOL APP</title>
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<style>
+:root{color-scheme:light;font-family:Arial,system-ui,sans-serif;color:#202124;background:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ddd;padding:6px 10px;box-shadow:0 2px 8px #0001}
+.header-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand{font-weight:700;font-size:14px}
+.sub{font-size:11px;color:#60656d}
+.toggle-menu-btn{background:#f1f3f5;color:#202124;border:1px solid #d0d5dd;border-radius:6px;padding:4px 8px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap}
+.actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+header.collapsed .actions,header.collapsed .sub{display:none}
+button{font:inherit;border:0;border-radius:7px;padding:6px 10px;font-size:12px;cursor:pointer;touch-action:manipulation}
+.primary{background:#d91e79;color:white;font-weight:700}
+.secondary{background:#e9eaee;color:#202124;font-weight:500}
+.danger{background:#fff0f3;color:#9b174c}
+main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
+.help-box{max-width:min(100%,794px);margin:0 auto 6px;background:#fff;border:1px solid #e0e3e8;border-radius:8px;padding:6px 10px;font-size:12px;color:#454b54}
+.help-box summary{cursor:pointer;font-weight:600;color:#202124;outline:none;user-select:none}
+.help-box ul{margin:6px 0 2px;padding-left:18px;line-height:1.45}
+.help-box li{margin-bottom:4px}
+.sheet-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.sheet{--scale:1;position:relative;width:min(100%,794px);margin:auto;aspect-ratio:2481/3508;background:white;box-shadow:0 4px 20px #0002;overflow:hidden}
+.sheet>.form-image{display:block;width:100%;height:100%;object-fit:fill}
+.field{position:absolute;z-index:2;border:1px solid transparent;background:transparent;color:#111;font:calc(14px * var(--scale,1)) Arial,sans-serif;padding:0 calc(3px * var(--scale,1));resize:none;overflow:hidden;border-radius:2px;min-width:0;line-height:1.15}
+.field:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
+.field::placeholder{color:transparent}
+.field[data-date-field="true"]{appearance:none;-webkit-appearance:none;text-align:left}
+.field[data-date-field="true"]:focus::placeholder{color:#888}
+.field:focus::placeholder{color:#888}
+.topfield{height:1.85%}
+.worktable{position:absolute;left:9.71%;top:33.62%;width:85.65%;height:14.11%;display:grid;grid-template-columns:10.0% 27.2% 7.81% 7.76% 47.23%;grid-template-rows:repeat(6,1fr);z-index:2}
+.worktable input{width:100%;height:100%;min-width:0;border:1px solid transparent;background:transparent;color:#111;font:calc(13.2px * var(--scale,1)) Arial,sans-serif;padding:0 calc(4px * var(--scale,1))}
+.worktable input[data-date-field="true"]{padding-left:calc(2px * var(--scale,1))!important;padding-right:0!important;letter-spacing:-0.2px}
+.worktable input:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
+.workdesc{position:absolute;left:9.71%;top:52.2%;width:85.65%;height:33.6%;color:#111;font:calc(14.2px * var(--scale,1)) Arial,sans-serif;line-height:1.38;padding:calc(4px * var(--scale,1));background:transparent;border:1px solid transparent;resize:none;z-index:2}
+.workdesc:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
+.top-select{appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(13.2px * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
+.bottom-select{display:block;appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(13.5px * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
+.bottomfield{padding-top:0!important;padding-bottom:0!important;height:1.55%!important;font-size:calc(14px * var(--scale,1))!important}
+.sign-target{position:absolute;left:52.5%;top:91.2%;width:43%;height:5.1%;border:1.5px dashed #d91e79;background:#d91e790a;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#9c1557;font-size:calc(13px * var(--scale,1));cursor:pointer;text-align:center;z-index:3;padding:0}
+.sign-target.signed{border-color:transparent;background:transparent}
+.sign-target img{position:absolute;width:auto;height:auto;max-width:130%;max-height:130%;object-fit:contain;pointer-events:none;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--sig-scale,1));transform-origin:center}
+.sign-target .prompt{background:#fffD;padding:2px 6px;border-radius:4px}
+.sign-target.signed .prompt{display:none}
+.controls{max-width:min(100%,794px);margin:8px auto 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#fff;padding:8px 10px;border-radius:8px;border:1px solid #e0e3e8}
+.controls label{font-size:12px;color:#454b54}
+.controls input[type=range]{vertical-align:middle;width:130px}
+.controls input[type=email]{font:inherit;font-size:12px;padding:6px 8px;border:1px solid #cbd0d7;border-radius:6px;width:min(100%,240px)}
+.note{max-width:min(100%,794px);margin:8px auto 0;font-size:11px;color:#6b7280;line-height:1.4}
+.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#172033;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;box-shadow:0 8px 24px #0004;z-index:30;display:none;text-align:center;max-width:92vw}
+.toast.show{display:block}
+.modal{position:fixed;inset:0;background:#111a;display:none;align-items:center;justify-content:center;padding:10px;z-index:20}
+.modal.open{display:flex}
+.dialog{width:min(100%,680px);background:white;border-radius:16px;overflow:hidden;box-shadow:0 20px 70px #0005;display:flex;flex-direction:column;max-height:95dvh}
+.dialog-head{padding:12px 16px;border-bottom:1px solid #eee}
+.dialog-head h2{font-size:17px;margin:0 0 3px}
+.dialog-head p{font-size:12px;color:#5c6470;margin:0}
+.pad-wrap{padding:12px;background:#f7f7f8;flex:1;min-height:180px}
+.pad{display:block;width:100%;height:min(42dvh,300px);min-height:180px;background:white;border:1px solid #d4d6db;border-radius:10px;touch-action:none}
+.dialog-actions{padding:10px 14px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.dialog-actions .right{display:flex;gap:8px}
+@media(max-width:560px){
+  .actions button{flex:1 1 30%;padding:6px 6px;font-size:11.5px}
+}
+@page{size:A4 portrait;margin:0}
+@media print{
+  html,body{background:white!important;margin:0!important;padding:0!important;width:210mm!important;height:297mm!important}
+  header,.no-print,.help-box,.note,.modal,.controls,.toast{display:none!important}
+  main{margin:0!important;padding:0!important;max-width:none!important;width:210mm!important;height:297mm!important}
+  .sheet-wrap{padding:0!important;overflow:visible!important}
+  .sheet{width:210mm!important;height:297mm!important;aspect-ratio:auto!important;margin:0!important;box-shadow:none!important;zoom:1!important;transform:none!important;page-break-after:avoid;break-after:avoid}
+  .sheet>.form-image{width:210mm!important;height:297mm!important}
+  .field,.worktable input,.workdesc{border:0!important;outline:0!important;background:transparent!important;color:#111!important}
+  .field{font-size:10.5pt!important}
+  .worktable input{font-size:9.8pt!important}
+  .workdesc{font-size:10.5pt!important}
+  .top-select,.bottom-select{appearance:none!important;-webkit-appearance:none!important;border:0!important;background:transparent!important;color:#111!important;font-size:10pt!important}
+  .sign-target{left:52.5%;top:91.2%;width:43%;height:5.1%;border:0!important;background:transparent!important;border-radius:0}
+  .sign-target img{width:auto;height:auto;max-width:130%;max-height:130%;transform:translate(-50%,-50%) scale(var(--sig-scale,1))}
+  .sign-target .prompt{display:none!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+#formSelector {
+  font-family: inherit; font-size: 14px; font-weight: 700; color: #202124; 
+  background: #f1f3f5; border: 1px solid #d0d5dd; border-radius: 4px; 
+  padding: 2px 4px; cursor: pointer; outline: none;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+@media(max-width:560px){
+  .brand { flex-direction: column; align-items: flex-start !important; gap: 2px !important; }
+  #formSelector { font-size: 13px; max-width: 100%; }
+}
+</style>
+
+</head>
+<body>
+<header class="no-print" id="topHeader">
+  <div class="header-top">
+    <div>
+      <div class="brand" style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+        Fubosol · 
+        <select id="formSelector">
+          <option value="arbeitsbericht" selected="">Arbeits- und Regiebericht</option>
+          <option value="klima_inbetriebnahme">Klimaanlage Inbetriebnahmeprotokoll</option>
+          <option value="klima_wartung">Klimaanlage Wartungsprotokoll</option>
+          <option value="lueftung_inbetriebnahme">Lüftungsanlage Inbetriebnahmeprotokoll</option>
+          <option value="heizung_wartung">Heizungsanlage Wartungsprotokoll</option>
+        </select>
+      </div>
+      <div class="sub">Lokales Entwurfs-Backup aktiv</div>
+    </div>
+    <button type="button" class="toggle-menu-btn" id="toggleMenuBtn">▲ Menü ausblenden</button>
+  </div>
+  <div class="actions">
+    <button class="secondary" id="clearSignatureBtn">Unterschrift löschen</button>
+    <button class="secondary" id="clearBtn">Dokument leeren</button>
+    <button class="secondary" id="printBtn">Drucken</button>
+    <button class="secondary" id="savePdfBtn">PDF speichern</button>
+    <button class="primary" id="emailBtn">PDF per E-Mail</button>
+  </div>
+</header>
+<main>
+  <details class="help-box no-print">
+    <summary>ℹ️ Anleitung &amp; Funktionen anzeigen (Hilfe)</summary>
+    <ul>
+      <li><strong>Datumsfelder (Format TT.MM.JJ):</strong> Antippen eines leeren Datumsfeldes trägt sofort das heutige Datum ein und öffnet den Kalender.</li>
+      <li><strong>Automatische Arbeitszeit-Berechnung:</strong> Eingaben in <em>„Arbeitszeit von–bis“</em> (z. B. <code>7:30-12:00; 12:30-17:00</code> oder <code>7-7:30 FZ</code>) werden automatisch formatiert und die reine Stundenanzahl in <em>„Arbeitsstunden“</em> berechnet. Zusatztexte wie <code>FZ</code>, <code>mit FZ</code> oder <code>Laden</code> werden ignoriert.</li>
+      <li><strong>Offline-Speicherung:</strong> Alle Eingaben, Auswahlen und die Unterschrift werden automatisch im Browser gespeichert und bleiben beim Schließen oder Drehen des Geräts erhalten.</li>
+      <li><strong>PDF &amp; E-Mail-Versand (Gmail):</strong> Beim Klick auf <em>„PDF per E-Mail“</em> werden die Büro-Adresse (<code>biuro@fubosol.de</code>) und die optionale Kunden-E-Mail automatisch in die Zwischenablage kopiert – in Gmail einfach im Feld „An“ einfügen.</li>
+      <li><strong>Als App auf dem Smartphone installieren:</strong><br>
+          <b>Android (Chrome):</b> Tippen Sie oben rechts auf die drei Punkte (Menü) und wählen Sie <em>„Zum Startbildschirm hinzufügen“</em>.<br>
+          <b>iOS/Apple (Safari):</b> Tippen Sie unten auf das Teilen-Symbol (Viereck mit Pfeil nach oben) und wählen Sie <em>„Zum Home-Bildschirm“</em>.</li>
+    </ul>
+  </details>
+  <div id="placeholderWrap" style="display: none; text-align: center; padding: 40px 20px; background: #fff; border-radius: 8px; border: 1px solid #e0e3e8; margin-top: 20px;">
+    <h3 style="margin-top: 0; color: #d91e79;">Formular in Vorbereitung</h3>
+    <p style="color: #454b54;">Dieses Formular wird in Kürze hinzugefügt.</p>
+  </div>
+  <div class="sheet-wrap" id="sheetWrap">
+    <section class="sheet" aria-label="Fubosol Arbeits- und Regiebericht">
+      <img class="form-image" alt="Oryginalny formularz Fubosol Arbeits- und Regiebericht" src="form-arbeitsbericht.png">
+      <input class="field topfield" style="left:15.1%;top:21.35%;width:22.6%" data-field="Baustelle-1" aria-label="Baustelle Zeile 1">
+      <input class="field topfield" style="left:9.8%;top:23.60%;width:27.9%" data-field="Baustelle-2" aria-label="Baustelle Zeile 2">
+      <input class="field topfield" style="left:9.8%;top:25.85%;width:27.9%" data-field="Baustelle-3" aria-label="Baustelle Zeile 3">
+      <input class="field topfield" style="left:47.7%;top:21.35%;width:20.2%" data-field="Auftraggeber-1" aria-label="Auftraggeber Zeile 1">
+      <input class="field topfield" style="left:40.3%;top:23.60%;width:27.6%" data-field="Auftraggeber-2" aria-label="Auftraggeber Zeile 2">
+      <input class="field topfield" style="left:40.3%;top:25.85%;width:27.6%" data-field="Auftraggeber-3" aria-label="Auftraggeber Zeile 3">
+      <input class="field topfield" style="left:82.0%;top:21.35%;width:13.2%" data-field="Rüstzeit" aria-label="Rüstzeit" inputmode="decimal">
+      <input class="field topfield" style="left:82.0%;top:23.60%;width:13.2%" data-field="Fahrtkilometer" aria-label="Fahrtkilometer" inputmode="decimal">
+      <select class="field topfield top-select" style="left:82.0%;top:25.80%;width:10.5%;height:1.85%" data-field="Fahrtpauschale Ja Nein" aria-label="Fahrtpauschale Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
+      <div class="worktable" id="worktable"><input aria-label="Datum Zeile 1" data-field="Datum-1" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 1" data-field="Arbeitszeit von-bis-1"><input aria-label="Arbeitsstunden Zeile 1" data-field="Arbeitsstunden-1" inputmode="decimal"><input aria-label="Monteurzahl Zeile 1" data-field="Monteurzahl-1" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 1" data-field="Name des Monteurs-1"><input aria-label="Datum Zeile 2" data-field="Datum-2" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 2" data-field="Arbeitszeit von-bis-2"><input aria-label="Arbeitsstunden Zeile 2" data-field="Arbeitsstunden-2" inputmode="decimal"><input aria-label="Monteurzahl Zeile 2" data-field="Monteurzahl-2" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 2" data-field="Name des Monteurs-2"><input aria-label="Datum Zeile 3" data-field="Datum-3" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 3" data-field="Arbeitszeit von-bis-3"><input aria-label="Arbeitsstunden Zeile 3" data-field="Arbeitsstunden-3" inputmode="decimal"><input aria-label="Monteurzahl Zeile 3" data-field="Monteurzahl-3" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 3" data-field="Name des Monteurs-3"><input aria-label="Datum Zeile 4" data-field="Datum-4" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 4" data-field="Arbeitszeit von-bis-4"><input aria-label="Arbeitsstunden Zeile 4" data-field="Arbeitsstunden-4" inputmode="decimal"><input aria-label="Monteurzahl Zeile 4" data-field="Monteurzahl-4" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 4" data-field="Name des Monteurs-4"><input aria-label="Datum Zeile 5" data-field="Datum-5" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 5" data-field="Arbeitszeit von-bis-5"><input aria-label="Arbeitsstunden Zeile 5" data-field="Arbeitsstunden-5" inputmode="decimal"><input aria-label="Monteurzahl Zeile 5" data-field="Monteurzahl-5" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 5" data-field="Name des Monteurs-5"><input aria-label="Datum Zeile 6" data-field="Datum-6" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 6" data-field="Arbeitszeit von-bis-6"><input aria-label="Arbeitsstunden Zeile 6" data-field="Arbeitsstunden-6" inputmode="decimal"><input aria-label="Monteurzahl Zeile 6" data-field="Monteurzahl-6" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 6" data-field="Name des Monteurs-6"></div>
+      <textarea class="workdesc" data-field="Ausgeführte Arbeiten/Material" aria-label="Ausgeführte Arbeiten und Material"></textarea>
+      <select class="field bottom-select top-select" style="left:37.8%;top:87.20%;width:13.8%;height:1.9%;background:#fff;" data-field="Arbeit erledigt" aria-label="Arbeit erledigt: Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
+      <select class="field bottom-select top-select" style="left:82.8%;top:87.20%;width:11.8%;height:1.9%;background:#fff;" data-field="Neuer Termin erforderlich" aria-label="Neuer Termin erforderlich: Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
+      <input class="field bottomfield" style="left:12.7%;top:94.65%;width:22.2%" data-field="Ort" aria-label="Ort">
+      <input class="field bottomfield" style="left:38.9%;top:94.65%;width:12.6%" data-field="Datum Unterschrift" data-date-field="true" inputmode="none" aria-label="Datum">
+      <button class="sign-target" id="signTarget" aria-label="Unterschrift des Kunden erfassen"><span class="prompt">✍ Hier unterschreiben</span><img id="signatureImage" alt="Unterschrift des Kunden" hidden=""></button>
+    </section>
+  </div>
+  <div class="controls no-print">
+    <label for="zoomScale">Dokumentgröße: <strong id="zoomValue">100 %</strong></label>
+    <input id="zoomScale" type="range" min="60" max="160" value="100" step="5">
+    <label for="sigScale">Größe der Unterschrift: <strong id="scaleValue">100 %</strong></label>
+    <input id="sigScale" type="range" min="70" max="180" value="100" step="5">
+    <label for="clientEmail">E-Mail des Kunden (optional):</label>
+    <input type="email" id="clientEmail" placeholder="kunde@beispiel.de" autocomplete="email">
+    <input type="date" id="nativeDatePicker" aria-label="Datum auswählen" style="position:fixed;left:0;top:0;width:1px;height:1px;opacity:0.01;pointer-events:none;border:0;padding:0">
+  </div>
+  <p class="note no-print">Büro: biuro@fubosol.de · Aktuelle Eingaben werden als Entwurf lokal auf dem Gerät gespeichert.</p>
+</main>
+<div class="toast no-print" id="toastMsg" role="status" aria-live="polite"></div>
+<div class="modal" id="signatureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><div class="dialog-head"><h2 id="modalTitle">Unterschrift des Kunden</h2><p>Bitte unterschreiben Sie mit dem Finger oder einem Stift im Feld.</p></div><div class="pad-wrap"><canvas class="pad" id="signaturePad"></canvas></div><div class="dialog-actions"><button class="secondary" id="cancelBtn">Abbrechen</button><div class="right"><button class="danger" id="eraseBtn">Löschen</button><button class="primary" id="saveBtn">Unterschrift übernehmen</button></div></div></div></div>
+<script>
+(()=>{
+ const OFFICE_EMAIL='biuro@fubosol.de',STORAGE_KEY='fubosol_report_data';
+ const modal=document.getElementById('signatureModal'),canvas=document.getElementById('signaturePad'),ctx=canvas.getContext('2d'),target=document.getElementById('signTarget'),sigImg=document.getElementById('signatureImage'),toast=document.getElementById('toastMsg');
+ let drawing=false,hasInk=false,previous=null,toastTimer=null;
+
+ const formSelector = document.getElementById('formSelector');
+ const placeholderWrap = document.getElementById('placeholderWrap');
+ const sheetWrapElement = document.getElementById('sheetWrap');
+ const controlsEl = document.querySelector('.controls');
+
+ function updateFormView() {
+   if (formSelector.value === 'arbeitsbericht') {
+     sheetWrapElement.style.display = 'block';
+     controlsEl.style.display = 'flex';
+     placeholderWrap.style.display = 'none';
+   } else {
+     sheetWrapElement.style.display = 'none';
+     controlsEl.style.display = 'none';
+     placeholderWrap.style.display = 'block';
+   }
+   // Save selected form
+   try {
+     const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"fields":{}}');
+     data.selectedForm = formSelector.value;
+     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+   } catch(e) {}
+ }
+
+ formSelector.addEventListener('change', updateFormView);
+
+
+ const topHeader=document.getElementById('topHeader'),toggleMenuBtn=document.getElementById('toggleMenuBtn');
+ if(topHeader&&toggleMenuBtn){
+   toggleMenuBtn.addEventListener('click',()=>{
+     const collapsed=topHeader.classList.toggle('collapsed');
+     toggleMenuBtn.textContent=collapsed?'▼ Menü anzeigen':'▲ Menü ausblenden';
+   });
+ }
+
+ function showToast(msg){
+   if(!toast)return;
+   toast.textContent=msg;toast.classList.add('show');
+   if(toastTimer)clearTimeout(toastTimer);
+   toastTimer=setTimeout(()=>toast.classList.remove('show'),5000);
+ }
+
+ async function copyToClipboard(text){
+   try{
+     if(navigator.clipboard&&navigator.clipboard.writeText){
+       await navigator.clipboard.writeText(text);
+       return true;
+     }
+   }catch(e){}
+   try{
+     const ta=document.createElement('textarea');
+     ta.value=text;ta.style.position='fixed';ta.style.left='-9999px';ta.style.top='0';
+     document.body.appendChild(ta);ta.focus();ta.select();
+     const ok=document.execCommand('copy');ta.remove();
+     return ok;
+   }catch(e){return false}
+ }
+
+ function sizeCanvas(restore){
+   const r=canvas.getBoundingClientRect(),dpr=Math.max(1,window.devicePixelRatio||1);
+   let temp=null;if(restore&&hasInk){temp=document.createElement('canvas');temp.width=canvas.width;temp.height=canvas.height;temp.getContext('2d').drawImage(canvas,0,0)}
+   canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);
+   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.lineWidth=2.4;ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#172033';ctx.fillStyle='#172033';
+   if(temp){ctx.drawImage(temp,0,0,r.width,r.height)}else{hasInk=false}
+   previous=null;
+ }
+
+ function openModal(){modal.classList.add('open');document.body.style.overflow='hidden';requestAnimationFrame(()=>sizeCanvas(false))}
+ function closeModal(){modal.classList.remove('open');document.body.style.overflow='';drawing=false}
+ window.addEventListener('resize',()=>{if(modal.classList.contains('open'))sizeCanvas(true)});
+
+ function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+ canvas.addEventListener('pointerdown',e=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);drawing=true;previous=point(e);ctx.beginPath();ctx.arc(previous.x,previous.y,1.2,0,Math.PI*2);ctx.fill();hasInk=true});
+ canvas.addEventListener('pointermove',e=>{if(!drawing)return;e.preventDefault();const p=point(e);ctx.beginPath();ctx.moveTo(previous.x,previous.y);ctx.lineTo(p.x,p.y);ctx.stroke();previous=p;hasInk=true});
+ const stop=()=>{drawing=false;previous=null};canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',stop);
+ document.getElementById('eraseBtn').addEventListener('click',()=>{ctx.clearRect(0,0,canvas.width,canvas.height);hasInk=false});
+ document.getElementById('cancelBtn').addEventListener('click',closeModal);
+
+ document.getElementById('saveBtn').addEventListener('click',()=>{
+   if(!hasInk){alert('Bitte unterschreiben Sie zuerst im Feld.');return}
+   sigImg.src=canvas.toDataURL('image/png');sigImg.hidden=false;target.classList.add('signed');
+   saveDraft();closeModal();
+ });
+ target.addEventListener('click',openModal);
+
+ function clearSignature(){sigImg.removeAttribute('src');sigImg.hidden=true;target.classList.remove('signed');saveDraft()}
+ document.getElementById('clearSignatureBtn').addEventListener('click',clearSignature);
+
+ function clearFormAutomatically() {
+   document.querySelectorAll('[data-field]').forEach(el=>{el.value=''});
+   document.getElementById('clientEmail').value='';
+   clearSignature();
+   localStorage.removeItem(STORAGE_KEY);
+ }
+
+ document.getElementById('clearBtn').addEventListener('click',()=>{
+   if(!confirm('Soll der gesamte Bericht einschließlich aller Eingaben, Auswahlfelder und der Unterschrift geleert werden?'))return;
+   clearFormAutomatically();
+ });
+
+ const scale=document.getElementById('sigScale');
+ function updateScale(){target.style.setProperty('--sig-scale',Number(scale.value)/100);document.getElementById('scaleValue').textContent=Number(scale.value)+' %';saveDraft()}
+ scale.addEventListener('input',updateScale);
+
+ const datePicker=document.getElementById('nativeDatePicker');let activeDateField=null;
+ function getTodayISO(){const now=new Date();return String(now.getFullYear())+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0')}
+ function toISODate(value){
+   const m=(value||'').trim().match(/^(\d{1,2})[/. -](\d{1,2})[/. -](\d{2,4})$/);if(!m)return '';
+   let year=Number(m[3]);if(m[3].length===2)year+=year>=70?1900:2000;
+   return String(year).padStart(4,'0')+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0');
+ }
+ function fromISODate(value){if(!value)return '';const [y,m,d]=value.split('-');return d+'.'+m+'.'+y.slice(-2)}
+
+ document.querySelectorAll('[data-date-field="true"]').forEach(el=>{
+   el.addEventListener('click',()=>{
+     activeDateField=el;
+     const existingISO=toISODate(el.value);
+     const targetISO=existingISO||getTodayISO();
+     if(!el.value.trim()){
+       el.value=fromISODate(targetISO);
+       saveDraft();
+     }
+     datePicker.value=targetISO;
+     const rect=el.getBoundingClientRect();
+     datePicker.style.left=Math.max(0,rect.left)+'px';
+     datePicker.style.top=Math.max(0,rect.top)+'px';
+     try{if(datePicker.showPicker)datePicker.showPicker();else datePicker.click()}catch(err){datePicker.click()}
+   });
+   el.addEventListener('blur',()=>{const iso=toISODate(el.value);if(iso)el.value=fromISODate(iso);saveDraft()});
+ });
+ function applyPickedDate(){
+   if(activeDateField&&datePicker.value){
+     activeDateField.value=fromISODate(datePicker.value);
+     activeDateField.dispatchEvent(new Event('input',{bubbles:true}));
+     activeDateField.dispatchEvent(new Event('change',{bubbles:true}));
+     saveDraft();
+   }
+ }
+ datePicker.addEventListener('input',applyPickedDate);
+ datePicker.addEventListener('change',applyPickedDate);
+
+ function parseTimeIntervals(val){
+   if(!val)return{formatted:val,hours:''};
+   const segments=val.trim().split(/\s*;\s*/);
+   const formattedSegs=[];let totalMin=0,found=false;
+   for(const seg of segments){
+     const m=seg.match(/^\s*([0-9]{1,2}[:.][0-9]{2}|[0-9]{3,4}|[0-9]{1,2})\s*[-–—]\s*([0-9]{1,2}[:.][0-9]{2}|[0-9]{3,4}|[0-9]{1,2})(?:\s+(.*)|\s*(.*))?$/);
+     if(m){
+       found=true;
+       const parseSingle=s=>{
+         s=s.replace('.',':');
+         if(s.includes(':')){const[h,mn]=s.split(':');return[parseInt(h,10),parseInt(mn,10)]}
+         if(s.length===4)return[parseInt(s.slice(0,2),10),parseInt(s.slice(2),10)];
+         if(s.length===3)return[parseInt(s.slice(0,1),10),parseInt(s.slice(1),10)];
+         return[parseInt(s,10),0];
+       };
+       const[h1,m1]=parseSingle(m[1]),[h2,m2]=parseSingle(m[2]);
+       const rest=(m[3]||m[4]||'').trim();
+       let diff=(h2*60+m2)-(h1*60+m1);if(diff<0)diff+=1440;
+       totalMin+=diff;
+       const s1=String(h1).padStart(2,'0')+':'+String(m1).padStart(2,'0');
+       const s2=String(h2).padStart(2,'0')+':'+String(m2).padStart(2,'0');
+       formattedSegs.push(s1+'-'+s2+(rest?' '+rest:''));
+     }else{
+       formattedSegs.push(seg);
+     }
+   }
+   const resHours=found?String(parseFloat((totalMin/60).toFixed(2))):'';
+   return{formatted:formattedSegs.join('; '),hours:resHours};
+ }
+
+ for(let i=1;i<=6;i++){
+   const timeInp=document.querySelector(`[data-field="Arbeitszeit von-bis-${i}"]`);
+   const hoursInp=document.querySelector(`[data-field="Arbeitsstunden-${i}"]`);
+   if(timeInp&&hoursInp){
+     timeInp.addEventListener('blur',()=>{
+       const parsed=parseTimeIntervals(timeInp.value);
+       timeInp.value=parsed.formatted;
+       if(parsed.hours&&(!hoursInp.value||!isNaN(hoursInp.value)))hoursInp.value=parsed.hours;
+       saveDraft();
+     });
+   }
+ }
+
+ function saveDraft(){
+   const data={fields:{},email:document.getElementById('clientEmail').value,sigScale:scale.value,sigImg:sigImg.src||''};
+   document.querySelectorAll('[data-field]').forEach(el=>{data.fields[el.dataset.field]=el.value});
+   try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}catch(e){}
+ }
+ function loadDraft(){
+   try{
+     const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return;
+     const data=JSON.parse(raw);
+     if(data.fields){document.querySelectorAll('[data-field]').forEach(el=>{if(data.fields[el.dataset.field]!==undefined)el.value=data.fields[el.dataset.field]})}
+     if(data.email)document.getElementById('clientEmail').value=data.email;
+     if(data.sigScale){scale.value=data.sigScale;updateScale()}
+     if(data.sigImg){sigImg.src=data.sigImg;sigImg.hidden=false;target.classList.add('signed')}
+
+     if(data.selectedForm){
+       formSelector.value = data.selectedForm;
+     }
+     updateFormView();
+
+   }catch(e){}
+ }
+ document.querySelectorAll('[data-field],#clientEmail').forEach(el=>{el.addEventListener('input',saveDraft);el.addEventListener('change',saveDraft)});
+
+ document.getElementById('printBtn').addEventListener('click',()=>window.print());
+
+ function filename(){
+   const customer=[...document.querySelectorAll('[data-field^="Auftraggeber-"]')].map(e=>e.value.trim()).filter(Boolean).join(' ');
+   const safe=(customer||'Ohne Auftraggeber').replace(/[\\/:*?"<>|]/g,'-').replace(/\s+/g,' ').trim();
+   return 'Arbeits - Regiebericht - '+safe+'.pdf';
+ }
+
+ async function makePdfBlob(){
+   const sheet=document.querySelector('.sheet'),base=document.querySelector('.form-image');
+   if(!base.complete||!base.naturalWidth) await new Promise((resolve,reject)=>{base.onload=resolve;base.onerror=reject});
+   
+   const prevZoom=sheet.style.zoom;sheet.style.zoom='1';
+   const sr=sheet.getBoundingClientRect();
+   const W=1240,H=Math.round(W*3508/2481),cv=document.createElement('canvas');cv.width=W;cv.height=H;
+   const c=cv.getContext('2d');c.fillStyle='#fff';c.fillRect(0,0,W,H);c.drawImage(base,0,0,W,H);
+   
+   const sign=document.getElementById('signatureImage'),signTgt=document.getElementById('signTarget');
+   if(!sign.hidden&&sign.complete&&sign.naturalWidth){
+     const r=signTgt.getBoundingClientRect(),sx=W/sr.width,sy=H/sr.height;
+     const cx=(r.left-sr.left+r.width/2)*sx,cy=(r.top-sr.top+r.height/2)*sy;
+     const bw=r.width*sx,bh=r.height*sy,extra=Number(scale.value)/100;
+     const fit=Math.min(bw*1.3*extra/sign.naturalWidth,bh*1.3*extra/sign.naturalHeight);
+     const dw=sign.naturalWidth*fit,dh=sign.naturalHeight*fit;
+     c.drawImage(sign,cx-dw/2,cy-dh/2,dw,dh);
+   }
+   const jpg=atob(cv.toDataURL('image/jpeg',.93).split(',')[1]);
+   
+   const pageW=595.28,pageH=841.89,sx=pageW/sr.width,sy=pageH/sr.height;
+   let content='q '+pageW+' 0 0 '+pageH+' 0 0 cm /Im0 Do Q\n';
+
+   const map={
+     '€':0x80,'‚':0x82,'ƒ':0x83,'„':0x84,'…':0x85,'†':0x86,'‡':0x87,'ˆ':0x88,'‰':0x89,'Š':0x8A,'‹':0x8B,'Œ':0x8C,'Ž':0x8E,
+     '‘':0x91,'’':0x92,'“':0x93,'”':0x94,'•':0x95,'–':0x96,'—':0x97,'˜':0x98,'™':0x99,'š':0x9A,'›':0x9B,'œ':0x9C,'ž':0x9E,'Ÿ':0x9F,
+     'Ą':0x82,'ą':0x83,'Ć':0x84,'ć':0x85,'Ę':0x86,'ę':0x87,'Ł':0x88,'ł':0x89,'Ń':0x8A,'ń':0x8B,'Ś':0x8C,'ś':0x8D,'Ź':0x8E,'ź':0x8F,'Ż':0x90,'ż':0x91
+   };
+   function winAnsiHex(str){
+     let out='';
+     for(let i=0;i<str.length;i++){
+       const ch=str[i];let n=map[ch];
+       if(n===undefined){const cp=ch.codePointAt(0);n=cp<=255?cp:63}
+       out+=n.toString(16).padStart(2,'0');
+     }
+     return out.toUpperCase();
+   }
+   function pdfText(text,x,y,size){if(!text)return;content+='BT /F1 '+size.toFixed(2)+' Tf 1 0 0 1 '+x.toFixed(2)+' '+y.toFixed(2)+' Tm <'+winAnsiHex(text)+'> Tj ET\n'}
+
+   function wrapLine(text,maxChars){
+     const words=text.split(/\s+/);const out=[];let line='';
+     for(const word of words){
+       if(word.length>maxChars){
+         if(line){out.push(line);line=''}
+         for(let i=0;i<word.length;i+=maxChars)out.push(word.slice(i,i+maxChars));
+       }else if(!line){line=word}
+       else if((line+' '+word).length<=maxChars){line+=' '+word}
+       else{out.push(line);line=word}
+     }
+     if(line)out.push(line);
+     return out;
+   }
+
+   const controls=[...sheet.querySelectorAll('.field,.worktable input,.workdesc')];
+   for(const el of controls){
+     let value=(el.value||'').trim();if(!value)continue;
+     if(el.dataset.dateField==='true'){
+       const m=value.match(/^(\d{1,2})[/. -](\d{1,2})[/. -](\d{2,4})$/);
+       if(m)value=m[1].padStart(2,'0')+'.'+m[2].padStart(2,'0')+'.'+m[3].slice(-2);
+     }
+     const r=el.getBoundingClientRect(),x=(r.left-sr.left)*sx,y=(r.top-sr.top)*sy,w=r.width*sx,h=r.height*sy;
+     const fs=el.tagName==='TEXTAREA'?9.6:(el.closest('.worktable')?9.0:9.5);
+     const pad=el.classList.contains('workdesc')?3.5:(el.dataset.dateField==='true'&&el.closest('.worktable')?1.8:2.8);
+     const maxChars=Math.max(1,Math.floor((w-pad*2)/(fs*.51)));
+     let lines=[];
+     if(el.tagName==='TEXTAREA'){
+       for(const raw of value.split(/\r?\n/)){lines.push(...wrapLine(raw,maxChars))}
+     }else{lines=[value]}
+     const lineH=fs*1.32;
+     let baseline=el.tagName==='TEXTAREA'?(pageH-y-fs*1.15):(pageH-(y+(h+fs*.68)/2));
+     for(let i=0;i<lines.length;i++){
+       if(el.tagName==='TEXTAREA'&&i*lineH>h-fs*.2)break;
+       pdfText(lines[i],x+pad,baseline-i*lineH,fs);
+     }
+   }
+   sheet.style.zoom=prevZoom;
+
+   const objects=[];
+   objects[1]='<< /Type /Catalog /Pages 2 0 R >>';
+   objects[2]='<< /Type /Pages /Kids [3 0 R] /Count 1 >>';
+   objects[3]='<< /Type /Page /Parent 2 0 R /MediaBox [0 0 '+pageW+' '+pageH+'] /Resources << /XObject << /Im0 4 0 R >> /Font << /F1 6 0 R >> >> /Contents 5 0 R >>';
+   const imgLen=jpg.length;
+   objects[4]='<< /Type /XObject /Subtype /Image /Width '+W+' /Height '+H+' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+imgLen+' >>\nstream\n'+jpg+'\nendstream';
+   objects[5]='<< /Length '+content.length+' >>\nstream\n'+content+'endstream';
+   objects[6]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding << /Type /Encoding /BaseEncoding /WinAnsiEncoding /Differences [ 130 /Aogonek /aogonek /Cacute /cacute /Eogonek /eogonek /Lslash /lslash /Nacute /nacute /Sacute /sacute /Zacute /zacute /Zdotaccent /zdotaccent ] >> >>';
+
+   let pdf='%PDF-1.4\n%\xE2\xE3\xCF\xD3\n',offsets=[0];
+   for(let i=1;i<=6;i++){offsets[i]=pdf.length;pdf+=i+' 0 obj\n'+objects[i]+'\nendobj\n'}
+   const xref=pdf.length;
+   pdf+='xref\n0 7\n0000000000 65535 f \n';
+   for(let i=1;i<=6;i++)pdf+=String(offsets[i]).padStart(10,'0')+' 00000 n \n';
+   pdf+='trailer\n<< /Size 7 /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+   const bytes=new Uint8Array(pdf.length);
+   for(let i=0;i<pdf.length;i++)bytes[i]=pdf.charCodeAt(i)&255;
+   return new Blob([bytes],{type:'application/pdf'});
+ }
+
+ function downloadBlob(blob,name){
+   const url=URL.createObjectURL(blob),a=document.createElement('a');
+   a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
+   setTimeout(()=>URL.revokeObjectURL(url),30000);
+ }
+
+ document.getElementById('savePdfBtn').addEventListener('click',async()=>{
+   try {
+     const blob=await makePdfBlob();
+     downloadBlob(blob,filename());
+     clearFormAutomatically();
+     showToast('PDF gespeichert. Formular geleert.');
+   }
+   catch(e){alert('PDF konnte nicht erstellt werden. Bitte versuchen Sie es erneut oder nutzen Sie „Drucken“.')}
+ });
+
+ document.getElementById('emailBtn').addEventListener('click',async()=>{
+   const client=document.getElementById('clientEmail').value.trim();
+   const recipients=[OFFICE_EMAIL,client].filter(Boolean);
+   const clipboardRecipients=recipients.join(', ');
+   const name=filename();
+   const copied=await copyToClipboard(clipboardRecipients);
+   if(copied){
+     showToast('📋 Kopiert: '+clipboardRecipients+' (In Gmail im Feld „An“ einfügen)');
+   }
+   try{
+     const blob=await makePdfBlob();const file=new File([blob],name,{type:'application/pdf'});
+     if(navigator.canShare&&navigator.canShare({files:[file]})){
+       await navigator.share({
+         files:[file],
+         title:name.replace(/\.pdf$/,''),
+         text:'Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.\n\nEmpfänger (bereits in die Zwischenablage kopiert):\n'+clipboardRecipients
+       });
+       clearFormAutomatically();
+       showToast('E-Mail vorbereitet. Formular geleert.');
+       return;
+     }
+     downloadBlob(blob,name);
+     const subject=encodeURIComponent(name.replace(/\.pdf$/,''));
+     const body=encodeURIComponent('Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.\n\n(Bitte fügen Sie die heruntergeladene PDF-Datei als Anhang hinzu.)\n');
+     window.location.href='mailto:'+recipients.join(',')+'?subject='+subject+'&body='+body;
+     alert('Die PDF wurde heruntergeladen und die Empfänger ('+clipboardRecipients+') wurden kopiert. Ihr E-Mail-Programm wird geöffnet.');
+     clearFormAutomatically();
+   }catch(e){
+     if(e&&e.name==='AbortError')return;
+     alert('Die E-Mail-Freigabe war nicht möglich. Empfänger in Zwischenablage: '+clipboardRecipients);
+   }
+ });
+
+ const zoom=document.getElementById('zoomScale'),zoomValue=document.getElementById('zoomValue'),sheet=document.querySelector('.sheet'),sheetWrap=document.getElementById('sheetWrap');
+ function applyZoom(){
+   const z=Number(zoom.value)/100;
+   zoomValue.textContent=zoom.value+' %';
+   const wrapW=sheetWrap.clientWidth||Math.min(window.innerWidth-12,1000);
+   const base=Math.min(wrapW,794);
+   sheet.style.width=base+'px';
+   sheet.style.setProperty('--scale',String(base/794));
+   sheet.style.zoom=String(z);
+ }
+ zoom.addEventListener('input',applyZoom);
+ window.addEventListener('resize',()=>{requestAnimationFrame(applyZoom)});
+ if(window.screen&&window.screen.orientation){
+   window.screen.orientation.addEventListener('change',()=>{setTimeout(applyZoom,120)});
+ }
+
+ modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+ loadDraft();
+ updateScale();
+ applyZoom();
+})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker zarejestrowany!', reg.scope))
+        .catch(err => console.log('Błąd rejestracji SW:', err));
+    });
+  }
+</script>
+</body>
+</html>

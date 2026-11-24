@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<head><script type='text/javascript' nonce='pgVhV9fGhrpj/eWvlb5VWA==' src='https://contribution.usercontent.google.com/o69Mm3wf-Y7MyVudT_H_sLv6F-ty3c9bjlHxiA1gy2CoNHtXjE8hTHzGHMfHWeprpKIZooEBwum1pcUk8h_z6ND0wwe1_aABSrrrhLBKp_MxjYXlIx_Z7YXbTckc1ZkBPMrxZSvw0CKfgJV-rcejcfth0hOZRloo5S-rZr1sLFkrEQxj1f1QVFv42fETUaWDheN5grJVwBUdcGQKqBQY1mTXwzToU-AJSTOoMfQsOJOwqccvjhrc5ZXSgf4gZ04ImVLTJJ3_e9UgBSxgUx068itehIdNdOQdODG-d6kbO_QafOlYmmstxmOTTC7C3MsJOALv552w-i4csuFL_d9IcGQz0TFO6Y8IPHJxjwKdgPhcLooMoLmTdk-3H01d77rzNdAL6dqGnuyZuYOYKr5ybwVJEpfA635av9HKHvnSvG0zyoIP51g1n9MED9cPKgA1vgPimPRDThmd4dmO4fxXV1Pni-7LEKtYDjNxyfu4_L2wZsif1_jhTPHXnkx9hYdw81LU75AdhlfI1nPJTGV2MXyE2kDXEbQ0IV17mMbDVueAhovaIsKA84FttahCkOsAbxmErEcRqdRUrIvX9Cw-ic41Ao-Uup1qUshIcOwJ5oUP6mW6Q_Pl0-foEPvp6IKLPXvZkgN1jZ20cxzad9AHckjQh6VBH6GP2xJfKxTpniFcOo12c6e5US5dglf7KIsf_lA9MmLBcPLF27u0HAf_ijSf6jCG71O9P-RUbferp9mFypzcdKA3zHYHaenPk5Q'></script>
+<head><script type='text/javascript' nonce='U7lS3S278GzeFZBks5agvQ==' src='https://contribution.usercontent.google.com/RHw-Kvr4X2x-RE6ORgp8iUwxBcMP8Lavz703m5m8KFGJsKM5J_G4Ne1aLMT_KFtoYStD5auOR1MTQGOH3NJT2osdFrDYQMbKNoiH6ff8LicIAR7A2e1VTrMq3TyJCVnp6WyiXJoc9KcizAI9ell8LnSCXYe6JV4Kr-H18fNl8Air2MDzIBsBBavS8kN6G_1S0muQ2EPDNJOtTooAs0rwJUUBJSjmw3_mLFHkbIxAbzT2mBpvwfK62omdZyZeNXj6hcQEboYKpP6GOqr_1eKC7uIRHQdhft3co0nas-T1L1a-3uP6ox722-oDeviNDiPs71LtjfYYgVlRrtQSJoGsK3BGfp6PJIVOfHFs43mkB6MNX94Olt6d6MtEJwsnlMrAtb9nyybpWsBk3kG0g4jdr4lOm-QAH9jOP0LYTsu8lj9AYFLtlM42lcCtsd5k07Ifi2s8ggZDx5ELHzCMHwO-fAKGCYfp962FtBwv2exszu1NX-CN4Kme9kfhaxUU_pV1Ph_o8cVu7QSLG6pPiM793FT8Q3WGz5AaSBgl6gG1UVYqhQ4BGxbSvzSMnSPY0ycgZJxMK34trxb3In4m5kaF9VQQ9aXU9K7kjtmw2p6ktjrQPQ1e9oMGPX2HQN3Cf40vE6nws8syHNExqywvLm3lAHZCtZzpO0Otyj0jQmiisAShl1KvgOnGb8EHbiuaZwae3NYBmebOPxGg6HJ5tuNTV-DCWckCsL7eAatCIwk0RH4v-D6jKbmS3B8MbkNghC216SI'></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="application-name" content="FUBOSOL">
@@ -18,11 +18,15 @@
 body{margin:0}
 header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ddd;padding:6px 10px;box-shadow:0 2px 8px #0001}
 .header-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.brand{font-weight:700;font-size:14px}
-.sub{font-size:11px;color:#60656d}
 .toggle-menu-btn{background:#f1f3f5;color:#202124;border:1px solid #d0d5dd;border-radius:6px;padding:4px 8px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap}
-.actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
-header.collapsed .actions,header.collapsed .sub{display:none}
+.actions{display:flex;gap:6px;flex-wrap:nowrap;margin-top:6px;max-width:min(100%,794px)}
+header.collapsed .actions{display:none}
+.icon-btn{flex:1 1 0;height:36px;padding:0;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d0d5dd;border-radius:8px;transition:transform .12s ease,border-color .15s ease,background .15s ease}
+.icon-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.icon-btn:hover{border-color:#d91e79}
+.icon-btn:active{transform:scale(.96)}
+.icon-btn.wa-btn{background:#e7f8ee;color:#126b36;border-color:#bce3cb}
+.icon-btn.primary{background:#fdf2f8;color:#d91e79;border-color:#d91e79}
 button{font:inherit;border:0;border-radius:7px;padding:6px 10px;font-size:12px;cursor:pointer;touch-action:manipulation}
 .primary{background:#d91e79;color:white;font-weight:700}
 .secondary{background:#e9eaee;color:#202124;font-weight:500}
@@ -33,12 +37,12 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
 .help-box ul{margin:6px 0 2px;padding-left:18px;line-height:1.45}
 .help-box li{margin-bottom:4px}
 .sheet-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
-.sheet{--scale:1;position:relative;width:min(100%,794px);margin:auto;aspect-ratio:2481/3508;background:white;box-shadow:0 4px 20px #0002;overflow:hidden}
+.sheet{--scale:1;--doc-px:12.80px;position:relative;width:min(100%,794px);margin:auto;aspect-ratio:2481/3508;background:white;box-shadow:0 4px 20px #0002;overflow:hidden}
 .sheet + .sheet{margin-top:16px}
 .sheet.hidden-page{display:none}
 .page-badge{position:absolute;right:4.6%;top:17.2%;z-index:3;font:700 calc(11.33px * var(--scale,1)) Arial,Helvetica,sans-serif;color:#6b7280;background:#fffc;padding:2px 6px;border-radius:4px;pointer-events:none}
 .sheet>.form-image{display:block;width:100%;height:100%;object-fit:fill}
-.field{position:absolute;z-index:2;border:1px solid transparent;background:transparent;color:#111;font:calc(12.80px * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(3px * var(--scale,1));resize:none;overflow:hidden;border-radius:2px;min-width:0;line-height:1.15}
+.field{position:absolute;z-index:2;border:1px solid transparent;background:transparent;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(3px * var(--scale,1));resize:none;overflow:hidden;border-radius:2px;min-width:0;line-height:1.15}
 .field:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
 .field::placeholder{color:transparent}
 .field[data-date-field="true"]{appearance:none;-webkit-appearance:none;text-align:left}
@@ -46,15 +50,15 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
 .field:focus::placeholder{color:#888}
 .topfield{height:1.85%}
 .worktable{position:absolute;left:9.71%;top:33.62%;width:85.65%;height:14.11%;display:grid;grid-template-columns:10.0% 27.2% 7.81% 7.76% 47.23%;grid-template-rows:repeat(6,1fr);z-index:2}
-.worktable input{width:100%;height:100%;min-width:0;border:1px solid transparent;background:transparent;color:#111;font:calc(12.80px * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(4px * var(--scale,1))}
+.worktable input{width:100%;height:100%;min-width:0;border:1px solid transparent;background:transparent;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(4px * var(--scale,1))}
 .worktable input[data-date-field="true"]{padding-left:calc(2px * var(--scale,1))!important;padding-right:0!important;letter-spacing:-0.2px}
 .worktable input:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
-.workdesc{position:absolute;left:9.71%;top:52.2%;width:85.65%;height:34.2%;color:#111;font:calc(12.80px * var(--scale,1))/1.15 Arial,Helvetica,sans-serif;padding:calc(2px * var(--scale,1));background:transparent;border:1px solid transparent;resize:none;overflow:hidden;z-index:2}
+.workdesc{position:absolute;left:9.71%;top:52.2%;width:85.65%;height:34.2%;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1))/1.15 Arial,Helvetica,sans-serif;padding:calc(2px * var(--scale,1));background:transparent;border:1px solid transparent;resize:none;overflow:hidden;z-index:2}
 .workdesc:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
-.top-select{appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(12.80px * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
-.bottom-select{display:block;appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(12.80px * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
-.bottomfield{padding-top:0!important;padding-bottom:0!important;height:1.55%!important;font-size:calc(12.80px * var(--scale,1))!important}
-.sign-target{position:absolute;left:52.5%;top:91.2%;width:43%;height:5.1%;border:1.5px dashed #d91e79;background:#d91e790a;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#9c1557;font-size:calc(12.80px * var(--scale,1));cursor:pointer;text-align:center;z-index:3;padding:0}
+.top-select{appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(var(--doc-px,12.80px) * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
+.bottom-select{display:block;appearance:auto;-webkit-appearance:auto;padding:0 calc(2px * var(--scale,1));font-size:calc(var(--doc-px,12.80px) * var(--scale,1));background:transparent;border:1px solid transparent;border-radius:2px;color:#111;cursor:pointer}
+.bottomfield{padding-top:0!important;padding-bottom:0!important;height:1.55%!important;font-size:calc(var(--doc-px,12.80px) * var(--scale,1))!important}
+.sign-target{position:absolute;left:52.5%;top:91.2%;width:43%;height:5.1%;border:1.5px dashed #d91e79;background:#d91e790a;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#9c1557;font-size:calc(var(--doc-px,12.80px) * var(--scale,1));cursor:pointer;text-align:center;z-index:3;padding:0}
 .sign-target.signed{border-color:transparent;background:transparent}
 .sign-target img{position:absolute;width:auto;height:auto;max-width:130%;max-height:130%;object-fit:contain;pointer-events:none;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--sig-scale,1));transform-origin:center}
 .sign-target .prompt{background:#fffD;padding:2px 6px;border-radius:4px}
@@ -82,6 +86,17 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
 .note{max-width:min(100%,794px);margin:8px auto 0;font-size:11px;color:#6b7280;line-height:1.4}
 .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#172033;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;box-shadow:0 8px 24px #0004;z-index:30;display:none;text-align:center;max-width:92vw}
 .toast.show{display:block}
+.guide-body{padding:14px 16px;overflow-y:auto;font-size:12.5px;line-height:1.5;color:#202124}
+.guide-body h3{margin:12px 0 6px;font-size:13.5px;color:#d91e79;border-bottom:1px solid #f1f3f5;padding-bottom:3px}
+.guide-body h3:first-child{margin-top:0}
+.guide-body p{margin:4px 0 8px}
+.guide-table{width:100%;border-collapse:collapse;margin:6px 0 10px;font-size:12px}
+.guide-table th,.guide-table td{border:1px solid #e5e7eb;padding:5px 8px;text-align:left;vertical-align:top}
+.guide-table th{background:#f8f9fa;font-weight:700;color:#374151}
+.guide-table code{background:#f3f4f6;padding:1px 4px;border-radius:3px;font-size:11.5px;color:#b81466}
+.guide-example{background:#f9fafb;border-left:3px solid #d91e79;padding:8px 10px;border-radius:4px;margin:6px 0;font-size:12px}
+.guide-open-btn{background:#fdf2f8;color:#b81466;border:1px solid #f5b8d8;border-radius:5px;padding:2px 8px;font-size:11.5px;font-weight:600;cursor:pointer;margin-left:4px;vertical-align:baseline}
+.guide-open-btn:hover{background:#fce7f3}
 .modal{position:fixed;inset:0;background:#111a;display:none;align-items:center;justify-content:center;padding:10px;z-index:20}
 .modal.open{display:flex}
 .dialog{width:min(100%,680px);background:white;border-radius:16px;overflow:hidden;box-shadow:0 20px 70px #0005;display:flex;flex-direction:column;max-height:95dvh}
@@ -93,7 +108,8 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
 .dialog-actions{padding:10px 14px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .dialog-actions .right{display:flex;gap:8px}
 @media(max-width:560px){
-  .actions button{flex:1 1 30%;padding:6px 6px;font-size:11.5px}
+  .icon-btn{height:38px}
+  .icon-btn svg{width:21px;height:21px}
 }
 @page{size:A4 portrait;margin:0}
 @media print{
@@ -114,15 +130,30 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
 }
 
-.voice-bar{max-width:min(100%,794px);margin:6px auto;background:#fff;border:1px solid #e0e3e8;border-radius:8px;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
-.voice-group{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.voice-btn{background:#f3f4f6;color:#202124;border:1px solid #d0d5dd;border-radius:7px;padding:6px 10px;font-size:12px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.voice-btn.recording{background:#fee2e2;color:#b91c1c;border-color:#ef4444;animation:pulseRec 1.2s infinite}
-.voice-btn.ai-btn{background:#fdf2f8;color:#b81466;border-color:#f5b8d8}
-.voice-btn.ai-btn:disabled{opacity:0.6;cursor:wait}
-.voice-lang{font:inherit;font-size:12px;padding:5px 6px;border:1px solid #d0d5dd;border-radius:6px;background:#fff;color:#202124;cursor:pointer}
-.voice-hint{font-size:11px;color:#6b7280}
-@keyframes pulseRec{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.35)}50%{box-shadow:0 0 0 5px rgba(239,68,68,0)}}
+.floating-voice-pill{position:fixed;z-index:25;display:none;align-items:center;gap:3px;background:#fffffffa;border:1.5px solid #d91e79;border-radius:999px;padding:2px 5px;box-shadow:0 4px 14px rgba(0,0,0,.18);backdrop-filter:blur(4px)}
+.floating-voice-pill.visible{display:inline-flex}
+.fvp-mic{width:27px;height:27px;border-radius:50%;border:0;background:#d91e79;color:#fff;display:inline-flex;align-items:center;justify-content:center;padding:0;cursor:pointer;box-shadow:0 2px 5px rgba(217,30,121,.35)}
+.fvp-mic svg{width:14.5px;height:14.5px;fill:currentColor}
+.fvp-mic.recording{background:#dc2626;animation:pulseRec 1.2s infinite}
+.fvp-lang{height:23px;border-radius:999px;border:1px solid #d0d5dd;background:#f8f9fa;color:#202124;font-size:10px;font-weight:700;padding:0 6px;cursor:pointer;display:inline-flex;align-items:center;gap:2px}
+.fvp-lang:hover{background:#eef0f3}
+.fvp-ai{height:23px;border-radius:999px;border:1px solid #f5b8d8;background:#fdf2f8;color:#b81466;font-size:10px;font-weight:700;padding:0 7px;cursor:pointer;display:inline-flex;align-items:center;gap:2px}
+.fvp-ai:disabled{opacity:0.6;cursor:wait}
+.fvp-close{width:21px;height:21px;border-radius:50%;border:1px solid #e5e7eb;background:#f3f4f6;color:#4b5563;font-size:11px;font-weight:700;line-height:1;padding:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.fvp-close:hover{background:#fee2e2;color:#b91c1c;border-color:#fca5a5}
+.footer-row{max-width:min(100%,794px);margin:8px auto 0;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.footer-row .note{margin:0;flex:1}
+.settings-btn{width:34px;height:34px;border-radius:8px;background:#fff;border:1px solid #d0d5dd;color:#454b54;display:inline-flex;align-items:center;justify-content:center;padding:0;flex-shrink:0;cursor:pointer;transition:transform .18s ease,border-color .18s ease,color .18s ease}
+.settings-btn:hover{border-color:#d91e79;color:#d91e79;transform:rotate(25deg)}
+.settings-btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.settings-grid{display:flex;flex-direction:column;gap:10px;padding:14px 16px;overflow-y:auto;font-size:12.5px}
+.settings-card{background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:10px 12px}
+.settings-card h3{margin:0 0 6px;font-size:13px;color:#d91e79}
+.settings-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:6px}
+.settings-row label{font-size:12px;color:#374151;font-weight:600}
+.settings-row input,.settings-row select{font:inherit;font-size:12px;padding:6px 8px;border:1px solid #cbd0d7;border-radius:6px;background:#fff;color:#111}
+.settings-note{font-size:11px;color:#6b7280;margin:5px 0 0;line-height:1.4}
+@keyframes pulseRec{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.45)}50%{box-shadow:0 0 0 6px rgba(220,38,38,0)}}
 
 #formSelector {
   font-family: inherit; font-size: 14px; font-weight: 700; color: #202124; 
@@ -132,43 +163,75 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
   text-overflow: ellipsis;
 }
 @media(max-width:560px){
-  .brand { flex-direction: column; align-items: flex-start !important; gap: 2px !important; }
-  #formSelector { font-size: 13px; max-width: 100%; }
+  #formSelector { font-size: 13.5px; max-width: 100%; }
 }
 </style>
 </head>
 <body>
 <header class="no-print" id="topHeader">
   <div class="header-top">
-    <div>
-      <div class="brand" style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
-        Fubosol · 
-        <select id="formSelector">
-          <option value="arbeitsbericht" selected="">Arbeits- und Regiebericht</option>
-          <option value="klima_inbetriebnahme">Klimaanlage Inbetriebnahmeprotokoll</option>
-          <option value="klima_wartung">Klimaanlage Wartungsprotokoll</option>
-          <option value="lueftung_inbetriebnahme">Lüftungsanlage Inbetriebnahmeprotokoll</option>
-          <option value="heizung_wartung">Heizungsanlage Wartungsprotokoll</option>
-        </select>
-      </div>
-      <div class="sub">Lokales Entwurfs-Backup aktiv</div>
+    <div style="min-width:0;flex:1">
+      <select id="formSelector" aria-label="Formular auswählen">
+        <option value="arbeitsbericht" selected="">Arbeits- und Regiebericht</option>
+        <option value="klima_inbetriebnahme">Klimaanlage Inbetriebnahmeprotokoll</option>
+        <option value="klima_wartung">Klimaanlage Wartungsprotokoll</option>
+        <option value="lueftung_inbetriebnahme">Lüftungsanlage Inbetriebnahmeprotokoll</option>
+        <option value="heizung_wartung">Heizungsanlage Wartungsprotokoll</option>
+      </select>
     </div>
     <button type="button" class="toggle-menu-btn" id="toggleMenuBtn">▲ Menü ausblenden</button>
   </div>
-  <div class="actions">
-    <button class="secondary" id="clearSignatureBtn">Unterschrift löschen</button>
-    <button class="secondary" id="clearBtn">Dokument leeren</button>
-    <button class="secondary" id="printBtn">Drucken</button>
-    <button class="secondary" id="savePdfBtn">PDF speichern</button>
-    <button class="secondary" id="whatsappBtn" style="background:#e7f8ee;color:#126b36;font-weight:600">WhatsApp</button>
-    <button class="primary" id="emailBtn">PDF per E-Mail</button>
+  <div class="actions icon-actions">
+    <button type="button" class="secondary icon-btn" id="clearSignatureBtn" title="Unterschrift löschen" aria-label="Unterschrift löschen">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <path d="M2 15c2.2-3.5 4.2-3.5 6.2 0 1.6 2.6 3.3 2.6 5.3-.5"/>
+        <path d="M2 19h11"/>
+        <path d="M14.5 4.5l5 5-7 7H7.5v-5l7-7z"/>
+        <path d="M16.5 15.5l4.5 4.5M21 15.5l-4.5 4.5"/>
+      </svg>
+    </button>
+    <button type="button" class="secondary icon-btn" id="clearBtn" title="Dokument leeren" aria-label="Dokument leeren">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <polyline points="3 6 5 6 21 6"/>
+        <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+        <path d="M10 11v6M14 11v6"/>
+        <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+      </svg>
+    </button>
+    <button type="button" class="secondary icon-btn" id="printBtn" title="Drucken" aria-label="Drucken">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <polyline points="6 9 6 2 18 2 18 9"/>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+        <rect x="6" y="14" width="12" height="8"/>
+      </svg>
+    </button>
+    <button type="button" class="secondary icon-btn" id="savePdfBtn" title="PDF speichern" aria-label="PDF speichern">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <text x="12" y="17.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="6.4" font-weight="700" fill="currentColor" stroke="none">PDF</text>
+      </svg>
+    </button>
+    <button type="button" class="secondary icon-btn wa-btn" id="whatsappBtn" title="Per WhatsApp senden" aria-label="WhatsApp">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        <path d="M9.5 8.8c.3-.3.6-.3.9 0l1 1.1c.2.2.2.6 0 .8l-.5.6c.5.9 1.2 1.6 2.1 2.1l.6-.5c.2-.2.6-.2.8 0l1.1 1c.3.3.3.6 0 .9l-.5.5c-.6.6-1.5.8-2.3.4-1.8-.8-3.3-2.3-4.1-4.1-.4-.8-.2-1.7.4-2.3l.5-.5z"/>
+      </svg>
+    </button>
+    <button type="button" class="primary icon-btn" id="emailBtn" title="PDF per E-Mail" aria-label="PDF per E-Mail">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <polyline points="22 6 12 13 2 6"/>
+      </svg>
+    </button>
   </div>
 </header>
 <main>
   <details class="help-box no-print">
     <summary>ℹ️ Anleitung &amp; Funktionen anzeigen (Hilfe)</summary>
     <ul>
-            <li><strong>Spracheingabe &amp; Sprachbefehle (DE &amp; PL):</strong> Über <em>„🎙️ Diktieren“</em> oder die Mikrofontaste der Smartphone-Tastatur können Sie Arbeiten diktieren. Erkannte Befehle: <code>Punkt</code>/<code>kropka</code> (.), <code>Komma</code>/<code>przecinek</code> (,), <code>Doppelpunkt</code>/<code>dwukropek</code> (:), <code>Fragezeichen</code>/<code>znak zapytania</code> (?), <code>Neue Zeile</code>/<code>nowa linia</code>, <code>Spiegelstrich</code>/<code>myślnik</code> (neue Zeile mit <code>- </code>) sowie <code>Nummerierung</code>/<code>numerowanie</code> (automatisch <code>1. </code>, <code>2. </code>, <code>3. </code>).</li>
+            <li><strong>✨ KI-Fachübersetzung (PL → DE) &amp; Einstellungen:</strong> Diktieren oder schreiben Sie stichpunktartig auf Polnisch und tippen Sie auf <em>„✨ PL→DE“</em>. API-Schlüssel, Schriftgröße (9–12 pt), Standard-Monteur und Backup finden Sie unten rechts hinter dem Zahnrad-Symbol (<strong>⚙️</strong>).</li>
+      <li><strong>Spracheingabe &amp; Sprachbefehle (DE &amp; PL):</strong> Diktieren mit automatischer Zeichensetzung, Zeilenumbrüchen und Aufzählungen. <button type="button" class="guide-open-btn" id="openDictationGuideBtn">📖 Ausführliche Diktier-Anleitung öffnen</button></li>
       <li><strong>Datumsfelder (Format TT.MM.JJ):</strong> Antippen öffnet den Kalender (heutiges Datum vorausgewählt). Über „Löschen“ im Kalender oder mit Backspace/Entf kann ein Datum jederzeit wieder geleert werden.</li>
       <li><strong>Automatische Arbeitszeit-Berechnung:</strong> Eingaben in <em>„Arbeitszeit von–bis“</em> (z. B. <code>7:30-12:00; 12:30-17:00</code> oder <code>7-7:30 FZ</code>) werden automatisch formatiert und die reine Stundenanzahl in <em>„Arbeitsstunden“</em> berechnet. Zusatztexte wie <code>FZ</code>, <code>mit FZ</code> oder <code>Laden</code> werden ignoriert.</li>
       <li><strong>Automatische 2. Seite (identisch auf Smartphone &amp; PC):</strong> Sobald das Textfeld <em>„Ausgeführte Arbeiten/Material“</em> (25 Zeilen) gefüllt ist, öffnet sich automatisch eine zweite Seite mit allen übernommenen Kopf- und Fußdaten. Überlaufender Text wird direkt auf Seite 2 übertragen.</li>
@@ -183,18 +246,6 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
   <div id="placeholderWrap" style="display: none; text-align: center; padding: 40px 20px; background: #fff; border-radius: 8px; border: 1px solid #e0e3e8; margin-top: 20px;">
     <h3 style="margin-top: 0; color: #d91e79;">Formular in Vorbereitung</h3>
     <p style="color: #454b54;">Dieses Formular wird in Kürze hinzugefügt.</p>
-  </div>
-  <div class="voice-bar no-print" id="voiceBar" aria-label="Spracheingabe">
-    <div class="voice-group">
-      <button type="button" class="voice-btn" id="dictateBtn">🎙️ Diktieren</button>
-      <select class="voice-lang" id="dictateLang" aria-label="Sprache für Diktat">
-        <option value="de-DE" selected="">DE</option>
-        <option value="pl-PL">PL</option>
-      </select>
-      <button type="button" class="voice-btn" id="undoTextBtn" title="Letzte Änderung rückgängig machen">↩ Rückgängig</button>
-      <button type="button" class="voice-btn" id="resetNumberingBtn" title="Aufzählung wieder bei 1 starten">1️⃣ Zähler: 1</button>
-    </div>
-    <span class="voice-hint" id="voiceStatus">Befehle: Punkt/kropka, Komma/przecinek, Neue Zeile/nowa linia, Punkt/myślnik (- ), Nummerierung/numerowanie (1., 2., 3.)</span>
   </div>
   <div class="sheet-wrap" id="sheetWrap">
     <!-- SEITE 1 -->
@@ -250,6 +301,7 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
     <input type="email" id="clientEmail" placeholder="kunde@beispiel.de" autocomplete="email">
     <input type="date" id="nativeDatePicker" aria-label="Datum auswählen" style="position:fixed;left:0;top:0;width:1px;height:1px;opacity:0.01;pointer-events:none;border:0;padding:0">
   </div>
+
   <section class="history-box no-print" id="historyBox" aria-label="Gespeicherte PDF-Berichte">
     <details class="history-details" id="historyDetails">
       <summary>
@@ -269,15 +321,173 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
       </div>
     </details>
   </section>
-  <p class="note no-print">Büro: info@fubosol.de · Aktuelle Eingaben und PDF-Historie werden lokal auf dem Gerät gespeichert.</p>
+  <div class="footer-row no-print">
+    <p class="note">Büro: info@fubosol.de · Aktuelle Eingaben und PDF-Historie werden lokal auf dem Gerät gespeichert.</p>
+    <button type="button" class="settings-btn" id="openSettingsBtn" title="Einstellungen öffnen" aria-label="Einstellungen">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="3.2"/>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+      </svg>
+    </button>
+  </div>
 </main>
+<div class="floating-voice-pill no-print" id="floatingVoicePill" role="toolbar" aria-label="Spracheingabe">
+  <button type="button" class="fvp-mic" id="dictateBtn" title="Diktieren starten/stoppen" aria-label="Diktieren">
+    <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/></svg>
+  </button>
+  <button type="button" class="fvp-lang" id="dictateLangBtn" title="Sprache wechseln (DE / PL)" aria-label="Sprache wechseln">🌐 DE</button>
+  <button type="button" class="fvp-ai" id="aiTranslateBtn" title="PL → DE Fachtext">✨ PL→DE</button>
+  <button type="button" class="fvp-close" id="closeVoicePillBtn" title="Diktierleiste schließen" aria-label="Schließen">✕</button>
+</div>
+
+<div class="modal no-print" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+  <div class="dialog" style="max-width:520px">
+    <div class="dialog-head" style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+      <div>
+        <h2 id="settingsModalTitle">⚙️ Einstellungen</h2>
+        <p>Schriftgröße, Standard-Monteur, KI-Schlüssel &amp; Konfigurations-Backup</p>
+      </div>
+      <button type="button" class="secondary" id="closeSettingsTopBtn" aria-label="Schließen">✕</button>
+    </div>
+    <div class="settings-grid">
+      <div class="settings-card">
+        <h3>📝 Schriftgröße im gesamten Dokument</h3>
+        <div class="settings-row">
+          <label for="docFontSizePt">Schriftgröße (9,0 – 12,0 pt):</label>
+          <input type="number" id="docFontSizePt" min="9" max="12" step="0.1" value="9.6" style="width:90px">
+        </div>
+        <p class="settings-note" id="fontLinesPreview">Aktuell: 9,6 pt → max. 25 Zeilen (je 90 Zeichen) auf Seite 1.</p>
+      </div>
+
+      <div class="settings-card">
+        <h3>👷 Standard-Monteur</h3>
+        <div class="settings-row">
+          <label for="defaultTechnician">Name des Monteurs (Zeile 1):</label>
+          <input type="text" id="defaultTechnician" placeholder="z. B. T. Piotrowski" style="width:min(100%,230px)">
+        </div>
+        <p class="settings-note">Wird beim Leeren des Dokuments automatisch in Zeile 1 eingetragen. Weitere Monteure &amp; Anzahl tragen Sie bei Bedarf selbst ein.</p>
+      </div>
+
+      <div class="settings-card">
+        <h3>✨ KI-Einstellungen (Gemini API für PL → DE)</h3>
+        <div class="settings-row">
+          <label for="geminiApiKey">Gemini API-Key:</label>
+          <input type="password" id="geminiApiKey" placeholder="AIzaSy..." autocomplete="off" style="width:min(100%,240px)">
+        </div>
+        <div class="settings-row">
+          <label for="geminiModel">Modell:</label>
+          <select id="geminiModel" style="width:min(100%,240px)">
+            <option value="gemini-2.5-flash" selected="">gemini-2.5-flash (schnell)</option>
+            <option value="gemini-2.5-pro">gemini-2.5-pro (präzise)</option>
+          </select>
+        </div>
+        <p class="settings-note">Wird ausschließlich lokal im Browser (localStorage) dieses Geräts gespeichert.</p>
+      </div>
+
+      <div class="settings-card">
+        <h3>💾 Backup / Einstellungen übertragen</h3>
+        <div class="settings-row" style="justify-content:flex-start">
+          <button type="button" class="secondary" id="exportSettingsBtn">📋 Einstellungen kopieren</button>
+          <button type="button" class="secondary" id="toggleImportBoxBtn">📥 Backup einfügen</button>
+        </div>
+        <div id="importSettingsWrap" style="display:none;margin-top:8px">
+          <textarea id="importSettingsInput" rows="3" placeholder="Hier den kopierten Backup-Code einfügen..." style="width:100%;font:inherit;font-size:11.5px;padding:6px;border:1px solid #cbd0d7;border-radius:6px;resize:vertical"></textarea>
+          <div style="margin-top:6px;display:flex;justify-content:flex-end">
+            <button type="button" class="primary" id="applyImportSettingsBtn">Backup übernehmen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dialog-actions" style="justify-content:space-between;border-top:1px solid #eee">
+      <button type="button" class="secondary" id="closeSettingsBtn">Abbrechen</button>
+      <button type="button" class="primary" id="saveSettingsBtn">Speichern &amp; übernehmen</button>
+    </div>
+  </div>
+</div>
 <div class="toast no-print" id="toastMsg" role="status" aria-live="polite"></div>
 <div class="modal" id="signatureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><div class="dialog-head"><h2 id="modalTitle">Unterschrift des Kunden</h2><p>Bitte unterschreiben Sie mit dem Finger oder einem Stift im Feld.</p></div><div class="pad-wrap"><canvas class="pad" id="signaturePad"></canvas></div><div class="dialog-actions"><button class="secondary" id="cancelBtn">Abbrechen</button><div class="right"><button class="danger" id="eraseBtn">Löschen</button><button class="primary" id="saveBtn">Unterschrift übernehmen</button></div></div></div></div>
+<div class="modal no-print" id="dictationGuideModal" role="dialog" aria-modal="true" aria-labelledby="dictGuideTitle">
+  <div class="dialog">
+    <div class="dialog-head" style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+      <div>
+        <h2 id="dictGuideTitle">🎙️ Anleitung: Spracheingabe &amp; Befehle</h2>
+        <p>So nutzen Sie das Diktieren auf Deutsch (DE) und Polnisch (PL) optimal.</p>
+      </div>
+      <button type="button" class="secondary" id="closeDictationGuideTopBtn" aria-label="Schließen">✕</button>
+    </div>
+    <div class="guide-body">
+      <h3>1. So starten Sie das Diktieren</h3>
+      <ul>
+        <li>Tippen Sie in ein erlaubtes Textfeld (<em>Ausgeführte Arbeiten/Material</em>, <em>Arbeitszeit von–bis</em> oder <em>Name des Monteurs</em>) – direkt am Feld erscheint das schwebende Mikrofon-Symbol (<strong>🎙️</strong>) mit Sprach-Umschalter (<strong>🌐 DE / PL</strong>).</li>
+        <li><strong>Android &amp; PC (Chrome/Edge):</strong> Tippen Sie auf das Mikrofon-Symbol (wird rot). Der Text wird <strong>live während des Sprechens</strong> eingetragen; nach <strong>4 Sekunden ohne Stimme</strong> stoppt die Aufnahme automatisch (oder per Klick auf Stopp).</li>
+        <li><strong>iPhone / iPad (iOS) oder Smartphone-Tastatur:</strong> Sie können jederzeit auch die Mikrofontaste direkt auf Ihrer Bildschirmtastatur (Apple / Google Gboard) verwenden – alle untenstehenden Befehle werden ebenfalls erkannt.</li>
+      </ul>
+
+      <h3>2. Sprachbefehle für Satzzeichen (DE &amp; PL)</h3>
+      <p>Sprechen Sie den Befehl einfach mit im Satz aus – das Leerzeichen davor wird automatisch entfernt und das nächste Wort nach einem Satzende großgeschrieben:</p>
+      <table class="guide-table">
+        <thead>
+          <tr><th>Ergebnis</th><th>Befehl Deutsch (DE)</th><th>Befehl Polnisch (PL)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>.</code> (Punkt)</td><td><code>Punkt</code> / <code>Satzpunkt</code></td><td><code>kropka</code></td></tr>
+          <tr><td><code>,</code> (Komma)</td><td><code>Komma</code></td><td><code>przecinek</code></td></tr>
+          <tr><td><code>:</code> (Doppelpunkt)</td><td><code>Doppelpunkt</code></td><td><code>dwukropek</code></td></tr>
+          <tr><td><code>;</code> (Semikolon)</td><td><code>Semikolon</code></td><td><code>średnik</code></td></tr>
+          <tr><td><code>?</code> (Fragezeichen)</td><td><code>Fragezeichen</code></td><td><code>znak zapytania</code> / <code>pytajnik</code></td></tr>
+          <tr><td><code>!</code> (Ausrufezeichen)</td><td><code>Ausrufezeichen</code></td><td><code>wykrzyknik</code></td></tr>
+          <tr><td><code>/</code> (Schrägstrich)</td><td><code>Schrägstrich</code></td><td><code>ukośnik</code></td></tr>
+        </tbody>
+      </table>
+
+      <h3>3. Zeilenumbrüche &amp; Aufzählungen (- und 1., 2., 3.)</h3>
+      <table class="guide-table">
+        <thead>
+          <tr><th>Funktion</th><th>Befehl Deutsch (DE)</th><th>Befehl Polnisch (PL)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Neue Zeile</td><td><code>Neue Zeile</code> / <code>Absatz</code></td><td><code>nowa linia</code> / <code>nowy wiersz</code> / <code>enter</code></td></tr>
+          <tr><td>Aufzählung mit <code>- </code></td><td><code>Spiegelstrich</code> / <code>Bindestrich</code></td><td><code>myślnik</code> / <code>punkt od myślnika</code> / <code>podpunkt</code></td></tr>
+          <tr><td>Nummerierung <code>1. </code>, <code>2. </code>, <code>3. </code></td><td><code>Nummerierung</code> / <code>Aufzählung</code></td><td><code>numerowanie</code> / <code>punktowanie</code></td></tr>
+          <tr><td>Zeitbereich <code>- </code> (z. B. <code>12:30-13</code>)</td><td><code>bis</code> (z. B. <code>12:30 bis 13</code>)</td><td><code>do</code> (z. B. <code>12:30 do 13</code>)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4. Praxisbeispiel &amp; Hilfsfunktionen</h3>
+      <div class="guide-example">
+        <strong>Sie sprechen:</strong><br>
+        <em>„Wartung der Wärmepumpe durchgeführt Doppelpunkt Spiegelstrich Filter gereinigt Spiegelstrich Anlagendruck geprüft Komma 1,6 bar Punkt Nummerierung Probelauf ohne Störung“</em><br><br>
+        <strong>Ergebnis im Bericht:</strong><br>
+        Wartung der Wärmepumpe durchgeführt:<br>
+        - Filter gereinigt<br>
+        - Anlagendruck geprüft, 1,6 bar.<br>
+        1. Probelauf ohne Störung
+      </div>
+      <ul>
+        <li><strong>Automatische Seite 2:</strong> Ab Zeile 26 öffnet sich beim Diktieren automatisch Seite 2 und führt den Text dort nahtlos fort.</li>
+      </ul>
+
+      <h3>5. ✨ KI-Fachübersetzung &amp; Textglättung (PL → DE)</h3>
+      <p>Sie können stichpunktartig oder umgangssprachlich auf Polnisch diktieren und den gesamten Berichtstext anschließend mit <strong>„✨ PL→DE“</strong> in sauberes SHK-/Klima-/Elektro-Fachdeutsch umwandeln lassen.</p>
+      <div class="guide-example">
+        <strong>Beispiel-Ablauf:</strong><br>
+        1. Ins Textfeld tippen, Sprache über <code>🌐 PL</code> auf Polnisch stellen und auf das Mikrofon tippen.<br>
+        2. Sprechen: <em>„numerowanie wymiana zaworu trójdrogowego na zasilaniu pompy ciepła numerowanie odpowietrzenie układu i dobicie ciśnienia do półtora bara numerowanie próba szczelności i uruchomienie próbne bez błędów“</em><br>
+        3. Auf <strong>„✨ PL→DE“</strong> tippen → Die KI erstellt sofort einen fachgerechten deutschen Berichtstext.<br>
+        4. Das Ergebnis wird direkt ins Formular eingefügt.
+      </div>
+
+    </div>
+    <div class="dialog-actions" style="justify-content:flex-end;border-top:1px solid #eee">
+      <button type="button" class="primary" id="closeDictationGuideBtn">Schließen</button>
+    </div>
+  </div>
+</div>
 <script>
 (()=>{
  const OFFICE_EMAIL='info@fubosol.de',STORAGE_KEY='fubosol_report_data',HISTORY_KEY='fubosol_pdf_history_v1',MAX_HISTORY=30;
- // Czcionka 9.6 pt w PDF (lineHeight 1.15) -> 25 linii x 90 znaków mieści się czysto bez przewijania
- const PDF_MAX_LINES=25,PDF_MAX_CHARS=90;
+ const SETTINGS_STORAGE_KEY='fubosol_user_settings_v1';
+ let docFontPt=9.6,PDF_MAX_LINES=25,PDF_MAX_CHARS=90,defaultTechnicianName='';
  const modal=document.getElementById('signatureModal'),canvas=document.getElementById('signaturePad'),ctx=canvas.getContext('2d');
  const target=document.getElementById('signTarget'),sigImg=document.getElementById('signatureImage');
  const target2=document.getElementById('signTarget2'),sigImg2=document.getElementById('signatureImage2');
@@ -488,6 +698,7 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    sheetPage2.classList.add('hidden-page');
    if(page1Badge)page1Badge.hidden=true;
    localStorage.removeItem(STORAGE_KEY);
+   applyDefaultTechnicianIfEmpty();
  }
 
  document.getElementById('clearBtn').addEventListener('click',()=>{
@@ -922,7 +1133,7 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
          if(m)value=m[1].padStart(2,'0')+'.'+m[2].padStart(2,'0')+'.'+m[3].slice(-2);
        }
        const r=el.getBoundingClientRect(),x=(r.left-sr.left)*sx,y=(r.top-sr.top)*sy,w=r.width*sx,h=r.height*sy;
-       const fs=9.6;
+       const fs=docFontPt;
        const pad=el.classList.contains('workdesc')?2.0:(el.dataset.dateField==='true'&&el.closest('.worktable')?1.8:2.8);
        const maxChars=el.tagName==='TEXTAREA'?PDF_MAX_CHARS:Math.max(1,Math.floor((w-pad*2)/(fs*.51)));
        let lines=[];
@@ -1094,89 +1305,156 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
 
 
- /* --- Spracheingabe & Sprachbefehle (DE / PL, Web Speech + Tastatur-Diktat) --- */
+ /* --- Schwebende Spracheingabe & Sprachbefehle (DE / PL) --- */
+ const floatingVoicePill=document.getElementById('floatingVoicePill');
  const dictateBtn=document.getElementById('dictateBtn');
- const dictateLang=document.getElementById('dictateLang');
- const undoTextBtn=document.getElementById('undoTextBtn');
- const resetNumberingBtn=document.getElementById('resetNumberingBtn');
- const voiceStatus=document.getElementById('voiceStatus');
- let lastActiveTextTarget=workdescPage1;
- let textUndoStack=[];
+ const dictateLangBtn=document.getElementById('dictateLangBtn');
+ const MIC_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/></svg>';
+ const STOP_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>';
+
+ let currentDictateLang='pl-PL';
+ if(dictateLangBtn)dictateLangBtn.textContent='🌐 PL';
+
+ let lastActiveTextTarget=null;
  let listCounter=1;
  let isApplyingVoiceTransform=false;
+ let hidePillTimer=null;
+ let silenceTimer=null;
+ let dictationBaseValue='';
+ let dictationPrefixWithSpace='';
+ let dictationCounterStart=1;
+ const SILENCE_TIMEOUT_MS=4000;
 
- function updateCounterButton(){
-   if(resetNumberingBtn)resetNumberingBtn.textContent='1️⃣ Zähler: '+listCounter;
- }
-
- function pushTextUndo(){
-   const snap={p1:workdescPage1.value,p2:workdescPage2.value,counter:listCounter};
-   const last=textUndoStack[textUndoStack.length-1];
-   if(!last||last.p1!==snap.p1||last.p2!==snap.p2){
-     textUndoStack.push(snap);
-     if(textUndoStack.length>25)textUndoStack.shift();
+ function clearSilenceTimer(){
+   if(silenceTimer){
+     clearTimeout(silenceTimer);
+     silenceTimer=null;
    }
  }
 
- if(undoTextBtn){
-   undoTextBtn.addEventListener('click',()=>{
-     if(!textUndoStack.length){
-       showToast('Nichts zum Rückgängigmachen vorhanden.');
-       return;
+ function resetSilenceTimer(){
+   clearSilenceTimer();
+   if(!isRecording)return;
+   silenceTimer=setTimeout(()=>{
+     if(isRecording&&recognition){
+       manualStop=true;
+       try{recognition.stop()}catch(e){}
+       showToast('🔇 4 s ciszy – dyktowanie zakończone.');
      }
-     const prev=textUndoStack.pop();
-     workdescPage1.value=prev.p1;
-     workdescPage2.value=prev.p2;
-     listCounter=prev.counter||1;
-     updateCounterButton();
-     enforcePage1Overflow(false);
-     saveDraft();
-     showToast('Letzte Textänderung rückgängig gemacht.');
+   },SILENCE_TIMEOUT_MS);
+ }
+
+ function positionFloatingVoicePill(el){
+   if(!floatingVoicePill||!el)return;
+   const rect=el.getBoundingClientRect();
+   if(!rect.width&&!rect.height)return;
+   floatingVoicePill.classList.add('visible');
+   const pillW=floatingVoicePill.offsetWidth||110;
+   const pillH=floatingVoicePill.offsetHeight||36;
+   let left=rect.right-pillW-4;
+   let top=rect.top-pillH-4;
+   if(top<6)top=Math.min(window.innerHeight-pillH-6,rect.bottom+4);
+   left=Math.max(6,Math.min(window.innerWidth-pillW-6,left));
+   floatingVoicePill.style.left=Math.round(left)+'px';
+   floatingVoicePill.style.top=Math.round(top)+'px';
+ }
+
+ function hideFloatingVoicePill(force){
+   if(isRecording&&!force)return;
+   if(floatingVoicePill)floatingVoicePill.classList.remove('visible');
+ }
+ const closeVoicePillBtn=document.getElementById('closeVoicePillBtn');
+ if(closeVoicePillBtn){
+   closeVoicePillBtn.addEventListener('click',()=>{
+     if(isRecording&&recognition){
+       manualStop=true;
+       try{recognition.stop()}catch(e){}
+     }
+     hideFloatingVoicePill(true);
    });
  }
 
- if(resetNumberingBtn){
-   resetNumberingBtn.addEventListener('click',()=>{
-     listCounter=1;
-     updateCounterButton();
-     showToast('Aufzählungszähler auf 1 zurückgesetzt.');
+ if(floatingVoicePill){
+   floatingVoicePill.addEventListener('pointerdown',(e)=>{
+     e.preventDefault();
    });
+ }
+
+ const EXCLUDED_DICTATION_FIELDS=new Set([
+   'Rüstzeit','Fahrtkilometer',
+   'Baustelle-1','Baustelle-2','Baustelle-3',
+   'Auftraggeber-1','Auftraggeber-2','Auftraggeber-3',
+   'Ort'
+ ]);
+ function isDictationAllowedField(el){
+   if(!el||el.readOnly||el.dataset.dateField==='true')return false;
+   if(el.tagName==='TEXTAREA')return true;
+   const key=(el.dataset.field||el.dataset.syncField||'').trim();
+   if(!key)return false;
+   if(EXCLUDED_DICTATION_FIELDS.has(key))return false;
+   if(/^Arbeitsstunden-/i.test(key)||/^Monteurzahl-/i.test(key))return false;
+   return true;
  }
 
  document.querySelectorAll('textarea, input[type="text"], input:not([type])').forEach(el=>{
+   if(!isDictationAllowedField(el))return;
    el.addEventListener('focus',()=>{
-     if(el.dataset.dateField!=='true'&&!el.readOnly){
-       lastActiveTextTarget=el;
-     }
+     if(hidePillTimer){clearTimeout(hidePillTimer);hidePillTimer=null}
+     lastActiveTextTarget=el;
+     if(el===workdescPage1&&!el.value.trim())listCounter=1;
+     positionFloatingVoicePill(el);
    });
+   el.addEventListener('click',()=>{
+     if(hidePillTimer){clearTimeout(hidePillTimer);hidePillTimer=null}
+     lastActiveTextTarget=el;
+     positionFloatingVoicePill(el);
+   });
+   el.addEventListener('blur',()=>{
+     hidePillTimer=setTimeout(()=>{
+       const active=document.activeElement;
+       if(!active||(active.tagName!=='TEXTAREA'&&active.tagName!=='INPUT')){
+         hideFloatingVoicePill();
+       }
+     },180);
+   });
+ });
+
+ window.addEventListener('scroll',()=>{
+   if(floatingVoicePill&&floatingVoicePill.classList.contains('visible')&&lastActiveTextTarget){
+     positionFloatingVoicePill(lastActiveTextTarget);
+   }
+ },true);
+ window.addEventListener('resize',()=>{
+   if(floatingVoicePill&&floatingVoicePill.classList.contains('visible')&&lastActiveTextTarget){
+     positionFloatingVoicePill(lastActiveTextTarget);
+   }
  });
 
  function applyVoiceCommands(rawText,isLiveKeyboard){
    if(!rawText)return rawText;
    let t=rawText;
 
-   // Numbered list command: Nummerierung / Aufzählung / punktowanie / numerowanie
+   // Zamiana "bis" / "do" między godzinami lub liczbami na "-" (np. "12:30 bis 13" -> "12:30 - 13", "7 do 15:30" -> "7 - 15:30")
+   t=t.replace(/(\b(?:[0-9]{1,2}(?:[:.][0-9]{1,2})?|[0-9]{3,4})\b)\s+(?:bis|do)\s+(\b(?:[0-9]{1,2}(?:[:.][0-9]{1,2})?|[0-9]{3,4})\b)/gi,'$1-$2');
+   t=t.replace(/(\d)\s+(?:bis|do)\s+(\d)/gi,'$1-$2');
+
    const numRegex=/(?:^|\s)(?:nummerierung|aufzählung|punktowanie|numerowanie)(?=$|\s|[.,!?;:])/gi;
    t=t.replace(numRegex,(match,offset,fullStr)=>{
      const prefix=fullStr.slice(0,offset);
      const needsNewline=prefix.length>0&&!prefix.endsWith('\n');
      const item=(needsNewline?'\n':'')+listCounter+'. ';
      listCounter++;
-     updateCounterButton();
      return item;
    });
 
-   // Bullet point command: Spiegelstrich / Bindestrich / myślnik / punkt od myślnika / podpunkt
    t=t.replace(/(?:^|\s)(?:spiegelstrich|bindestrich|punkt od myślnika|podpunkt|myślnik)(?=$|\s|[.,!?;:])/gi,(match,offset,fullStr)=>{
      const prefix=fullStr.slice(0,offset);
      const needsNewline=prefix.length>0&&!prefix.endsWith('\n');
      return (needsNewline?'\n':'')+'- ';
    });
 
-   // New line command: Neue Zeile / Absatz / nowa linia / nowy wiersz / enter
    t=t.replace(/(?:^|\s)(?:neue zeile|neuer absatz|absatz|nowa linia|nowy wiersz|enter)(?=$|\s|[.,!?;:])/gi,'\n');
 
-   // Punctuation commands (skip standalone "punkt" in live keyboard mode if user meant a normal word, unless spoken via mic or explicit "kropka"/"satzpunkt")
    if(!isLiveKeyboard){
      t=t.replace(/\s+(?:satzpunkt|punkt|kropka)(?=$|\s|[.,!?;:])/gi,'.');
      t=t.replace(/^(?:satzpunkt|punkt|kropka)(?=$|\s)/gi,'.');
@@ -1190,7 +1468,6 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    t=t.replace(/\s+(?:ausrufezeichen|wykrzyknik)(?=$|\s|[.,!?;:])/gi,'!');
    t=t.replace(/\s+(?:schrägstrich|ukośnik)(?=$|\s|[.,!?;:])/gi,'/');
 
-   // Clean spaces before punctuation and capitalize after newline / sentence end
    t=t.replace(/ +([.,:;?!])/g,'$1');
    t=t.replace(/([.,:;?!])([A-Za-zÄÖÜäöüßĄĆĘŁŃÓŚŹŻąćęłńóśźż])/g,'$1 $2');
    t=t.replace(/\n +/g,'\n');
@@ -1198,14 +1475,12 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    return t;
  }
 
- // Also process voice commands when dictating via Android Gboard / iOS keyboard microphone
  [workdescPage1,workdescPage2].forEach(ta=>{
    ta.addEventListener('input',()=>{
      if(isApplyingVoiceTransform)return;
      const val=ta.value;
      if(/(?:nummerierung|aufzählung|punktowanie|numerowanie|spiegelstrich|bindestrich|punkt od myślnika|podpunkt|myślnik|neue zeile|neuer absatz|nowa linia|nowy wiersz|satzpunkt|kropka|przecinek|dwukropek|średnik|znak zapytania|wykrzyknik|ukośnik)(?:\s|[.,!?;:])$/i.test(val)){
        isApplyingVoiceTransform=true;
-       pushTextUndo();
        ta.value=applyVoiceCommands(val,true);
        isApplyingVoiceTransform=false;
        enforcePage1Overflow(ta===workdescPage1);
@@ -1214,21 +1489,21 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    });
  });
 
- function insertDictatedSegment(rawTranscript){
-   const targetEl=(lastActiveTextTarget&&document.body.contains(lastActiveTextTarget))?lastActiveTextTarget:workdescPage1;
-   pushTextUndo();
-   const current=targetEl.value||'';
-   let combined=current;
-   if(combined&&!combined.endsWith('\n')&&!combined.endsWith(' ')&&!/^(?:punkt|kropka|komma|przecinek|doppelpunkt|dwukropek|semikolon|średnik|fragezeichen|znak zapytania|ausrufezeichen|wykrzyknik|neue zeile|nowa linia|spiegelstrich|myślnik|nummerierung|punktowanie|numerowanie)/i.test(rawTranscript.trim())){
-     combined+=' ';
+ function getActiveDictationTarget(){
+   if(lastActiveTextTarget&&document.body.contains(lastActiveTextTarget)&&isDictationAllowedField(lastActiveTextTarget)){
+     return lastActiveTextTarget;
    }
-   combined+=rawTranscript.trim();
+   return workdescPage1;
+ }
+
+ function writeDictatedText(targetEl,textToWrite,isFinalSegment){
    isApplyingVoiceTransform=true;
-   targetEl.value=applyVoiceCommands(combined,false);
+   targetEl.value=textToWrite;
    isApplyingVoiceTransform=false;
 
    if(targetEl===workdescPage1||targetEl===workdescPage2){
      enforcePage1Overflow(targetEl===workdescPage1);
+     if(lastActiveTextTarget)positionFloatingVoicePill(lastActiveTextTarget);
    }else if(targetEl.dataset.syncField){
      const src=getFieldOnPage1(targetEl.dataset.syncField);
      if(src)src.value=targetEl.value;
@@ -1236,37 +1511,105 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
    }else{
      syncPage2Fields();
    }
-   saveDraft();
+   if(isFinalSegment)saveDraft();
+ }
+
+ function prepareDictationSegmentAnchor(targetEl){
+   dictationCounterStart=listCounter;
+   dictationBaseValue=targetEl.value||'';
+   if(dictationBaseValue&&!dictationBaseValue.endsWith('\n')&&!dictationBaseValue.endsWith(' ')){
+     dictationPrefixWithSpace=dictationBaseValue+' ';
+   }else{
+     dictationPrefixWithSpace=dictationBaseValue;
+   }
+ }
+
+ function applyDictationLive(finalSegment,interimSegment){
+   const targetEl=getActiveDictationTarget();
+   listCounter=dictationCounterStart;
+   let combined=dictationPrefixWithSpace;
+   const spoken=((finalSegment||'')+' '+(interimSegment||'')).trim();
+   if(!spoken){
+     writeDictatedText(targetEl,dictationBaseValue,false);
+     return;
+   }
+   if(combined&&!combined.endsWith('\n')&&!combined.endsWith(' ')&&!/^(?:punkt|kropka|komma|przecinek|doppelpunkt|dwukropek|semikolon|średnik|fragezeichen|znak zapytania|ausrufezeichen|wykrzyknik|neue zeile|nowa linia|spiegelstrich|myślnik|nummerierung|punktowanie|numerowanie|bis|do)/i.test(spoken)){
+     combined+=' ';
+   }
+   combined+=spoken;
+   const transformed=applyVoiceCommands(combined,false);
+   const isFinal=(!!finalSegment&&!interimSegment);
+   writeDictatedText(targetEl,transformed,isFinal);
+   if(isFinal){
+     dictationBaseValue=targetEl.value||'';
+     dictationPrefixWithSpace=dictationBaseValue;
+     dictationCounterStart=listCounter;
+   }
  }
 
  const SpeechRecognitionAPI=window.SpeechRecognition||window.webkitSpeechRecognition;
- let recognition=null,isRecording=false,manualStop=false;
+ let recognition=null,isRecording=false,manualStop=false,sessionFinalText='';
+
+ if(dictateLangBtn){
+   dictateLangBtn.addEventListener('click',()=>{
+     currentDictateLang=(currentDictateLang==='de-DE')?'pl-PL':'de-DE';
+     dictateLangBtn.textContent=(currentDictateLang==='de-DE')?'🌐 DE':'🌐 PL';
+     showToast('Diktier-Sprache: '+(currentDictateLang==='de-DE'?'Deutsch (DE)':'Polski (PL)'));
+     if(isRecording&&recognition){
+       clearSilenceTimer();
+       manualStop=true;
+       try{recognition.stop()}catch(e){}
+       setTimeout(()=>{
+         manualStop=false;
+         sessionFinalText='';
+         prepareDictationSegmentAnchor(getActiveDictationTarget());
+         recognition.lang=currentDictateLang;
+         try{recognition.start();resetSilenceTimer()}catch(e){}
+       },250);
+     }
+   });
+ }
 
  if(SpeechRecognitionAPI&&dictateBtn){
    recognition=new SpeechRecognitionAPI();
    recognition.continuous=true;
-   recognition.interimResults=false;
+   recognition.interimResults=true;
 
    recognition.onstart=()=>{
      isRecording=true;
      dictateBtn.classList.add('recording');
-     dictateBtn.textContent='⏹️ Stopp';
-     if(voiceStatus)voiceStatus.textContent='🔴 Aufnahme läuft ('+dictateLang.value+') – sprechen Sie jetzt...';
+     dictateBtn.innerHTML=STOP_SVG;
+     if(lastActiveTextTarget)positionFloatingVoicePill(lastActiveTextTarget);
+     resetSilenceTimer();
    };
 
    recognition.onresult=(event)=>{
+     resetSilenceTimer();
+     let interim='';
      for(let i=event.resultIndex;i<event.results.length;i++){
+       const transcript=event.results[i][0].transcript||'';
        if(event.results[i].isFinal){
-         const transcript=event.results[i][0].transcript;
-         if(transcript&&transcript.trim()){
-           insertDictatedSegment(transcript);
+         if(transcript.trim()){
+           sessionFinalText=(sessionFinalText?(sessionFinalText+' '+transcript.trim()):transcript.trim());
          }
+       }else{
+         interim+=transcript;
        }
      }
+     applyDictationLive(sessionFinalText,interim.trim());
+   };
+
+   recognition.onspeechstart=()=>{
+     resetSilenceTimer();
+   };
+
+   recognition.onsoundstart=()=>{
+     resetSilenceTimer();
    };
 
    recognition.onerror=(event)=>{
      if(event.error==='not-allowed'||event.error==='service-not-allowed'){
+       clearSilenceTimer();
        manualStop=true;
        showToast('Mikrofonzugriff blockiert – nutzen Sie alternativ das Mikrofon der Tastatur.');
      }
@@ -1276,46 +1619,327 @@ main{max-width:1000px;margin:6px auto;padding:0 6px 24px}
      if(isRecording&&!manualStop){
        try{recognition.start();return}catch(e){}
      }
+     clearSilenceTimer();
      isRecording=false;
      dictateBtn.classList.remove('recording');
-     dictateBtn.textContent='🎙️ Diktieren';
-     if(voiceStatus)voiceStatus.textContent='Befehle: Punkt/kropka, Komma/przecinek, Neue Zeile/nowa linia, Punkt/myślnik (- ), Nummerierung/numerowanie (1., 2., 3.)';
+     dictateBtn.innerHTML=MIC_SVG;
    };
 
    dictateBtn.addEventListener('click',()=>{
      if(isRecording){
+       clearSilenceTimer();
        manualStop=true;
        try{recognition.stop()}catch(e){}
      }else{
        manualStop=false;
-       recognition.lang=dictateLang?dictateLang.value:'de-DE';
-       try{recognition.start()}catch(e){
+       sessionFinalText='';
+       const tEl=getActiveDictationTarget();
+       if(!lastActiveTextTarget)lastActiveTextTarget=tEl;
+       prepareDictationSegmentAnchor(tEl);
+       recognition.lang=currentDictateLang;
+       try{
+         recognition.start();
+         resetSilenceTimer();
+       }catch(e){
+         clearSilenceTimer();
          showToast('Spracherkennung konnte nicht gestartet werden. Bitte Tastatur-Mikrofon verwenden.');
        }
      }
    });
-
-   if(dictateLang){
-     dictateLang.addEventListener('change',()=>{
-       if(isRecording){
-         manualStop=true;
-         try{recognition.stop()}catch(e){}
-         setTimeout(()=>{
-           manualStop=false;
-           recognition.lang=dictateLang.value;
-           try{recognition.start()}catch(e){}
-         },250);
-       }
-     });
-   }
  }else if(dictateBtn){
    dictateBtn.addEventListener('click',()=>{
-     showToast('Direktes Browser-Diktat auf diesem Gerät nicht verfügbar – tippen Sie ins Textfeld und nutzen Sie das Mikrofon auf der Tastatur.');
+     showToast('Direktes Browser-Diktat auf diesem Gerät nicht verfügbar – nutzen Sie das Mikrofon auf der Tastatur.');
      if(lastActiveTextTarget)lastActiveTextTarget.focus();
    });
  }
 
+ /* --- KI-Übersetzung & Fachredaktion PL -> DE (Gemini API BYOK) --- */
+ const AI_KEY_STORAGE='fubosol_gemini_api_key_v1';
+ const AI_MODEL_STORAGE='fubosol_gemini_model_v1';
+ const aiTranslateBtn=document.getElementById('aiTranslateBtn');
+ const settingsModal=document.getElementById('settingsModal');
+ const openSettingsBtn=document.getElementById('openSettingsBtn');
+ const closeSettingsTopBtn=document.getElementById('closeSettingsTopBtn');
+ const closeSettingsBtn=document.getElementById('closeSettingsBtn');
+ const saveSettingsBtn=document.getElementById('saveSettingsBtn');
+ const docFontSizePtInput=document.getElementById('docFontSizePt');
+ const fontLinesPreview=document.getElementById('fontLinesPreview');
+ const defaultTechnicianInput=document.getElementById('defaultTechnician');
+ const geminiApiKeyInput=document.getElementById('geminiApiKey');
+ const geminiModelSelect=document.getElementById('geminiModel');
+ const exportSettingsBtn=document.getElementById('exportSettingsBtn');
+ const toggleImportBoxBtn=document.getElementById('toggleImportBoxBtn');
+ const importSettingsWrap=document.getElementById('importSettingsWrap');
+ const importSettingsInput=document.getElementById('importSettingsInput');
+ const applyImportSettingsBtn=document.getElementById('applyImportSettingsBtn');
+
+ function clampFontPt(val){
+   const n=parseFloat(String(val||'9.6').replace(',','.'));
+   if(isNaN(n))return 9.6;
+   return Math.min(12.0,Math.max(9.0,Math.round(n*10)/10));
+ }
+
+ function calcMetricsForPt(pt){
+   const lines=Math.max(18,Math.min(28,Math.floor((25*9.6)/pt)));
+   const chars=Math.max(65,Math.min(100,Math.floor((90*9.6)/pt)));
+   return{lines,chars};
+ }
+
+ function updateFontPreviewLabel(pt){
+   const cPt=clampFontPt(pt);
+   const m=calcMetricsForPt(cPt);
+   if(fontLinesPreview){
+     fontLinesPreview.textContent='Vorschau: '+cPt.toFixed(1).replace('.',',')+' pt → max. '+m.lines+' Zeilen (je '+m.chars+' Zeichen) auf Seite 1.';
+   }
+ }
+
+ function applyDocumentFontSize(pt){
+   docFontPt=clampFontPt(pt);
+   const m=calcMetricsForPt(docFontPt);
+   PDF_MAX_LINES=m.lines;
+   PDF_MAX_CHARS=m.chars;
+   const px=(docFontPt*(96/72)).toFixed(2)+'px';
+   document.querySelectorAll('.sheet').forEach(s=>s.style.setProperty('--doc-px',px));
+   let dynPrintStyle=document.getElementById('dynamicPrintFontStyle');
+   if(!dynPrintStyle){
+     dynPrintStyle=document.createElement('style');
+     dynPrintStyle.id='dynamicPrintFontStyle';
+     document.head.appendChild(dynPrintStyle);
+   }
+   dynPrintStyle.textContent='@media print{.field,.worktable input,.workdesc,.top-select,.bottom-select{font-size:'+docFontPt.toFixed(1)+'pt!important}}';
+   updateFontPreviewLabel(docFontPt);
+   enforcePage1Overflow(false);
+ }
+
+ function applyDefaultTechnicianIfEmpty(){
+   if(!defaultTechnicianName)return;
+   const tech1=getFieldOnPage1('Name des Monteurs-1');
+   if(tech1&&!tech1.value.trim()){
+     tech1.value=defaultTechnicianName;
+     syncPage2Fields();
+   }
+ }
+
+ function loadUserSettings(){
+   let cfg={};
+   try{
+     const raw=localStorage.getItem(SETTINGS_STORAGE_KEY);
+     if(raw)cfg=JSON.parse(raw)||{};
+   }catch(e){}
+   const savedPt=cfg.fontPt!==undefined?cfg.fontPt:9.6;
+   defaultTechnicianName=(cfg.defaultTechnician||'').trim();
+   const savedKey=(cfg.apiKey!==undefined?cfg.apiKey:(localStorage.getItem(AI_KEY_STORAGE)||'')).trim();
+   const savedModel=cfg.model||localStorage.getItem(AI_MODEL_STORAGE)||'gemini-2.5-flash';
+
+   if(docFontSizePtInput)docFontSizePtInput.value=clampFontPt(savedPt).toFixed(1);
+   if(defaultTechnicianInput)defaultTechnicianInput.value=defaultTechnicianName;
+   if(geminiApiKeyInput)geminiApiKeyInput.value=savedKey;
+   if(geminiModelSelect)geminiModelSelect.value=savedModel;
+   applyDocumentFontSize(savedPt);
+ }
+
+ function persistUserSettings(cfg){
+   const cleanPt=clampFontPt(cfg.fontPt);
+   const cleanTech=(cfg.defaultTechnician||'').trim();
+   const cleanKey=(cfg.apiKey||'').trim();
+   const cleanModel=cfg.model||'gemini-2.5-flash';
+   const payload={fontPt:cleanPt,defaultTechnician:cleanTech,apiKey:cleanKey,model:cleanModel};
+   localStorage.setItem(SETTINGS_STORAGE_KEY,JSON.stringify(payload));
+   if(cleanKey)localStorage.setItem(AI_KEY_STORAGE,cleanKey);
+   else localStorage.removeItem(AI_KEY_STORAGE);
+   localStorage.setItem(AI_MODEL_STORAGE,cleanModel);
+   defaultTechnicianName=cleanTech;
+   applyDocumentFontSize(cleanPt);
+   applyDefaultTechnicianIfEmpty();
+   saveDraft();
+ }
+
+ function openSettingsModal(){
+   loadUserSettings();
+   if(importSettingsWrap)importSettingsWrap.style.display='none';
+   if(settingsModal){
+     settingsModal.classList.add('open');
+     document.body.style.overflow='hidden';
+   }
+ }
+ function closeSettingsModal(){
+   if(settingsModal){
+     settingsModal.classList.remove('open');
+     document.body.style.overflow='';
+   }
+ }
+
+ if(openSettingsBtn)openSettingsBtn.addEventListener('click',openSettingsModal);
+ if(closeSettingsTopBtn)closeSettingsTopBtn.addEventListener('click',closeSettingsModal);
+ if(closeSettingsBtn)closeSettingsBtn.addEventListener('click',closeSettingsModal);
+ if(settingsModal)settingsModal.addEventListener('click',e=>{if(e.target===settingsModal)closeSettingsModal()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&settingsModal&&settingsModal.classList.contains('open'))closeSettingsModal()});
+
+ if(docFontSizePtInput){
+   docFontSizePtInput.addEventListener('input',()=>updateFontPreviewLabel(docFontSizePtInput.value));
+ }
+
+ if(saveSettingsBtn){
+   saveSettingsBtn.addEventListener('click',()=>{
+     const rawPt=parseFloat(String(docFontSizePtInput.value||'9.6').replace(',','.'));
+     if(isNaN(rawPt)||rawPt<9||rawPt>12){
+       alert('Bitte eine Schriftgröße zwischen 9,0 und 12,0 Punkten eingeben.');
+       docFontSizePtInput.focus();
+       return;
+     }
+     persistUserSettings({
+       fontPt:rawPt,
+       defaultTechnician:defaultTechnicianInput?defaultTechnicianInput.value:'',
+       apiKey:geminiApiKeyInput?geminiApiKeyInput.value:'',
+       model:geminiModelSelect?geminiModelSelect.value:'gemini-2.5-flash'
+     });
+     closeSettingsModal();
+     showToast('⚙️ Einstellungen gespeichert ('+docFontPt.toFixed(1).replace('.',',')+' pt, max. '+PDF_MAX_LINES+' Zeilen).');
+   });
+ }
+
+ if(exportSettingsBtn){
+   exportSettingsBtn.addEventListener('click',async()=>{
+     const backupObj={
+       app:'FUBOSOL-AI',
+       v:1,
+       fontPt:clampFontPt(docFontSizePtInput?docFontSizePtInput.value:docFontPt),
+       defaultTechnician:(defaultTechnicianInput?defaultTechnicianInput.value:defaultTechnicianName).trim(),
+       apiKey:(geminiApiKeyInput?geminiApiKeyInput.value:'').trim(),
+       model:geminiModelSelect?geminiModelSelect.value:'gemini-2.5-flash'
+     };
+     const ok=await copyToClipboard(JSON.stringify(backupObj));
+     showToast(ok?'📋 Backup-Code in die Zwischenablage kopiert!':'Kopieren fehlgeschlagen.');
+   });
+ }
+
+ if(toggleImportBoxBtn&&importSettingsWrap){
+   toggleImportBoxBtn.addEventListener('click',()=>{
+     const shown=importSettingsWrap.style.display==='block';
+     importSettingsWrap.style.display=shown?'none':'block';
+     if(!shown&&importSettingsInput)importSettingsInput.focus();
+   });
+ }
+
+ if(applyImportSettingsBtn&&importSettingsInput){
+   applyImportSettingsBtn.addEventListener('click',()=>{
+     const raw=importSettingsInput.value.trim();
+     if(!raw){
+       showToast('Bitte zuerst den kopierten Backup-Code einfügen.');
+       return;
+     }
+     try{
+       const parsed=JSON.parse(raw);
+       if(!parsed||typeof parsed!=='object')throw new Error('Ungültiges Format');
+       if(docFontSizePtInput&&parsed.fontPt!==undefined)docFontSizePtInput.value=clampFontPt(parsed.fontPt).toFixed(1);
+       if(defaultTechnicianInput&&parsed.defaultTechnician!==undefined)defaultTechnicianInput.value=parsed.defaultTechnician;
+       if(geminiApiKeyInput&&parsed.apiKey!==undefined)geminiApiKeyInput.value=parsed.apiKey;
+       if(geminiModelSelect&&parsed.model)geminiModelSelect.value=parsed.model;
+       updateFontPreviewLabel(docFontSizePtInput.value);
+       importSettingsInput.value='';
+       importSettingsWrap.style.display='none';
+       showToast('📥 Backup geladen – bitte noch auf „Speichern & übernehmen“ tippen.');
+     }catch(e){
+       alert('Der Backup-Code konnte nicht gelesen werden. Bitte vollständigen Text einfügen.');
+     }
+   });
+ }
+
+ async function polishAndTranslateWorkDescWithAI(){
+   const apiKey=(localStorage.getItem(AI_KEY_STORAGE)||(geminiApiKeyInput?geminiApiKeyInput.value:'')).trim();
+   if(!apiKey){
+     openSettingsModal();
+     setTimeout(()=>{if(geminiApiKeyInput)geminiApiKeyInput.focus()},80);
+     showToast('Bitte zuerst deinen Gemini API-Schlüssel in den Einstellungen eintragen.');
+     return;
+   }
+
+   const p1=(workdescPage1.value||'').trim();
+   const p2=(workdescPage2.value||'').trim();
+   const fullRaw=[p1,p2].filter(Boolean).join('\n');
+   if(!fullRaw){
+     showToast('Bitte zuerst Text diktieren oder eingeben.');
+     return;
+   }
+
+   const model=(geminiModelSelect?geminiModelSelect.value:'gemini-2.5-flash')||'gemini-2.5-flash';
+   const origBtnText=aiTranslateBtn.textContent;
+   aiTranslateBtn.disabled=true;
+   aiTranslateBtn.textContent='⏳ KI übersetzt...';
+
+   const systemPrompt=[
+     'Du bist ein erfahrener deutscher Kundendiensttechniker und Meister für Sanitär-, Heizungs-, Klima-, Lüftungs- und Elektrotechnik (SHK / Kältetechnik / Elektro) bei der Firma Fubosol Heiztechnik GmbH.',
+     'Deine Aufgabe: Wandle den diktierten Rohtext (oft auf Polnisch, umgangssprachlich oder stichpunktartig, manchmal mit deutschen Fachbegriffen gemischt) in einen klaren, fachlich präzisen, professionellen deutschen Berichtstext für das Feld "Ausgeführte Arbeiten/Material" eines offiziellen Arbeits- und Regieberichts um.',
+     'Regeln:',
+     '1. Übersetze alles ins korrekte, natürliche Handwerker-/Techniker-Deutsch mit passender SHK-, Kälte- und Elektro-Fachterminologie (z. B. Kältemittelleitungen evakuiert, Druckprobe mit Stickstoff durchgeführt, Kondensatpumpe erneuert, Anlage entlüftet und auf Dichtheit geprüft, Probelauf durchgeführt).',
+     '2. Strukturiere unordentliche oder verschachtelte Sätze logisch, streiche Füllwörter und Wiederholungen, aber erfinde KEINE Arbeiten, Messwerte oder Materialien hinzu, die nicht im Rohtext stehen.',
+     '3. Behalte Aufzählungen (- oder 1., 2., 3.) und Zeilenumbrüche sinnvoll bei, damit der Text auf einem DIN-A4-Arbeitsbericht gut lesbar ist.',
+     '4. Gib ausschließlich den fertigen deutschen Berichtstext zurück – ohne Einleitung, ohne Anführungszeichen, ohne Markdown-Fettschrift (**), ohne Kommentare.'
+   ].join('\n');
+
+   try{
+     const url='https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(model)+':generateContent?key='+encodeURIComponent(apiKey);
+     const resp=await fetch(url,{
+       method:'POST',
+       headers:{'Content-Type':'application/json'},
+       body:JSON.stringify({
+         systemInstruction:{parts:[{text:systemPrompt}]},
+         contents:[{role:'user',parts:[{text:fullRaw}]}],
+         generationConfig:{temperature:0.2}
+       })
+     });
+     if(!resp.ok){
+       const errData=await resp.json().catch(()=>({}));
+       const errMsg=(errData&&errData.error&&errData.error.message)?errData.error.message:('HTTP '+resp.status);
+       throw new Error(errMsg);
+     }
+     const data=await resp.json();
+     const translated=(data&&data.candidates&&data.candidates[0]&&data.candidates[0].content&&data.candidates[0].content.parts)
+       ?data.candidates[0].content.parts.map(p=>p.text||'').join('').trim()
+       :'';
+     if(!translated)throw new Error('Leere Antwort von der KI erhalten.');
+
+     workdescPage1.value=translated;
+     workdescPage2.value='';
+     enforcePage1Overflow(false);
+     saveDraft();
+     showToast('✨ Text in SHK-/Klima-Fachdeutsch übertragen.');
+   }catch(err){
+     alert('KI-Übersetzung fehlgeschlagen: '+(err&&err.message?err.message:'Netzwerkfehler'));
+   }finally{
+     aiTranslateBtn.disabled=false;
+     aiTranslateBtn.textContent=origBtnText;
+   }
+ }
+
+ if(aiTranslateBtn){
+   aiTranslateBtn.addEventListener('click',polishAndTranslateWorkDescWithAI);
+ }
+
+
+ const dictationGuideModal=document.getElementById('dictationGuideModal');
+ const openDictationGuideBtn=document.getElementById('openDictationGuideBtn');
+ const closeDictationGuideBtn=document.getElementById('closeDictationGuideBtn');
+ const closeDictationGuideTopBtn=document.getElementById('closeDictationGuideTopBtn');
+ function openDictationGuide(){
+   if(!dictationGuideModal)return;
+   dictationGuideModal.classList.add('open');
+   document.body.style.overflow='hidden';
+ }
+ function closeDictationGuide(){
+   if(!dictationGuideModal)return;
+   dictationGuideModal.classList.remove('open');
+   document.body.style.overflow='';
+ }
+ if(openDictationGuideBtn)openDictationGuideBtn.addEventListener('click',openDictationGuide);
+ if(closeDictationGuideBtn)closeDictationGuideBtn.addEventListener('click',closeDictationGuide);
+ if(closeDictationGuideTopBtn)closeDictationGuideTopBtn.addEventListener('click',closeDictationGuide);
+ if(dictationGuideModal)dictationGuideModal.addEventListener('click',e=>{if(e.target===dictationGuideModal)closeDictationGuide()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&dictationGuideModal&&dictationGuideModal.classList.contains('open'))closeDictationGuide()});
+
+ loadUserSettings();
  loadDraft();
+ applyDefaultTechnicianIfEmpty();
  renderPdfHistory();
  updateScale();
  applyZoom();

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-<head>
+<head><script type='text/javascript' nonce='+OB8BwwKa5C+JgyDRJzW7A==' src='https://contribution.usercontent.google.com/QRY1GQGxxID9Q5SvszRvoemaQQXhXLdLoUioGCP0kKcnZrrGtt0WklTxIHKcCM7Jwpx-SCaU68v0hz-wblmdcuqndOFG4YvsbBu6Xx9vdNqTYfbcp3FnWteR_g6JLG3Jz0knPZlxDHSw2W-a4fuggrWdAKfgWvuGbwHxp--3OqaH6GYdHKEa-O0khSgEqY-dKx3cYn0CpAbTGvGBHIuGPq1thy182kOugym6Z1dR_TlC3gISrm0MugjkNoZ-qCggWjrr3dyXyruFSpJ124tpAB7OlRww_B1kWpXiGQjGWiQ4eOjYklR153XSysGSpn_QAUsojsTtJyiCnWCBxF_mCkKW8VSaempU9LTAg5zwJvzEJSpfqWKWvfKTAJ0fBpSL4byBB7WimUZFwEh_iIjiACTv64uc1TnecCRT0B-BkWSIgzN9zKNG7qKNSrQZl1dPzpI33izPgnCbGGSkCpRcOyUHIdTc_uvSIL4GLuZRxxPIhhNZxmp09W8fWuB-aolmBEOoGN6ufSu0wO8aVYjnu0ZnSLdATzNyZ1SeiCvEg20mogHUdT14HKVsoBZ3LQ0DS4s8U6qOJDTwWTf2SIT4fqWlZhtAxkVH7IZ9Xp8maLB2M375tWSpWa7UQ_G-X7Nndn67xrstToubZKezE2Tqa1E9uANstz-wYVqATFU_wiOdueuwMGwBv-lQuu6Z5Hp1ot0aphzy2MiwJuSF7joK_EZtpKTVn_ObfQc_zSIls3oE87niz8WAX76hGsM'></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="application-name" content="FUBOSOL">
@@ -16,23 +16,22 @@
 :root{color-scheme:light;font-family:Arial,Helvetica,sans-serif;color:#202124;background:#f3f4f6}
 *{box-sizing:border-box}
 body{margin:0}
-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ddd;padding:max(6px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) 6px max(10px,env(safe-area-inset-left));box-shadow:0 2px 8px #0001}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ddd;padding:6px 10px;box-shadow:0 2px 8px #0001}
 .header-top{display:flex;align-items:center;justify-content:space-between;gap:8px;max-width:min(100%,794px);margin:0 auto}
 .toggle-menu-btn{background:#f1f3f5;color:#202124;border:1px solid #d0d5dd;border-radius:6px;padding:4px 8px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap}
 .actions{display:flex;gap:6px;flex-wrap:nowrap;margin:6px auto 0;max-width:min(100%,794px)}
 header.collapsed .actions{display:none}
-.icon-btn{flex:1 1 0;height:36px;padding:0;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d0d5dd;border-radius:8px;transition:transform .12s ease,border-color .15s ease,background .15s ease,opacity .15s ease}
+.icon-btn{flex:1 1 0;height:36px;padding:0;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d0d5dd;border-radius:8px;transition:transform .12s ease,border-color .15s ease,background .15s ease}
 .icon-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.icon-btn:hover:not(:disabled){border-color:#d91e79}
-.icon-btn:active:not(:disabled){transform:scale(.96)}
-.icon-btn:disabled{opacity:.4;cursor:not-allowed}
+.icon-btn:hover{border-color:#d91e79}
+.icon-btn:active{transform:scale(.96)}
 .icon-btn.wa-btn{background:#e7f8ee;color:#126b36;border-color:#bce3cb}
 .icon-btn.primary{background:#fdf2f8;color:#d91e79;border-color:#d91e79}
 button{font:inherit;border:0;border-radius:7px;padding:6px 10px;font-size:12px;cursor:pointer;touch-action:manipulation}
 .primary{background:#d91e79;color:white;font-weight:700}
 .secondary{background:#e9eaee;color:#202124;font-weight:500}
 .danger{background:#fff0f3;color:#9b174c}
-main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left))}
+main{max-width:1000px;margin:6px auto;padding:0 6px calc(24px + env(safe-area-inset-bottom,0px))}
 .help-box{max-width:min(100%,794px);margin:0 auto 6px;background:#fff;border:1px solid #e0e3e8;border-radius:8px;padding:6px 10px;font-size:12px;color:#454b54}
 .help-box summary{cursor:pointer;font-weight:600;color:#202124;outline:none;user-select:none}
 .help-box ul{margin:6px 0 2px;padding-left:18px;line-height:1.45}
@@ -46,13 +45,13 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .field{position:absolute;z-index:2;border:1px solid transparent;background:transparent;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(3px * var(--scale,1));resize:none;overflow:hidden;border-radius:2px;min-width:0;line-height:1.15}
 .field:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
 .field::placeholder{color:transparent}
-.field[data-date-field="true"]{appearance:none;-webkit-appearance:none;text-align:left;cursor:pointer}
+.field[data-date-field="true"]{appearance:none;-webkit-appearance:none;text-align:left}
 .field[data-date-field="true"]:focus::placeholder{color:#888}
 .field:focus::placeholder{color:#888}
 .topfield{height:1.85%}
 .worktable{position:absolute;left:9.71%;top:33.62%;width:85.65%;height:14.11%;display:grid;grid-template-columns:10.0% 27.2% 7.81% 7.76% 47.23%;grid-template-rows:repeat(6,1fr);z-index:2}
 .worktable input{width:100%;height:100%;min-width:0;border:1px solid transparent;background:transparent;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1)) Arial,Helvetica,sans-serif;padding:0 calc(4px * var(--scale,1))}
-.worktable input[data-date-field="true"]{padding-left:calc(2px * var(--scale,1))!important;padding-right:0!important;letter-spacing:-0.2px;cursor:pointer}
+.worktable input[data-date-field="true"]{padding-left:calc(2px * var(--scale,1))!important;padding-right:0!important;letter-spacing:-0.2px}
 .worktable input:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
 .workdesc{position:absolute;left:9.71%;top:52.2%;width:85.65%;height:34.2%;color:#111;font:calc(var(--doc-px,12.80px) * var(--scale,1))/1.15 Arial,Helvetica,sans-serif;padding:calc(2px * var(--scale,1));background:transparent;border:1px solid transparent;resize:none;overflow:hidden;z-index:2}
 .workdesc:focus{outline:1px solid #d91e79;background:#ffffffdf;border-color:#d91e79}
@@ -81,6 +80,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .history-caret{display:inline-block;transition:transform .18s ease;font-size:11px;color:#6b7280}
 .history-details[open] .history-caret{transform:rotate(90deg)}
 .history-head-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.history-body{margin-top:10px;padding-top:8px;border-top:1px solid #eef0f3}
 .history-meta{font-size:11px;color:#6b7280}
 .history-list{display:flex;flex-direction:column;gap:6px}
 .history-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border:1px solid #e5e7eb;border-radius:7px;background:#fafafa;flex-wrap:wrap}
@@ -90,7 +90,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .history-actions{display:flex;gap:5px;flex-wrap:wrap}
 .history-empty{font-size:12px;color:#6b7280;padding:8px 0}
 .note{max-width:min(100%,794px);margin:8px auto 0;font-size:11px;color:#6b7280;line-height:1.4}
-.toast{position:fixed;bottom:max(16px,calc(env(safe-area-inset-bottom) + 8px));left:50%;transform:translateX(-50%);background:#172033;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;box-shadow:0 8px 24px #0004;z-index:30;display:none;text-align:center;max-width:92vw}
+.toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:#172033;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;box-shadow:0 8px 24px #0004;z-index:30;display:none;text-align:center;max-width:92vw}
 .toast.show{display:block}
 .guide-body{padding:14px 16px;overflow-y:auto;font-size:12.5px;line-height:1.5;color:#202124}
 .guide-body h3{margin:12px 0 6px;font-size:13.5px;color:#d91e79;border-bottom:1px solid #f1f3f5;padding-bottom:3px}
@@ -111,8 +111,6 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .dialog-head p{font-size:12px;color:#5c6470;margin:0}
 .pad-wrap{padding:12px;background:#f7f7f8;flex:1;min-height:180px}
 .pad{display:block;width:100%;height:min(42dvh,300px);min-height:180px;background:white;border:1px solid #d4d6db;border-radius:10px;touch-action:none}
-.pdf-preview-wrap{padding:10px;background:#f3f4f6;flex:1;min-height:60dvh;display:flex}
-.pdf-preview-frame{width:100%;flex:1;min-height:60dvh;border:1px solid #d4d6db;border-radius:8px;background:#fff}
 .dialog-actions{padding:10px 14px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .dialog-actions .right{display:flex;gap:8px}
 @media(max-width:560px){
@@ -136,19 +134,19 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
   .sign-target img{width:auto;height:auto;max-width:130%;max-height:130%;transform:translate(-50%,-50%) scale(var(--sig-scale,1))}
   .sign-target .prompt{display:none!important}
   body.print-landscape .sheet-wrap{display:none!important}
-  body.print-landscape .lohnwoche-wrap{display:block!important;padding:0!important;margin:0!important;overflow:hidden!important;height:142mm!important;page-break-after:avoid!important;break-after:avoid!important}
-  body.print-landscape .lw-sheet{width:210mm!important;height:139.59mm!important;max-height:139.59mm!important;min-height:0!important;aspect-ratio:auto!important;margin:0!important;padding:2.5mm 4.5mm!important;box-shadow:none!important;border:0!important;zoom:1!important;overflow:hidden!important;box-sizing:border-box!important}
+  body.print-landscape .lohnwoche-wrap{display:block!important;padding:0!important;margin:0!important;overflow:visible!important;height:auto!important;page-break-after:avoid!important;break-after:avoid!important}
+  body.print-landscape .lw-sheet{width:210mm!important;height:139.59mm!important;min-height:139.59mm!important;aspect-ratio:auto!important;margin:0!important;padding:2.5mm 4.5mm!important;box-shadow:none!important;border:0!important;zoom:1!important;overflow:visible!important;box-sizing:border-box!important}
   body.print-landscape .lw-table{height:100%!important;max-height:100%!important;table-layout:fixed!important}
   body.print-landscape .lw-table .lw-top-row td{padding:1.5px 5px 2px!important;height:9.5mm!important}
   body.print-landscape .lw-top-title,body.print-landscape .lw-name-label{font-size:13pt!important}
-  body.print-landscape .lw-name-inline input{font-size:11.5pt!important;padding:0 3px!important}
+  body.print-landscape .lw-name-inline input{font-size:12pt!important;padding:0 3px!important}
   body.print-landscape .lw-subheaders th{padding:1px!important;font-size:7pt!important;line-height:1.02!important}
   body.print-landscape .lw-subheaders th.lw-sub-von,body.print-landscape .lw-subheaders th.lw-sub-bis{padding:0.5px!important;font-size:6.8pt!important}
   body.print-landscape .lw-data-row,body.print-landscape .lw-data-row td{height:3.3mm!important;max-height:3.3mm!important;line-height:1!important;padding:0!important}
-  body.print-landscape .lw-data-row input{height:3.1mm!important;max-height:3.1mm!important;line-height:1.05!important;padding:0 1.5px!important;font-size:7.5pt!important}
+  body.print-landscape .lw-data-row input{height:3.1mm!important;max-height:3.1mm!important;line-height:1!important;padding:0 1.5px!important;font-size:8.2pt!important}
   body.print-landscape .lw-inline-field input{font-size:9pt!important;padding:0 2px!important}
-  body.print-landscape .lw-total-row,body.print-landscape .lw-total-row td{height:4.4mm!important;max-height:4.4mm!important;padding:1px 3px!important;font-size:8pt!important}
-  body.print-landscape .lw-total-row input{height:3.8mm!important;font-size:8pt!important;padding:0 2px!important}
+  body.print-landscape .lw-total-row,body.print-landscape .lw-total-row td{height:4.4mm!important;max-height:4.4mm!important;padding:1px 3px!important;font-size:9pt!important}
+  body.print-landscape .lw-total-row input{height:3.8mm!important;font-size:9pt!important;padding:0 2px!important}
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
 }
 
@@ -161,6 +159,8 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .fvp-mic.recording{background:#dc2626;animation:pulseRec 1.2s infinite}
 .fvp-lang{height:23px;border-radius:999px;border:1px solid #d0d5dd;background:#f8f9fa;color:#202124;font-size:10px;font-weight:700;padding:0 6px;cursor:pointer;display:inline-flex;align-items:center;gap:2px}
 .fvp-lang:hover{background:#eef0f3}
+.fvp-ai{height:23px;border-radius:999px;border:1px solid #f5b8d8;background:#fdf2f8;color:#b81466;font-size:10px;font-weight:700;padding:0 7px;cursor:pointer;display:inline-flex;align-items:center;gap:2px}
+.fvp-ai:disabled{opacity:0.6;cursor:wait}
 .fvp-close{width:21px;height:21px;border-radius:50%;border:1px solid #e5e7eb;background:#f3f4f6;color:#4b5563;font-size:11px;font-weight:700;line-height:1;padding:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
 .fvp-close:hover{background:#fee2e2;color:#b91c1c;border-color:#fca5a5}
 .footer-row{max-width:min(100%,794px);margin:8px auto 0;display:flex;align-items:center;justify-content:space-between;gap:10px}
@@ -177,39 +177,40 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 .settings-note{font-size:11px;color:#6b7280;margin:5px 0 0;line-height:1.4}
 @keyframes pulseRec{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.45)}50%{box-shadow:0 0 0 6px rgba(220,38,38,0)}}
 
-/* --- Lohnwoche / Stundennachweis --- */
+
+/* --- Lohnwoche / Stundennachweis (v46: dezente Linien 1.5px, kein vertikales Verziehen im Hochformat) --- */
 .lohnwoche-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;display:none}
-.lw-sheet{--scale:1;position:relative;width:794px;min-width:0;margin:auto;aspect-ratio:794/486;background:#fff;box-shadow:0 4px 20px #0002;padding:calc(10px * var(--scale,1)) calc(14px * var(--scale,1));display:flex;flex-direction:column;justify-content:space-between;border:1px solid #d0d5dd;overflow:hidden}
-.lw-table{width:100%;height:100%;border-collapse:collapse;table-layout:fixed;border:1.5px solid #111;color:#111;font-family:Arial,Helvetica,sans-serif}
-.lw-table th,.lw-table td{border:0.7px solid #333;padding:0;vertical-align:middle;overflow:hidden}
-.lw-table .lw-top-row td{border-bottom:1.5px solid #111;padding:calc(3px * var(--scale,1)) calc(6px * var(--scale,1)) calc(4px * var(--scale,1));vertical-align:bottom}
-.lw-name-cell{border-right:1.5px solid #111!important;vertical-align:bottom!important}
-.lw-week-cell{border-right:1.5px solid #111!important;vertical-align:top!important}
-.lw-company-cell{font-size:calc(10.6px * var(--scale,1));line-height:1.2;font-weight:700;vertical-align:middle!important;text-align:right;padding-right:calc(7px * var(--scale,1))!important}
-.lw-top-title{font-size:calc(13pt * var(--scale,1));font-weight:700;margin-bottom:calc(2px * var(--scale,1));display:block;line-height:1.1}
-.lw-name-inline{display:flex;align-items:flex-end;gap:calc(7px * var(--scale,1));width:100%;padding-top:calc(8px * var(--scale,1));border-bottom:1.1px solid #111;padding-bottom:1px}
+.lw-sheet{--scale:1;position:relative;width:794px;min-width:0;margin:auto;aspect-ratio:794/510;background:#fff;box-shadow:0 4px 20px #0002;padding:calc(10px * var(--scale,1)) calc(14px * var(--scale,1));display:flex;flex-direction:column;justify-content:space-between;border:1px solid #d0d5dd}
+.lw-table{width:100%;height:100%;border-collapse:collapse;table-layout:fixed;border:2px solid #111;color:#111;font-family:Arial,Helvetica,sans-serif}
+.lw-table th,.lw-table td{border:1px solid #6b7280;padding:0;vertical-align:middle;overflow:hidden}
+.lw-table .lw-top-row td{border-bottom:2px solid #111;padding:3px 6px 4px;vertical-align:bottom}
+.lw-name-cell{border-right:2px solid #111!important;vertical-align:bottom!important}
+.lw-week-cell{border-right:2px solid #111!important;vertical-align:top!important}
+.lw-company-cell{font-size:calc(10.6px * var(--scale,1));line-height:1.2;font-weight:700;vertical-align:middle!important;text-align:right;padding-right:7px!important}
+.lw-top-title{font-size:calc(13pt * var(--scale,1));font-weight:700;margin-bottom:2px;display:block;line-height:1.1}
+.lw-name-inline{display:flex;align-items:flex-end;gap:7px;width:100%;padding-top:8px;border-bottom:1px solid #111;padding-bottom:1px}
 .lw-name-label{font-size:calc(13pt * var(--scale,1));font-weight:700;line-height:1.1;white-space:nowrap}
-.lw-name-inline input{flex:1;min-width:0;min-height:0;border:0;border-bottom:0;background:transparent;font:calc(12pt * var(--scale,1))/1.1 Arial,Helvetica,sans-serif;color:#111;padding:0 calc(4px * var(--scale,1));border-radius:0}
+.lw-name-inline input{flex:1;min-width:0;border:0;border-bottom:0;background:transparent;font:calc(12pt * var(--scale,1))/1.1 Arial,Helvetica,sans-serif;color:#111;padding:0 4px;border-radius:0}
 .lw-name-inline input:focus{outline:1px solid #d91e79;background:#fdf2f8}
-.lw-inline-field{display:flex;align-items:flex-end;gap:calc(4px * var(--scale,1));margin-top:calc(2px * var(--scale,1));font-size:calc(11.5px * var(--scale,1))}
-.lw-inline-field input{flex:1;min-width:0;min-height:0;border:0;border-bottom:1.1px solid #111;background:transparent;font:calc(9pt * var(--scale,1))/1.1 Arial,Helvetica,sans-serif;color:#111;padding:0 calc(3px * var(--scale,1)) 1px;border-radius:0}
+.lw-inline-field{display:flex;align-items:flex-end;gap:4px;margin-top:2px;font-size:calc(11.5px * var(--scale,1))}
+.lw-inline-field input{flex:1;min-width:0;border:0;border-bottom:1px solid #111;background:transparent;font:calc(9pt * var(--scale,1))/1.1 Arial,Helvetica,sans-serif;color:#111;padding:0 3px 1px;border-radius:0}
 .lw-inline-field input:focus{outline:1px solid #d91e79;background:#fdf2f8}
-.lw-subheaders th{font-size:calc(9.5px * var(--scale,1));font-weight:700;text-align:center;padding:calc(2px * var(--scale,1)) 1px;line-height:1.08;border-bottom:1.5px solid #111;background:#fff;word-break:break-word}
-.lw-subheaders th.lw-sub-von,.lw-subheaders th.lw-sub-bis{border-top:0.7px solid #333;padding:1px;font-size:calc(9.3px * var(--scale,1))}
-.lw-thick-right{border-right:1.5px solid #111!important}
-.lw-day-end td{border-bottom:1.5px solid #111!important}
+.lw-subheaders th{font-size:calc(9.5px * var(--scale,1));font-weight:700;text-align:center;padding:2px 1px;line-height:1.08;border-bottom:2px solid #111;background:#fff;word-break:break-word;color:#111}
+.lw-subheaders th.lw-sub-von,.lw-subheaders th.lw-sub-bis{border-top:1px solid #6b7280;padding:1px;font-size:calc(9.3px * var(--scale,1))}
+.lw-thick-right{border-right:2px solid #111!important}
+.lw-day-end td{border-bottom:2px solid #111!important}
 .lw-data-row td{height:2.28%;line-height:1}
-.lw-data-row input,.lw-data-row select{width:100%;height:100%;max-height:100%;min-height:0;border:0;background:transparent;color:#111;font:calc(9pt * var(--scale,1))/1 Arial,Helvetica,sans-serif;padding:0 calc(2px * var(--scale,1));min-width:0;display:block}
+.lw-data-row input,.lw-data-row select{width:100%;height:100%;max-height:100%;border:0;background:transparent;color:#111;font:calc(9pt * var(--scale,1))/1 Arial,Helvetica,sans-serif;padding:0 calc(2px * var(--scale,1));min-width:0}
 .lw-data-row input:focus,.lw-data-row select:focus{outline:1px solid #d91e79;background:#fdf2f8}
 .lw-center{text-align:center}
 .lw-right{text-align:right}
-.lw-day-sum{font-weight:700!important;background:#f9fafb!important;color:#111!important}
-.lw-total-row td{border-top:1.5px solid #111!important;background:#f3f4f6;font-weight:700;font-size:calc(9pt * var(--scale,1));padding:calc(2px * var(--scale,1)) calc(4px * var(--scale,1));height:2.8%}
-.lw-total-row input{width:100%;height:100%;min-height:0;border:0;background:transparent;font:700 calc(9pt * var(--scale,1)) Arial,Helvetica,sans-serif;color:#111;text-align:right;padding:0 calc(2px * var(--scale,1))}
+.lw-day-sum{font-weight:700!important;background:#f3f4f6!important;color:#111!important}
+.lw-total-row td{border-top:2px solid #111!important;background:#f3f4f6;font-weight:700;font-size:calc(9pt * var(--scale,1));padding:2px 4px;height:2.8%}
+.lw-total-row input{width:100%;height:100%;border:0;background:transparent;font:700 calc(9pt * var(--scale,1)) Arial,Helvetica,sans-serif;color:#111;text-align:right;padding:0 2px}
 
 #formSelector {
-  font-family: inherit; font-size: 14px; font-weight: 700; color: #202124;
-  background: #f1f3f5; border: 1px solid #d0d5dd; border-radius: 4px;
+  font-family: inherit; font-size: 14px; font-weight: 700; color: #202124; 
+  background: #f1f3f5; border: 1px solid #d0d5dd; border-radius: 4px; 
   padding: 2px 4px; cursor: pointer; outline: none;
   max-width: 100%;
   text-overflow: ellipsis;
@@ -236,7 +237,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
   </div>
   <div class="actions icon-actions">
     <button type="button" class="secondary icon-btn" id="clearSignatureBtn" title="Unterschrift löschen" aria-label="Unterschrift löschen">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <rect x="3" y="3" width="11" height="17" rx="1.8"/>
         <path d="M5.5 7h6M5.5 10h6"/>
         <path d="M5.5 16.5c1.1-1.6 2.1-1.6 3 0 .8 1.2 1.6 1.2 2.5-.3"/>
@@ -245,7 +246,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
       </svg>
     </button>
     <button type="button" class="secondary icon-btn" id="clearBtn" title="Dokument leeren" aria-label="Dokument leeren">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <polyline points="3 6 5 6 21 6"/>
         <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
         <path d="M10 11v6M14 11v6"/>
@@ -253,27 +254,27 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
       </svg>
     </button>
     <button type="button" class="secondary icon-btn" id="printBtn" title="Drucken" aria-label="Drucken">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <polyline points="6 9 6 2 18 2 18 9"/>
         <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
         <rect x="6" y="14" width="12" height="8"/>
       </svg>
     </button>
     <button type="button" class="secondary icon-btn" id="savePdfBtn" title="PDF speichern" aria-label="PDF speichern">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
         <polyline points="14 2 14 8 20 8"/>
         <text x="12" y="17.2" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="6.4" font-weight="700" fill="currentColor" stroke="none">PDF</text>
       </svg>
     </button>
     <button type="button" class="secondary icon-btn wa-btn" id="whatsappBtn" title="Per WhatsApp senden" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
         <path d="M9.5 8.8c.3-.3.6-.3.9 0l1 1.1c.2.2.2.6 0 .8l-.5.6c.5.9 1.2 1.6 2.1 2.1l.6-.5c.2-.2.6-.2.8 0l1.1 1c.3.3.3.6 0 .9l-.5.5c-.6.6-1.5.8-2.3.4-1.8-.8-3.3-2.3-4.1-4.1-.4-.8-.2-1.7.4-2.3l.5-.5z"/>
       </svg>
     </button>
     <button type="button" class="primary icon-btn" id="emailBtn" title="PDF per E-Mail" aria-label="PDF per E-Mail">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <rect x="2" y="4" width="20" height="16" rx="2"/>
         <polyline points="22 6 12 13 2 6"/>
       </svg>
@@ -317,12 +318,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
       <input class="field topfield" style="left:82.0%;top:21.35%;width:13.2%" data-field="Rüstzeit" aria-label="Rüstzeit" inputmode="decimal">
       <input class="field topfield" style="left:82.0%;top:23.60%;width:13.2%" data-field="Fahrtkilometer" aria-label="Fahrtkilometer" inputmode="decimal">
       <select class="field topfield top-select" style="left:82.0%;top:25.80%;width:10.5%;height:1.85%" data-field="Fahrtpauschale Ja Nein" aria-label="Fahrtpauschale Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
-      <div class="worktable" id="worktable"><input aria-label="Datum Zeile 1" data-field="Datum-1" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 1" data-field="Arbeitszeit von-bis-1"><input aria-label="Arbeitsstunden Zeile 1" data-field="Arbeitsstunden-1" inputmode="decimal"><input aria-label="Monteurzahl Zeile 1" data-field="Monteurzahl-1" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 1" data-field="Name des Monteurs-1"><input aria-label="Datum Zeile 2" data-field="Datum-2" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 2" data-field="Arbeitszeit von-bis-2"><input aria-label="Arbeitsstunden Zeile 2" data-field="Arbeitsstunden-2" inputmode="decimal"><input aria-label="Monteurzahl Zeile 2" data-field="Monteurzahl-2" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 2" data-field="Name des Monteurs-2"><input aria-label="Datum Zeile 3" data-field="Datum-3" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 3" data-field="Arbeitszeit von-bis-3"><input aria-label="Arbeitsstunden Zeile 3" data-field="Arbeitsstunden-3" inputmode="decimal"><input aria-label="Monteurzahl Zeile 3" data-field="Monteurzahl-3" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 3" data-field="Name des Monteurs-3"><input aria-label="Datum Zeile 4" data-field="Datum-4" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 4" data-field="Arbeitszeit von-bis-4"><input aria-label="Arbeitsstunden Zeile 4" data-field="Arbeitsstunden-4" inputmode="decimal"><input aria-label="Monteurzahl Zeile 4" data-field="Monteurzahl-4" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 4" data-field="Name des Monteurs-4"><input aria-label="Datum Zeile 5" data-field="Datum-5" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 5" data-field="Arbeitszeit von-bis-5"><input aria-label="Arbeitsstunden Zeile 5" data-field="Arbeitsstunden-5" inputmode="decimal"><input aria-label="Monteurzahl Zeile 5" data-field="Monteurzahl-5" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 5" data-field="Name des Monteurs-5"><input aria-label="Datum Zeile 6" data-field="Datum-6" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 6" data-field="Arbeitszeit von-bis-6"><input aria-label="Arbeitsstunden Zeile 6" data-field="Arbeitsstunden-6" inputmode="decimal"><input aria-label="Monteurzahl Zeile 6" data-field="Monteurzahl-6" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 6" data-field="Name des Monteurs-6"></div>
+      <div class="worktable" id="worktable"><input aria-label="Datum Zeile 1" data-field="Datum-1" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 1" data-field="Arbeitszeit von-bis-1"><input aria-label="Arbeitsstunden Zeile 1" data-field="Arbeitsstunden-1" inputmode="decimal"><input aria-label="Monteurzahl Zeile 1" data-field="Monteurzahl-1" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 1" data-field="Name des Monteurs-1"><input aria-label="Datum Zeile 2" data-field="Datum-2" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 2" data-field="Arbeitszeit von-bis-2"><input aria-label="Arbeitsstunden Zeile 2" data-field="Arbeitsstunden-2" inputmode="decimal"><input aria-label="Monteurzahl Zeile 2" data-field="Monteurzahl-2" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 2" data-field="Name des Monteurs-2"><input aria-label="Datum Zeile 3" data-field="Datum-3" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 3" data-field="Arbeitszeit von-bis-3"><input aria-label="Arbeitsstunden Zeile 3" data-field="Arbeitsstunden-3" inputmode="decimal"><input aria-label="Monteurzahl Zeile 3" data-field="Monteurzahl-3" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 3" data-field="Name des Monteurs-3"><input aria-label="Datum Zeile 4" data-field="Datum-4" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 4" data-field="Arbeitszeit von-bis-4"><input aria-label="Arbeitsstunden Zeile 4" data-field="Arbeitsstunden-4" inputmode="decimal"><input aria-label="Monteurzahl Zeile 4" data-field="Monteurzahl-4" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 4" data-field="Name des Monteurs-4"><input aria-label="Datum Zeile 5" data-field="Datum-5" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 5" data-field="Arbeitszeit von-bis-5"><input aria-label="Arbeitsstunden Zeile 5" data-field="Arbeitsstunden-5" inputmode="decimal"><input aria-label="Monteurzahl Zeile 5" data-field="Monteurzahl-5" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 5" data-field="Name des Monteurs-5"><input aria-label="Datum Zeile 6" data-field="Datum-6" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 6" data-field="Arbeitszeit von-bis-6"><input aria-label="Arbeitsstunden Zeile 6" data-field="Arbeitsstunden-6" inputmode="decimal"><input aria-label="Monteurzahl Zeile 6" data-field="Monteurzahl-6" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 6" data-field="Name des Monteurs-6"></div>
       <textarea class="workdesc" id="workdescPage1" data-field="Ausgeführte Arbeiten/Material" aria-label="Ausgeführte Arbeiten und Material"></textarea>
       <select class="field bottom-select top-select" style="left:37.8%;top:87.20%;width:13.8%;height:1.9%;background:#fff;" data-field="Arbeit erledigt" aria-label="Arbeit erledigt: Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
       <select class="field bottom-select top-select" style="left:82.8%;top:87.20%;width:11.8%;height:1.9%;background:#fff;" data-field="Neuer Termin erforderlich" aria-label="Neuer Termin erforderlich: Ja oder Nein"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
       <input class="field bottomfield" style="left:12.7%;top:94.65%;width:22.2%" data-field="Ort" aria-label="Ort">
-      <input class="field bottomfield" style="left:38.9%;top:94.65%;width:12.6%" data-field="Datum Unterschrift" data-date-field="true" inputmode="none" aria-label="Datum">
+      <input class="field bottomfield" style="left:38.9%;top:94.65%;width:12.6%" data-field="Datum Unterschrift" data-date-field="true" aria-label="Datum">
       <button class="sign-target" id="signTarget" aria-label="Unterschrift des Kunden erfassen"><span class="prompt">✍ Hier unterschreiben</span><img id="signatureImage" alt="Unterschrift des Kunden" hidden=""></button>
     </section>
 
@@ -339,12 +340,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
       <input class="field topfield" style="left:82.0%;top:21.35%;width:13.2%" data-sync-field="Rüstzeit" aria-label="Rüstzeit (Seite 2)" inputmode="decimal">
       <input class="field topfield" style="left:82.0%;top:23.60%;width:13.2%" data-sync-field="Fahrtkilometer" aria-label="Fahrtkilometer (Seite 2)" inputmode="decimal">
       <select class="field topfield top-select" style="left:82.0%;top:25.80%;width:10.5%;height:1.85%" data-sync-field="Fahrtpauschale Ja Nein" aria-label="Fahrtpauschale Ja oder Nein (Seite 2)"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
-      <div class="worktable" id="worktable2"><input aria-label="Datum Zeile 1 (Seite 2)" data-sync-field="Datum-1" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 1 (Seite 2)" data-sync-field="Arbeitszeit von-bis-1"><input aria-label="Arbeitsstunden Zeile 1 (Seite 2)" data-sync-field="Arbeitsstunden-1" inputmode="decimal"><input aria-label="Monteurzahl Zeile 1 (Seite 2)" data-sync-field="Monteurzahl-1" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 1 (Seite 2)" data-sync-field="Name des Monteurs-1"><input aria-label="Datum Zeile 2 (Seite 2)" data-sync-field="Datum-2" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 2 (Seite 2)" data-sync-field="Arbeitszeit von-bis-2"><input aria-label="Arbeitsstunden Zeile 2 (Seite 2)" data-sync-field="Arbeitsstunden-2" inputmode="decimal"><input aria-label="Monteurzahl Zeile 2 (Seite 2)" data-sync-field="Monteurzahl-2" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 2 (Seite 2)" data-sync-field="Name des Monteurs-2"><input aria-label="Datum Zeile 3 (Seite 2)" data-sync-field="Datum-3" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 3 (Seite 2)" data-sync-field="Arbeitszeit von-bis-3"><input aria-label="Arbeitsstunden Zeile 3 (Seite 2)" data-sync-field="Arbeitsstunden-3" inputmode="decimal"><input aria-label="Monteurzahl Zeile 3 (Seite 2)" data-sync-field="Monteurzahl-3" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 3 (Seite 2)" data-sync-field="Name des Monteurs-3"><input aria-label="Datum Zeile 4 (Seite 2)" data-sync-field="Datum-4" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 4 (Seite 2)" data-sync-field="Arbeitszeit von-bis-4"><input aria-label="Arbeitsstunden Zeile 4 (Seite 2)" data-sync-field="Arbeitsstunden-4" inputmode="decimal"><input aria-label="Monteurzahl Zeile 4 (Seite 2)" data-sync-field="Monteurzahl-4" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 4 (Seite 2)" data-sync-field="Name des Monteurs-4"><input aria-label="Datum Zeile 5 (Seite 2)" data-sync-field="Datum-5" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 5 (Seite 2)" data-sync-field="Arbeitszeit von-bis-5"><input aria-label="Arbeitsstunden Zeile 5 (Seite 2)" data-sync-field="Arbeitsstunden-5" inputmode="decimal"><input aria-label="Monteurzahl Zeile 5 (Seite 2)" data-sync-field="Monteurzahl-5" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 5 (Seite 2)" data-sync-field="Name des Monteurs-5"><input aria-label="Datum Zeile 6 (Seite 2)" data-sync-field="Datum-6" data-date-field="true" inputmode="none"><input aria-label="Arbeitszeit von-bis Zeile 6 (Seite 2)" data-sync-field="Arbeitszeit von-bis-6"><input aria-label="Arbeitsstunden Zeile 6 (Seite 2)" data-sync-field="Arbeitsstunden-6" inputmode="decimal"><input aria-label="Monteurzahl Zeile 6 (Seite 2)" data-sync-field="Monteurzahl-6" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 6 (Seite 2)" data-sync-field="Name des Monteurs-6"></div>
+      <div class="worktable" id="worktable2"><input aria-label="Datum Zeile 1 (Seite 2)" data-sync-field="Datum-1" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 1 (Seite 2)" data-sync-field="Arbeitszeit von-bis-1"><input aria-label="Arbeitsstunden Zeile 1 (Seite 2)" data-sync-field="Arbeitsstunden-1" inputmode="decimal"><input aria-label="Monteurzahl Zeile 1 (Seite 2)" data-sync-field="Monteurzahl-1" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 1 (Seite 2)" data-sync-field="Name des Monteurs-1"><input aria-label="Datum Zeile 2 (Seite 2)" data-sync-field="Datum-2" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 2 (Seite 2)" data-sync-field="Arbeitszeit von-bis-2"><input aria-label="Arbeitsstunden Zeile 2 (Seite 2)" data-sync-field="Arbeitsstunden-2" inputmode="decimal"><input aria-label="Monteurzahl Zeile 2 (Seite 2)" data-sync-field="Monteurzahl-2" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 2 (Seite 2)" data-sync-field="Name des Monteurs-2"><input aria-label="Datum Zeile 3 (Seite 2)" data-sync-field="Datum-3" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 3 (Seite 2)" data-sync-field="Arbeitszeit von-bis-3"><input aria-label="Arbeitsstunden Zeile 3 (Seite 2)" data-sync-field="Arbeitsstunden-3" inputmode="decimal"><input aria-label="Monteurzahl Zeile 3 (Seite 2)" data-sync-field="Monteurzahl-3" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 3 (Seite 2)" data-sync-field="Name des Monteurs-3"><input aria-label="Datum Zeile 4 (Seite 2)" data-sync-field="Datum-4" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 4 (Seite 2)" data-sync-field="Arbeitszeit von-bis-4"><input aria-label="Arbeitsstunden Zeile 4 (Seite 2)" data-sync-field="Arbeitsstunden-4" inputmode="decimal"><input aria-label="Monteurzahl Zeile 4 (Seite 2)" data-sync-field="Monteurzahl-4" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 4 (Seite 2)" data-sync-field="Name des Monteurs-4"><input aria-label="Datum Zeile 5 (Seite 2)" data-sync-field="Datum-5" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 5 (Seite 2)" data-sync-field="Arbeitszeit von-bis-5"><input aria-label="Arbeitsstunden Zeile 5 (Seite 2)" data-sync-field="Arbeitsstunden-5" inputmode="decimal"><input aria-label="Monteurzahl Zeile 5 (Seite 2)" data-sync-field="Monteurzahl-5" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 5 (Seite 2)" data-sync-field="Name des Monteurs-5"><input aria-label="Datum Zeile 6 (Seite 2)" data-sync-field="Datum-6" data-date-field="true"><input aria-label="Arbeitszeit von-bis Zeile 6 (Seite 2)" data-sync-field="Arbeitszeit von-bis-6"><input aria-label="Arbeitsstunden Zeile 6 (Seite 2)" data-sync-field="Arbeitsstunden-6" inputmode="decimal"><input aria-label="Monteurzahl Zeile 6 (Seite 2)" data-sync-field="Monteurzahl-6" inputmode="numeric"><input aria-label="Name des Monteurs Zeile 6 (Seite 2)" data-sync-field="Name des Monteurs-6"></div>
       <textarea class="workdesc" id="workdescPage2" data-field="Ausgeführte Arbeiten/Material Seite 2" aria-label="Ausgeführte Arbeiten und Material (Seite 2)"></textarea>
       <select class="field bottom-select top-select" style="left:37.8%;top:87.20%;width:13.8%;height:1.9%;background:#fff;" data-sync-field="Arbeit erledigt" aria-label="Arbeit erledigt: Ja oder Nein (Seite 2)"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
       <select class="field bottom-select top-select" style="left:82.8%;top:87.20%;width:11.8%;height:1.9%;background:#fff;" data-sync-field="Neuer Termin erforderlich" aria-label="Neuer Termin erforderlich: Ja oder Nein (Seite 2)"><option value=""></option><option value="Ja">Ja</option><option value="Nein">Nein</option></select>
       <input class="field bottomfield" style="left:12.7%;top:94.65%;width:22.2%" data-sync-field="Ort" aria-label="Ort (Seite 2)">
-      <input class="field bottomfield" style="left:38.9%;top:94.65%;width:12.6%" data-sync-field="Datum Unterschrift" data-date-field="true" inputmode="none" aria-label="Datum (Seite 2)">
+      <input class="field bottomfield" style="left:38.9%;top:94.65%;width:12.6%" data-sync-field="Datum Unterschrift" data-date-field="true" aria-label="Datum (Seite 2)">
       <button class="sign-target" id="signTarget2" aria-label="Unterschrift des Kunden erfassen (Seite 2)"><span class="prompt">✍ Hier unterschreiben</span><img id="signatureImage2" alt="Unterschrift des Kunden (Seite 2)" hidden=""></button>
     </section>
   </div>
@@ -375,9 +376,9 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
               <span class="lw-top-title">Lohnwoche</span>
               <div class="lw-inline-field">
                 <span>vom</span>
-                <input data-lw-field="lw_vom" id="lwVomInput" data-date-field="true" inputmode="none" aria-label="Lohnwoche vom">
+                <input data-lw-field="lw_vom" id="lwVomInput" data-date-field="true" aria-label="Lohnwoche vom">
                 <span>bis</span>
-                <input data-lw-field="lw_bis" id="lwBisInput" data-date-field="true" inputmode="none" aria-label="Lohnwoche bis">
+                <input data-lw-field="lw_bis" id="lwBisInput" data-date-field="true" aria-label="Lohnwoche bis">
               </div>
             </td>
             <td class="lw-company-cell">
@@ -403,7 +404,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
         </thead>
         <tbody>
           <tr class="lw-data-row" data-lw-day="1" data-lw-row="1">
-            <td><input class="lw-center" data-lw-field="lw_date_1" data-lw-day-date="1" data-date-field="true" inputmode="none" aria-label="Datum Tag 1"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_1" data-lw-day-date="1" data-date-field="true" aria-label="Datum Tag 1"></td>
             <td><input class="lw-center" data-lw-field="lw_von_1" inputmode="numeric" aria-label="Von Zeile 1"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_1" inputmode="numeric" aria-label="Bis Zeile 1"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_1" inputmode="decimal" aria-label="Reisezeit Zeile 1"></td>
@@ -414,7 +415,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_1" aria-label="Abrechnungsvermerke Zeile 1"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="1" data-lw-row="2">
-            <td><input class="lw-center" data-lw-field="lw_date_2" data-date-field="true" inputmode="none" aria-label="Datum Zeile 2"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_2" data-date-field="true" aria-label="Datum Zeile 2"></td>
             <td><input class="lw-center" data-lw-field="lw_von_2" inputmode="numeric" aria-label="Von Zeile 2"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_2" inputmode="numeric" aria-label="Bis Zeile 2"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_2" inputmode="decimal" aria-label="Reisezeit Zeile 2"></td>
@@ -425,7 +426,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_2" aria-label="Abrechnungsvermerke Zeile 2"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="1" data-lw-row="3">
-            <td><input class="lw-center" data-lw-field="lw_date_3" data-date-field="true" inputmode="none" aria-label="Datum Zeile 3"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_3" data-date-field="true" aria-label="Datum Zeile 3"></td>
             <td><input class="lw-center" data-lw-field="lw_von_3" inputmode="numeric" aria-label="Von Zeile 3"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_3" inputmode="numeric" aria-label="Bis Zeile 3"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_3" inputmode="decimal" aria-label="Reisezeit Zeile 3"></td>
@@ -436,7 +437,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_3" aria-label="Abrechnungsvermerke Zeile 3"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="1" data-lw-row="4">
-            <td><input class="lw-center" data-lw-field="lw_date_4" data-date-field="true" inputmode="none" aria-label="Datum Zeile 4"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_4" data-date-field="true" aria-label="Datum Zeile 4"></td>
             <td><input class="lw-center" data-lw-field="lw_von_4" inputmode="numeric" aria-label="Von Zeile 4"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_4" inputmode="numeric" aria-label="Bis Zeile 4"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_4" inputmode="decimal" aria-label="Reisezeit Zeile 4"></td>
@@ -447,18 +448,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_4" aria-label="Abrechnungsvermerke Zeile 4"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="1" data-lw-row="5">
-            <td><input class="lw-center" data-lw-field="lw_date_5" data-date-field="true" inputmode="none" aria-label="Datum Zeile 5"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_5" data-date-field="true" aria-label="Datum Zeile 5"></td>
             <td><input class="lw-center" data-lw-field="lw_von_5" inputmode="numeric" aria-label="Von Zeile 5"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_5" inputmode="numeric" aria-label="Bis Zeile 5"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_5" inputmode="decimal" aria-label="Reisezeit Zeile 5"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="1" inputmode="decimal" aria-label="Tagessumme Tag 1" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="1" aria-label="Tagessumme Tag 1" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_5" aria-label="Wo gearbeitet Zeile 5"></td>
             <td><input data-lw-field="lw_wem_5" aria-label="Mit wem Zeile 5"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_5" aria-label="darüber Arbeitsbericht Zeile 5"></td>
             <td><input data-lw-field="lw_vermerk_5" aria-label="Abrechnungsvermerke Zeile 5"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="2" data-lw-row="6">
-            <td><input class="lw-center" data-lw-field="lw_date_6" data-lw-day-date="2" data-date-field="true" inputmode="none" aria-label="Datum Tag 2"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_6" data-lw-day-date="2" data-date-field="true" aria-label="Datum Tag 2"></td>
             <td><input class="lw-center" data-lw-field="lw_von_6" inputmode="numeric" aria-label="Von Zeile 6"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_6" inputmode="numeric" aria-label="Bis Zeile 6"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_6" inputmode="decimal" aria-label="Reisezeit Zeile 6"></td>
@@ -469,7 +470,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_6" aria-label="Abrechnungsvermerke Zeile 6"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="2" data-lw-row="7">
-            <td><input class="lw-center" data-lw-field="lw_date_7" data-date-field="true" inputmode="none" aria-label="Datum Zeile 7"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_7" data-date-field="true" aria-label="Datum Zeile 7"></td>
             <td><input class="lw-center" data-lw-field="lw_von_7" inputmode="numeric" aria-label="Von Zeile 7"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_7" inputmode="numeric" aria-label="Bis Zeile 7"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_7" inputmode="decimal" aria-label="Reisezeit Zeile 7"></td>
@@ -480,7 +481,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_7" aria-label="Abrechnungsvermerke Zeile 7"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="2" data-lw-row="8">
-            <td><input class="lw-center" data-lw-field="lw_date_8" data-date-field="true" inputmode="none" aria-label="Datum Zeile 8"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_8" data-date-field="true" aria-label="Datum Zeile 8"></td>
             <td><input class="lw-center" data-lw-field="lw_von_8" inputmode="numeric" aria-label="Von Zeile 8"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_8" inputmode="numeric" aria-label="Bis Zeile 8"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_8" inputmode="decimal" aria-label="Reisezeit Zeile 8"></td>
@@ -491,7 +492,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_8" aria-label="Abrechnungsvermerke Zeile 8"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="2" data-lw-row="9">
-            <td><input class="lw-center" data-lw-field="lw_date_9" data-date-field="true" inputmode="none" aria-label="Datum Zeile 9"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_9" data-date-field="true" aria-label="Datum Zeile 9"></td>
             <td><input class="lw-center" data-lw-field="lw_von_9" inputmode="numeric" aria-label="Von Zeile 9"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_9" inputmode="numeric" aria-label="Bis Zeile 9"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_9" inputmode="decimal" aria-label="Reisezeit Zeile 9"></td>
@@ -502,18 +503,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_9" aria-label="Abrechnungsvermerke Zeile 9"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="2" data-lw-row="10">
-            <td><input class="lw-center" data-lw-field="lw_date_10" data-date-field="true" inputmode="none" aria-label="Datum Zeile 10"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_10" data-date-field="true" aria-label="Datum Zeile 10"></td>
             <td><input class="lw-center" data-lw-field="lw_von_10" inputmode="numeric" aria-label="Von Zeile 10"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_10" inputmode="numeric" aria-label="Bis Zeile 10"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_10" inputmode="decimal" aria-label="Reisezeit Zeile 10"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="2" inputmode="decimal" aria-label="Tagessumme Tag 2" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="2" aria-label="Tagessumme Tag 2" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_10" aria-label="Wo gearbeitet Zeile 10"></td>
             <td><input data-lw-field="lw_wem_10" aria-label="Mit wem Zeile 10"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_10" aria-label="darüber Arbeitsbericht Zeile 10"></td>
             <td><input data-lw-field="lw_vermerk_10" aria-label="Abrechnungsvermerke Zeile 10"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="3" data-lw-row="11">
-            <td><input class="lw-center" data-lw-field="lw_date_11" data-lw-day-date="3" data-date-field="true" inputmode="none" aria-label="Datum Tag 3"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_11" data-lw-day-date="3" data-date-field="true" aria-label="Datum Tag 3"></td>
             <td><input class="lw-center" data-lw-field="lw_von_11" inputmode="numeric" aria-label="Von Zeile 11"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_11" inputmode="numeric" aria-label="Bis Zeile 11"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_11" inputmode="decimal" aria-label="Reisezeit Zeile 11"></td>
@@ -524,7 +525,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_11" aria-label="Abrechnungsvermerke Zeile 11"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="3" data-lw-row="12">
-            <td><input class="lw-center" data-lw-field="lw_date_12" data-date-field="true" inputmode="none" aria-label="Datum Zeile 12"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_12" data-date-field="true" aria-label="Datum Zeile 12"></td>
             <td><input class="lw-center" data-lw-field="lw_von_12" inputmode="numeric" aria-label="Von Zeile 12"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_12" inputmode="numeric" aria-label="Bis Zeile 12"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_12" inputmode="decimal" aria-label="Reisezeit Zeile 12"></td>
@@ -535,7 +536,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_12" aria-label="Abrechnungsvermerke Zeile 12"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="3" data-lw-row="13">
-            <td><input class="lw-center" data-lw-field="lw_date_13" data-date-field="true" inputmode="none" aria-label="Datum Zeile 13"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_13" data-date-field="true" aria-label="Datum Zeile 13"></td>
             <td><input class="lw-center" data-lw-field="lw_von_13" inputmode="numeric" aria-label="Von Zeile 13"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_13" inputmode="numeric" aria-label="Bis Zeile 13"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_13" inputmode="decimal" aria-label="Reisezeit Zeile 13"></td>
@@ -546,7 +547,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_13" aria-label="Abrechnungsvermerke Zeile 13"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="3" data-lw-row="14">
-            <td><input class="lw-center" data-lw-field="lw_date_14" data-date-field="true" inputmode="none" aria-label="Datum Zeile 14"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_14" data-date-field="true" aria-label="Datum Zeile 14"></td>
             <td><input class="lw-center" data-lw-field="lw_von_14" inputmode="numeric" aria-label="Von Zeile 14"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_14" inputmode="numeric" aria-label="Bis Zeile 14"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_14" inputmode="decimal" aria-label="Reisezeit Zeile 14"></td>
@@ -557,18 +558,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_14" aria-label="Abrechnungsvermerke Zeile 14"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="3" data-lw-row="15">
-            <td><input class="lw-center" data-lw-field="lw_date_15" data-date-field="true" inputmode="none" aria-label="Datum Zeile 15"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_15" data-date-field="true" aria-label="Datum Zeile 15"></td>
             <td><input class="lw-center" data-lw-field="lw_von_15" inputmode="numeric" aria-label="Von Zeile 15"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_15" inputmode="numeric" aria-label="Bis Zeile 15"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_15" inputmode="decimal" aria-label="Reisezeit Zeile 15"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="3" inputmode="decimal" aria-label="Tagessumme Tag 3" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="3" aria-label="Tagessumme Tag 3" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_15" aria-label="Wo gearbeitet Zeile 15"></td>
             <td><input data-lw-field="lw_wem_15" aria-label="Mit wem Zeile 15"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_15" aria-label="darüber Arbeitsbericht Zeile 15"></td>
             <td><input data-lw-field="lw_vermerk_15" aria-label="Abrechnungsvermerke Zeile 15"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="4" data-lw-row="16">
-            <td><input class="lw-center" data-lw-field="lw_date_16" data-lw-day-date="4" data-date-field="true" inputmode="none" aria-label="Datum Tag 4"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_16" data-lw-day-date="4" data-date-field="true" aria-label="Datum Tag 4"></td>
             <td><input class="lw-center" data-lw-field="lw_von_16" inputmode="numeric" aria-label="Von Zeile 16"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_16" inputmode="numeric" aria-label="Bis Zeile 16"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_16" inputmode="decimal" aria-label="Reisezeit Zeile 16"></td>
@@ -579,7 +580,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_16" aria-label="Abrechnungsvermerke Zeile 16"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="4" data-lw-row="17">
-            <td><input class="lw-center" data-lw-field="lw_date_17" data-date-field="true" inputmode="none" aria-label="Datum Zeile 17"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_17" data-date-field="true" aria-label="Datum Zeile 17"></td>
             <td><input class="lw-center" data-lw-field="lw_von_17" inputmode="numeric" aria-label="Von Zeile 17"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_17" inputmode="numeric" aria-label="Bis Zeile 17"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_17" inputmode="decimal" aria-label="Reisezeit Zeile 17"></td>
@@ -590,7 +591,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_17" aria-label="Abrechnungsvermerke Zeile 17"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="4" data-lw-row="18">
-            <td><input class="lw-center" data-lw-field="lw_date_18" data-date-field="true" inputmode="none" aria-label="Datum Zeile 18"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_18" data-date-field="true" aria-label="Datum Zeile 18"></td>
             <td><input class="lw-center" data-lw-field="lw_von_18" inputmode="numeric" aria-label="Von Zeile 18"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_18" inputmode="numeric" aria-label="Bis Zeile 18"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_18" inputmode="decimal" aria-label="Reisezeit Zeile 18"></td>
@@ -601,7 +602,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_18" aria-label="Abrechnungsvermerke Zeile 18"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="4" data-lw-row="19">
-            <td><input class="lw-center" data-lw-field="lw_date_19" data-date-field="true" inputmode="none" aria-label="Datum Zeile 19"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_19" data-date-field="true" aria-label="Datum Zeile 19"></td>
             <td><input class="lw-center" data-lw-field="lw_von_19" inputmode="numeric" aria-label="Von Zeile 19"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_19" inputmode="numeric" aria-label="Bis Zeile 19"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_19" inputmode="decimal" aria-label="Reisezeit Zeile 19"></td>
@@ -612,18 +613,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_19" aria-label="Abrechnungsvermerke Zeile 19"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="4" data-lw-row="20">
-            <td><input class="lw-center" data-lw-field="lw_date_20" data-date-field="true" inputmode="none" aria-label="Datum Zeile 20"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_20" data-date-field="true" aria-label="Datum Zeile 20"></td>
             <td><input class="lw-center" data-lw-field="lw_von_20" inputmode="numeric" aria-label="Von Zeile 20"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_20" inputmode="numeric" aria-label="Bis Zeile 20"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_20" inputmode="decimal" aria-label="Reisezeit Zeile 20"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="4" inputmode="decimal" aria-label="Tagessumme Tag 4" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="4" aria-label="Tagessumme Tag 4" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_20" aria-label="Wo gearbeitet Zeile 20"></td>
             <td><input data-lw-field="lw_wem_20" aria-label="Mit wem Zeile 20"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_20" aria-label="darüber Arbeitsbericht Zeile 20"></td>
             <td><input data-lw-field="lw_vermerk_20" aria-label="Abrechnungsvermerke Zeile 20"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="5" data-lw-row="21">
-            <td><input class="lw-center" data-lw-field="lw_date_21" data-lw-day-date="5" data-date-field="true" inputmode="none" aria-label="Datum Tag 5"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_21" data-lw-day-date="5" data-date-field="true" aria-label="Datum Tag 5"></td>
             <td><input class="lw-center" data-lw-field="lw_von_21" inputmode="numeric" aria-label="Von Zeile 21"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_21" inputmode="numeric" aria-label="Bis Zeile 21"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_21" inputmode="decimal" aria-label="Reisezeit Zeile 21"></td>
@@ -634,7 +635,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_21" aria-label="Abrechnungsvermerke Zeile 21"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="5" data-lw-row="22">
-            <td><input class="lw-center" data-lw-field="lw_date_22" data-date-field="true" inputmode="none" aria-label="Datum Zeile 22"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_22" data-date-field="true" aria-label="Datum Zeile 22"></td>
             <td><input class="lw-center" data-lw-field="lw_von_22" inputmode="numeric" aria-label="Von Zeile 22"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_22" inputmode="numeric" aria-label="Bis Zeile 22"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_22" inputmode="decimal" aria-label="Reisezeit Zeile 22"></td>
@@ -645,7 +646,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_22" aria-label="Abrechnungsvermerke Zeile 22"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="5" data-lw-row="23">
-            <td><input class="lw-center" data-lw-field="lw_date_23" data-date-field="true" inputmode="none" aria-label="Datum Zeile 23"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_23" data-date-field="true" aria-label="Datum Zeile 23"></td>
             <td><input class="lw-center" data-lw-field="lw_von_23" inputmode="numeric" aria-label="Von Zeile 23"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_23" inputmode="numeric" aria-label="Bis Zeile 23"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_23" inputmode="decimal" aria-label="Reisezeit Zeile 23"></td>
@@ -656,7 +657,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_23" aria-label="Abrechnungsvermerke Zeile 23"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="5" data-lw-row="24">
-            <td><input class="lw-center" data-lw-field="lw_date_24" data-date-field="true" inputmode="none" aria-label="Datum Zeile 24"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_24" data-date-field="true" aria-label="Datum Zeile 24"></td>
             <td><input class="lw-center" data-lw-field="lw_von_24" inputmode="numeric" aria-label="Von Zeile 24"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_24" inputmode="numeric" aria-label="Bis Zeile 24"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_24" inputmode="decimal" aria-label="Reisezeit Zeile 24"></td>
@@ -667,18 +668,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_24" aria-label="Abrechnungsvermerke Zeile 24"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="5" data-lw-row="25">
-            <td><input class="lw-center" data-lw-field="lw_date_25" data-date-field="true" inputmode="none" aria-label="Datum Zeile 25"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_25" data-date-field="true" aria-label="Datum Zeile 25"></td>
             <td><input class="lw-center" data-lw-field="lw_von_25" inputmode="numeric" aria-label="Von Zeile 25"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_25" inputmode="numeric" aria-label="Bis Zeile 25"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_25" inputmode="decimal" aria-label="Reisezeit Zeile 25"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="5" inputmode="decimal" aria-label="Tagessumme Tag 5" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="5" aria-label="Tagessumme Tag 5" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_25" aria-label="Wo gearbeitet Zeile 25"></td>
             <td><input data-lw-field="lw_wem_25" aria-label="Mit wem Zeile 25"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_25" aria-label="darüber Arbeitsbericht Zeile 25"></td>
             <td><input data-lw-field="lw_vermerk_25" aria-label="Abrechnungsvermerke Zeile 25"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="6" data-lw-row="26">
-            <td><input class="lw-center" data-lw-field="lw_date_26" data-lw-day-date="6" data-date-field="true" inputmode="none" aria-label="Datum Tag 6"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_26" data-lw-day-date="6" data-date-field="true" aria-label="Datum Tag 6"></td>
             <td><input class="lw-center" data-lw-field="lw_von_26" inputmode="numeric" aria-label="Von Zeile 26"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_26" inputmode="numeric" aria-label="Bis Zeile 26"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_26" inputmode="decimal" aria-label="Reisezeit Zeile 26"></td>
@@ -689,7 +690,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_26" aria-label="Abrechnungsvermerke Zeile 26"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="6" data-lw-row="27">
-            <td><input class="lw-center" data-lw-field="lw_date_27" data-date-field="true" inputmode="none" aria-label="Datum Zeile 27"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_27" data-date-field="true" aria-label="Datum Zeile 27"></td>
             <td><input class="lw-center" data-lw-field="lw_von_27" inputmode="numeric" aria-label="Von Zeile 27"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_27" inputmode="numeric" aria-label="Bis Zeile 27"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_27" inputmode="decimal" aria-label="Reisezeit Zeile 27"></td>
@@ -700,7 +701,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_27" aria-label="Abrechnungsvermerke Zeile 27"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="6" data-lw-row="28">
-            <td><input class="lw-center" data-lw-field="lw_date_28" data-date-field="true" inputmode="none" aria-label="Datum Zeile 28"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_28" data-date-field="true" aria-label="Datum Zeile 28"></td>
             <td><input class="lw-center" data-lw-field="lw_von_28" inputmode="numeric" aria-label="Von Zeile 28"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_28" inputmode="numeric" aria-label="Bis Zeile 28"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_28" inputmode="decimal" aria-label="Reisezeit Zeile 28"></td>
@@ -711,7 +712,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_28" aria-label="Abrechnungsvermerke Zeile 28"></td>
           </tr>
           <tr class="lw-data-row" data-lw-day="6" data-lw-row="29">
-            <td><input class="lw-center" data-lw-field="lw_date_29" data-date-field="true" inputmode="none" aria-label="Datum Zeile 29"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_29" data-date-field="true" aria-label="Datum Zeile 29"></td>
             <td><input class="lw-center" data-lw-field="lw_von_29" inputmode="numeric" aria-label="Von Zeile 29"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_29" inputmode="numeric" aria-label="Bis Zeile 29"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_29" inputmode="decimal" aria-label="Reisezeit Zeile 29"></td>
@@ -722,11 +723,11 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
             <td><input data-lw-field="lw_vermerk_29" aria-label="Abrechnungsvermerke Zeile 29"></td>
           </tr>
           <tr class="lw-data-row lw-day-end" data-lw-day="6" data-lw-row="30">
-            <td><input class="lw-center" data-lw-field="lw_date_30" data-date-field="true" inputmode="none" aria-label="Datum Zeile 30"></td>
+            <td><input class="lw-center" data-lw-field="lw_date_30" data-date-field="true" aria-label="Datum Zeile 30"></td>
             <td><input class="lw-center" data-lw-field="lw_von_30" inputmode="numeric" aria-label="Von Zeile 30"></td>
             <td><input class="lw-center" data-lw-field="lw_bis_30" inputmode="numeric" aria-label="Bis Zeile 30"></td>
             <td class="lw-thick-right"><input class="lw-right" data-lw-field="lw_reise_30" inputmode="decimal" aria-label="Reisezeit Zeile 30"></td>
-            <td><input class="lw-right lw-day-sum" data-lw-day-sum="6" inputmode="decimal" aria-label="Tagessumme Tag 6" placeholder="Σ"></td>
+            <td><input class="lw-right lw-day-sum" data-lw-day-sum="6" aria-label="Tagessumme Tag 6" placeholder="Σ"></td>
             <td colspan="2"><input data-lw-field="lw_wo_30" aria-label="Wo gearbeitet Zeile 30"></td>
             <td><input data-lw-field="lw_wem_30" aria-label="Mit wem Zeile 30"></td>
             <td class="lw-thick-right"><input data-lw-field="lw_bericht_30" aria-label="darüber Arbeitsbericht Zeile 30"></td>
@@ -752,7 +753,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
         <button type="button" class="step-btn" id="zoomPlusBtn" title="Dokument vergrößern (+5 %)" aria-label="Dokument vergrößern">+</button>
       </div>
     </div>
-    <div id="sigScaleContainer">
+    <div>
       <label for="sigScale">Größe der Unterschrift: <strong id="scaleValue">100 %</strong></label>
       <div class="slider-row">
         <button type="button" class="step-btn" id="sigMinusBtn" title="Unterschrift verkleinern (−5 %)" aria-label="Unterschrift verkleinern">−</button>
@@ -789,7 +790,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
   <div class="footer-row no-print">
     <p class="note">Büro: info@fubosol.de · Aktuelle Eingaben und PDF-Historie werden lokal auf dem Gerät gespeichert.</p>
     <button type="button" class="settings-btn" id="openSettingsBtn" title="Einstellungen öffnen" aria-label="Einstellungen">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <svg viewbox="0 0 24 24" aria-hidden="true">
         <circle cx="12" cy="12" r="3.2"/>
         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
       </svg>
@@ -799,7 +800,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 <div class="floating-voice-pill no-print" id="floatingVoicePill" role="toolbar" aria-label="Spracheingabe">
   <span class="fvp-drag" id="dragVoicePillHandle" title="Leiste verschieben" aria-hidden="true">⋮⋮</span>
   <button type="button" class="fvp-mic" id="dictateBtn" title="Diktieren starten/stoppen" aria-label="Diktieren">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/></svg>
+    <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/></svg>
   </button>
   <button type="button" class="fvp-lang" id="dictateLangBtn" title="Sprache wechseln (DE / PL)" aria-label="Sprache wechseln">🌐 DE</button>
   <button type="button" class="fvp-close" id="closeVoicePillBtn" title="Diktierleiste schließen" aria-label="Schließen">✕</button>
@@ -859,24 +860,6 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 </div>
 <div class="toast no-print" id="toastMsg" role="status" aria-live="polite"></div>
 <div class="modal" id="signatureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><div class="dialog-head"><h2 id="modalTitle">Unterschrift des Kunden</h2><p>Bitte unterschreiben Sie mit dem Finger oder einem Stift im Feld.</p></div><div class="pad-wrap"><canvas class="pad" id="signaturePad"></canvas></div><div class="dialog-actions"><button class="secondary" id="cancelBtn">Abbrechen</button><div class="right"><button class="danger" id="eraseBtn">Löschen</button><button class="primary" id="saveBtn">Unterschrift übernehmen</button></div></div></div></div>
-<div class="modal no-print" id="pdfPreviewModal" role="dialog" aria-modal="true" aria-labelledby="pdfPreviewTitle">
-  <div class="dialog" style="max-width:760px">
-    <div class="dialog-head" style="display:flex;align-items:center;justify-content:space-between;gap:8px">
-      <div>
-        <h2 id="pdfPreviewTitle">📄 PDF-Vorschau</h2>
-        <p id="pdfPreviewFilename" style="word-break:break-all"></p>
-      </div>
-      <button type="button" class="secondary" id="closePdfPreviewTopBtn" aria-label="Schließen">✕</button>
-    </div>
-    <div class="pdf-preview-wrap">
-      <iframe class="pdf-preview-frame" id="pdfPreviewFrame" title="PDF Vorschau"></iframe>
-    </div>
-    <div class="dialog-actions" style="justify-content:flex-end;border-top:1px solid #eee">
-      <button type="button" class="secondary" id="downloadPdfPreviewBtn">Herunterladen / Teilen</button>
-      <button type="button" class="primary" id="closePdfPreviewBtn">Schließen</button>
-    </div>
-  </div>
-</div>
 <div class="modal no-print" id="dictationGuideModal" role="dialog" aria-modal="true" aria-labelledby="dictGuideTitle">
   <div class="dialog">
     <div class="dialog-head" style="display:flex;align-items:center;justify-content:space-between;gap:8px">
@@ -917,7 +900,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
           <tr><th>Funktion</th><th>Befehl Deutsch (DE)</th><th>Befehl Polnisch (PL)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Zeitbereich <code>-</code> (z. B. <code>12:30-13</code>)</td><td><code>bis</code> (z. B. <code>12:30 bis 13</code>)</td><td><code>do</code> / <code>bis</code> (z. B. <code>12:30 do 13</code>)</td></tr>
+          <tr><td>Zeitbereich <code>-</code> (z. B. <code>12:30-13</code>)</td><td><code>bis</code> (np. <code>12:30 bis 13</code>)</td><td><code>do</code> / <code>bis</code> (np. <code>12:30 do 13</code>)</td></tr>
           <tr><td>Neue Zeile</td><td><code>Neue Zeile</code> / <code>Absatz</code></td><td><code>nowa linia</code> / <code>nowy wiersz</code> / <code>enter</code></td></tr>
           <tr><td>Aufzählung mit <code>- </code></td><td><code>Spiegelstrich</code> / <code>Bindestrich</code></td><td><code>myślnik</code> / <code>punkt od myślnika</code> / <code>podpunkt</code></td></tr>
           <tr><td>Nummerierung <code>1. </code>, <code>2. </code>, <code>3. </code></td><td><code>Nummerierung</code> / <code>Aufzählung</code></td><td><code>numerowanie</code> / <code>punktowanie</code></td></tr>
@@ -946,9 +929,8 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 </div>
 <script>
 (()=>{
- const OFFICE_EMAIL='info@fubosol.de',STORAGE_KEY='fubosol_report_data',HISTORY_KEY='fubosol_pdf_history_v1',HISTORY_LW_KEY='fubosol_pdf_history_lohnwoche_v1',MAX_HISTORY=30;
+ const OFFICE_EMAIL='info@fubosol.de',STORAGE_KEY='fubosol_report_data',HISTORY_KEY='fubosol_pdf_history_v1',MAX_HISTORY=30;
  const SETTINGS_STORAGE_KEY='fubosol_user_settings_v1';
- const IDB_NAME='fubosol_storage_db',IDB_VERSION=1,IDB_STORE='pdf_history';
  let docFontPt=9.6,PDF_MAX_LINES=25,PDF_MAX_CHARS=90,defaultTechFirstName='',defaultTechLastName='';
  const modal=document.getElementById('signatureModal'),canvas=document.getElementById('signaturePad'),ctx=canvas.getContext('2d');
  const target=document.getElementById('signTarget'),sigImg=document.getElementById('signatureImage');
@@ -959,10 +941,6 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  const historyList=document.getElementById('historyList'),historyCount=document.getElementById('historyCount');
  let drawing=false,hasInk=false,previous=null,toastTimer=null;
 
- const isTouchDevice=(navigator.maxTouchPoints>0)||('ontouchstart' in window);
- const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
- const isStandalonePWA=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;
-
  const formSelector=document.getElementById('formSelector');
  const placeholderWrap=document.getElementById('placeholderWrap');
  const sheetWrapElement=document.getElementById('sheetWrap');
@@ -970,68 +948,31 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 
  const lohnwocheWrap=document.getElementById('lohnwocheWrap');
  const sheetLohnwoche=document.getElementById('sheetLohnwoche');
- const sigScaleContainer=document.getElementById('sigScaleContainer');
+ const sigScaleWrap=document.getElementById('sigScale')?(document.getElementById('sigScale').closest('.slider-row')?.parentElement||document.getElementById('sigScale').parentElement):null;
  const clearSigBtn=document.getElementById('clearSignatureBtn');
- const clearBtn=document.getElementById('clearBtn');
- const printBtn=document.getElementById('printBtn');
- const savePdfBtn=document.getElementById('savePdfBtn');
- const whatsappBtn=document.getElementById('whatsappBtn');
- const emailBtn=document.getElementById('emailBtn');
-
- // Verhindert automatisches Safari-Zoomen auf iOS bei Fokus auf kleinen Eingabefeldern (<16px)
- if(isIOS){
-   const vpMeta=document.querySelector('meta[name="viewport"]');
-   if(vpMeta){
-     const origContent=vpMeta.getAttribute('content')||'width=device-width,initial-scale=1,viewport-fit=cover';
-     document.addEventListener('focusin',(e)=>{
-       if(e.target&&e.target.matches('input,textarea,select')&&!e.target.hasAttribute('data-date-field')){
-         vpMeta.setAttribute('content',origContent+',maximum-scale=1');
-       }
-     });
-     document.addEventListener('focusout',()=>{
-       setTimeout(()=>{
-         const act=document.activeElement;
-         if(!act||!act.matches('input,textarea,select')){
-           vpMeta.setAttribute('content',origContent);
-         }
-       },120);
-     });
-   }
- }
-
- function isActiveFormReady(){
-   return formSelector.value==='arbeitsbericht'||formSelector.value==='lohnwoche';
- }
-
- function setActionButtonsDisabled(disabled){
-   [clearBtn,printBtn,savePdfBtn,whatsappBtn,emailBtn].forEach(btn=>{
-     if(btn)btn.disabled=disabled;
-   });
- }
 
  function updateFormView(){
    const val=formSelector.value;
-   const emailFieldWrap=document.querySelector('.control-field.email-field');
    if(val==='arbeitsbericht'){
      sheetWrapElement.style.display='block';
      if(lohnwocheWrap)lohnwocheWrap.style.display='none';
      controlsEl.style.display='flex';
-     if(sigScaleContainer)sigScaleContainer.style.display='';
+     if(sigScaleWrap)sigScaleWrap.style.display='';
      if(clearSigBtn)clearSigBtn.style.display='';
+     const emailFieldWrap=document.querySelector('.control-field.email-field');
      if(emailFieldWrap)emailFieldWrap.style.display='';
      placeholderWrap.style.display='none';
      document.body.classList.remove('print-landscape');
-     setActionButtonsDisabled(false);
    }else if(val==='lohnwoche'){
      sheetWrapElement.style.display='none';
      if(lohnwocheWrap)lohnwocheWrap.style.display='block';
      controlsEl.style.display='flex';
-     if(sigScaleContainer)sigScaleContainer.style.display='none';
+     if(sigScaleWrap)sigScaleWrap.style.display='none';
      if(clearSigBtn)clearSigBtn.style.display='none';
+     const emailFieldWrap=document.querySelector('.control-field.email-field');
      if(emailFieldWrap)emailFieldWrap.style.display='none';
      placeholderWrap.style.display='none';
      document.body.classList.add('print-landscape');
-     setActionButtonsDisabled(false);
      applyDefaultLohnwocheNameIfEmpty();
      recalcLohnwocheTotals();
      applyZoom();
@@ -1039,11 +980,18 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      sheetWrapElement.style.display='none';
      if(lohnwocheWrap)lohnwocheWrap.style.display='none';
      controlsEl.style.display='none';
-     if(clearSigBtn)clearSigBtn.style.display='none';
      placeholderWrap.style.display='block';
      document.body.classList.remove('print-landscape');
-     setActionButtonsDisabled(true);
    }
+   const isPlaceholder=(val!=='arbeitsbericht'&&val!=='lohnwoche');
+   ['clearSignatureBtn','clearBtn','printBtn','savePdfBtn','whatsappBtn','emailBtn'].forEach(btnId=>{
+     const b=document.getElementById(btnId);
+     if(b){
+       b.disabled=isPlaceholder;
+       b.style.opacity=isPlaceholder?'0.4':'';
+       b.style.pointerEvents=isPlaceholder?'none':'';
+     }
+   });
    saveDraft();
  }
  formSelector.addEventListener('change',()=>{updateFormView();renderPdfHistory()});
@@ -1113,46 +1061,16 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    syncEl.addEventListener('change',propagate);
  });
 
- // Exaktes Messen mit proportionaler Schriftart (Arial/Helvetica) für Textarea & PDF
- const measureCanvas=document.createElement('canvas');
- const measureCtx=measureCanvas.getContext('2d');
-
- function getWorkdescMaxWidthPt(){
-   // workdesc Breite: 85.65% von 595.28pt minus 4pt Innenabstand
-   return (595.28*0.8565)-4.5;
- }
-
- function measureTextPt(str,fontPt){
-   if(!measureCtx)return String(str||'').length*fontPt*0.52;
-   measureCtx.font=fontPt+'pt Arial,Helvetica,sans-serif';
-   return measureCtx.measureText(str).width*(72/96);
- }
-
- function wrapLine(text,maxCharsOrPt,useExactFontPt){
+ function wrapLine(text,maxChars){
    if(!text)return [''];
-   const maxWidthPt=useExactFontPt?getWorkdescMaxWidthPt():0;
    const words=text.split(/\s+/);const out=[];let line='';
-   const fits=(candidate)=>{
-     if(useExactFontPt)return measureTextPt(candidate,useExactFontPt)<=maxWidthPt;
-     return candidate.length<=maxCharsOrPt;
-   };
    for(const word of words){
-     if(!fits(word)){
+     if(word.length>maxChars){
        if(line){out.push(line);line=''}
-       let chunk='';
-       for(let i=0;i<word.length;i++){
-         const nextChunk=chunk+word[i];
-         if(chunk&&!fits(nextChunk)){out.push(chunk);chunk=word[i]}
-         else{chunk=nextChunk}
-       }
-       if(chunk)line=chunk;
-     }else if(!line){
-       line=word;
-     }else if(fits(line+' '+word)){
-       line+=' '+word;
-     }else{
-       out.push(line);line=word;
-     }
+       for(let i=0;i<word.length;i+=maxChars)out.push(word.slice(i,i+maxChars));
+     }else if(!line){line=word}
+     else if((line+' '+word).length<=maxChars){line+=' '+word}
+     else{out.push(line);line=word}
    }
    if(line)out.push(line);
    return out.length?out:[''];
@@ -1162,7 +1080,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    const rawParts=(text||'').split(/\r?\n/);
    const result=[];
    for(let i=0;i<rawParts.length;i++){
-     result.push(...wrapLine(rawParts[i],PDF_MAX_CHARS,docFontPt));
+     result.push(...wrapLine(rawParts[i],PDF_MAX_CHARS));
    }
    return result;
  }
@@ -1189,7 +1107,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        workdescPage2.focus();
        workdescPage2.setSelectionRange(workdescPage2.value.length,workdescPage2.value.length);
      }
-     return;
+     return true;
    }
 
    const hasP2Text=(workdescPage2.value||'').trim().length>0;
@@ -1252,16 +1170,9 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  document.getElementById('clearSignatureBtn').addEventListener('click',clearSignatureOnly);
 
  function clearEntireDocument(){
-   if(!isActiveFormReady())return;
    if(formSelector.value==='lohnwoche'){
-     document.querySelectorAll('[data-lw-field]').forEach(el=>{
-       el.value='';
-       delete el.dataset.manualDate;
-     });
-     document.querySelectorAll('[data-lw-day-sum]').forEach(el=>{
-       el.value='';
-       delete el.dataset.manualEdited;
-     });
+     document.querySelectorAll('[data-lw-field]').forEach(el=>{el.value=''});
+     document.querySelectorAll('[data-lw-day-sum]').forEach(el=>{el.value='';delete el.dataset.manualEdited});
      applyDefaultLohnwocheNameIfEmpty();
      recalcLohnwocheTotals();
      saveDraft();
@@ -1278,8 +1189,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    applyDefaultTechnicianIfEmpty();
  }
 
- clearBtn.addEventListener('click',()=>{
-   if(!isActiveFormReady())return;
+ document.getElementById('clearBtn').addEventListener('click',()=>{
    if(!confirm('Sollen alle Eingaben des aktuellen Formulars geleert werden?'))return;
    clearEntireDocument();
    showToast('Dokument geleert.');
@@ -1296,6 +1206,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  scale.addEventListener('input',updateScale);
 
  const datePicker=document.getElementById('nativeDatePicker');let activeDateField=null;
+ function getTodayISO(){const now=new Date();return String(now.getFullYear())+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0')}
  function toISODate(value){
    const m=(value||'').trim().match(/^(\d{1,2})[/. -](\d{1,2})[/. -](\d{2,4})$/);if(!m)return '';
    let year=Number(m[3]);if(m[3].length===2)year+=year>=70?1900:2000;
@@ -1306,9 +1217,6 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  function clearSingleDateField(el){
    if(!el)return;
    el.value='';
-   if(el.hasAttribute('data-lw-day-date')||el.id==='lwBisInput'){
-     delete el.dataset.manualDate;
-   }
    if(el.dataset.syncField){
      const src=getFieldOnPage1(el.dataset.syncField);
      if(src)src.value='';
@@ -1320,26 +1228,20 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  }
 
  let dateClearedByPicker=false;
- let pickerInteracted=false;
+ const isTouchDevice=('ontouchstart' in window)||(navigator.maxTouchPoints>0);
  document.querySelectorAll('[data-date-field="true"]').forEach(el=>{
-   // Auf Mobilgeräten readonly setzen, damit Tastatur und Kalender nicht kollidieren
+   el.setAttribute('inputmode','none');
    if(isTouchDevice)el.readOnly=true;
-   el.addEventListener('click',(e)=>{
-     e.preventDefault();
+   el.addEventListener('click',()=>{
      activeDateField=el;
      dateClearedByPicker=false;
-     pickerInteracted=false;
      const existingISO=toISODate(el.value);
+     // Puste value pozwala odpalić input/change przy kliknięciu dzisiejszej daty lub przycisku "Dzisiaj"
      datePicker.value=existingISO||'';
      const rect=el.getBoundingClientRect();
      datePicker.style.left=Math.max(0,rect.left)+'px';
      datePicker.style.top=Math.max(0,rect.top)+'px';
-     try{
-       if(datePicker.showPicker)datePicker.showPicker();
-       else{datePicker.focus({preventScroll:true});datePicker.click()}
-     }catch(err){
-       try{datePicker.focus({preventScroll:true});datePicker.click()}catch(e2){}
-     }
+     try{if(datePicker.showPicker)datePicker.showPicker();else datePicker.click()}catch(err){datePicker.click()}
    });
    el.addEventListener('keydown',(e)=>{
      if(e.key==='Backspace'||e.key==='Delete'){
@@ -1349,7 +1251,6 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      }
    });
    el.addEventListener('blur',()=>{
-     if(el.readOnly)return;
      const trimmed=(el.value||'').trim();
      if(!trimmed){
        clearSingleDateField(el);
@@ -1361,15 +1262,10 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      saveDraft();
    });
  });
-
  function applyPickedDate(){
    if(!activeDateField)return;
-   pickerInteracted=true;
    if(datePicker.value){
      dateClearedByPicker=false;
-     if(activeDateField.hasAttribute('data-lw-day-date')||activeDateField.id==='lwBisInput'){
-       activeDateField.dataset.manualDate='1';
-     }
      activeDateField.value=fromISODate(datePicker.value);
      activeDateField.dispatchEvent(new Event('input',{bubbles:true}));
      activeDateField.dispatchEvent(new Event('change',{bubbles:true}));
@@ -1383,10 +1279,9 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  datePicker.addEventListener('input',applyPickedDate);
  datePicker.addEventListener('change',applyPickedDate);
  datePicker.addEventListener('blur',()=>{
-   if(activeDateField&&pickerInteracted&&!dateClearedByPicker&&datePicker.value){
+   if(activeDateField&&!dateClearedByPicker&&datePicker.value){
      applyPickedDate();
    }
-   activeDateField=null;
  });
 
  function parseTimeIntervals(val){
@@ -1443,19 +1338,22 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    }
  }
 
- /* --- PDF-Historie (IndexedDB mit lokalem Fallback & Migration) --- */
+ /* --- Historia zapisanych PDF-ów (IndexedDB z automatyczną migracją z localStorage) --- */
+ const IDB_NAME='fubosol_pdf_history_db',IDB_STORE='reports';
+ let historyCache=[];
+
  function activeHistoryKey(){
-   return (formSelector&&formSelector.value==='lohnwoche')?HISTORY_LW_KEY:HISTORY_KEY;
+   return (formSelector&&formSelector.value==='lohnwoche')?'fubosol_pdf_history_lohnwoche_v1':HISTORY_KEY;
  }
 
- function openHistoryDB(){
+ function openHistoryDb(){
    return new Promise((resolve,reject)=>{
-     if(!window.indexedDB){reject(new Error('No IDB'));return}
-     const req=indexedDB.open(IDB_NAME,IDB_VERSION);
+     if(!window.indexedDB){reject(new Error('No IndexedDB'));return}
+     const req=indexedDB.open(IDB_NAME,1);
      req.onupgradeneeded=()=>{
        const db=req.result;
        if(!db.objectStoreNames.contains(IDB_STORE)){
-         db.createObjectStore(IDB_STORE,{keyPath:'bucket'});
+         db.createObjectStore(IDB_STORE,{keyPath:'id'});
        }
      };
      req.onsuccess=()=>resolve(req.result);
@@ -1463,55 +1361,76 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    });
  }
 
- async function getPdfHistoryAsync(bucketKey){
-   const key=bucketKey||activeHistoryKey();
+ async function idbGetAllForForm(formKey){
    try{
-     const db=await openHistoryDB();
-     const items=await new Promise((resolve,reject)=>{
+     const db=await openHistoryDb();
+     return await new Promise((resolve,reject)=>{
        const tx=db.transaction(IDB_STORE,'readonly');
-       const st=tx.objectStore(IDB_STORE);
-       const req=st.get(key);
-       req.onsuccess=()=>resolve(req.result&&Array.isArray(req.result.items)?req.result.items:null);
+       const store=tx.objectStore(IDB_STORE);
+       const req=store.getAll();
+       req.onsuccess=()=>{
+         const all=(req.result||[]).filter(x=>(x.formKey||HISTORY_KEY)===formKey);
+         all.sort((a,b)=>(b.ts||0)-(a.ts||0));
+         resolve(all);
+       };
        req.onerror=()=>reject(req.error);
      });
-     if(items!==null)return items;
-     // Einmalige Migration alter Einträge aus localStorage -> IndexedDB
-     const legacyRaw=localStorage.getItem(key);
-     if(legacyRaw){
-       try{
-         const parsed=JSON.parse(legacyRaw);
-         if(Array.isArray(parsed)&&parsed.length){
-           await savePdfHistoryAsync(parsed,key);
-           localStorage.removeItem(key);
-           return parsed;
-         }
-       }catch(e){}
-     }
-     return [];
-   }catch(e){
+   }catch(e){return []}
+ }
+
+ async function idbPutEntry(entry){
+   const db=await openHistoryDb();
+   return await new Promise((resolve,reject)=>{
+     const tx=db.transaction(IDB_STORE,'readwrite');
+     tx.objectStore(IDB_STORE).put(entry);
+     tx.oncomplete=()=>resolve();
+     tx.onerror=()=>reject(tx.error);
+   });
+ }
+
+ async function idbDeleteEntry(entryId){
+   const db=await openHistoryDb();
+   return await new Promise((resolve,reject)=>{
+     const tx=db.transaction(IDB_STORE,'readwrite');
+     tx.objectStore(IDB_STORE).delete(entryId);
+     tx.oncomplete=()=>resolve();
+     tx.onerror=()=>reject(tx.error);
+   });
+ }
+
+ async function migrateLegacyHistoryIfAny(){
+   for(const fk of [HISTORY_KEY,'fubosol_pdf_history_lohnwoche_v1']){
      try{
-       const raw=localStorage.getItem(key);
-       const parsed=raw?JSON.parse(raw):[];
-       return Array.isArray(parsed)?parsed:[];
-     }catch(err){return []}
+       const raw=localStorage.getItem(fk);
+       if(!raw)continue;
+       const parsed=JSON.parse(raw);
+       if(Array.isArray(parsed)&&parsed.length){
+         for(let i=0;i<parsed.length;i++){
+           const item=parsed[i];
+           const blob=item.pdfBase64?base64ToBlob(item.pdfBase64,'application/pdf'):null;
+           await idbPutEntry({
+             id:item.id||('mig_'+Date.now()+'_'+i),
+             ts:Date.now()-i*1000,
+             formKey:fk,
+             createdAt:item.createdAt||'',
+             fileName:item.fileName||'Bericht.pdf',
+             pagesCount:item.pagesCount||1,
+             baustelle:item.baustelle||'',
+             auftraggeber:item.auftraggeber||'',
+             dateVal:item.dateVal||'',
+             hoursSum:item.hoursSum||'0',
+             pdfBlob:blob,
+             snapshot:item.snapshot||null
+           });
+         }
+       }
+       localStorage.removeItem(fk);
+     }catch(e){}
    }
  }
 
- async function savePdfHistoryAsync(items,bucketKey){
-   const key=bucketKey||activeHistoryKey();
-   const trimmed=items.slice(0,MAX_HISTORY);
-   try{
-     const db=await openHistoryDB();
-     await new Promise((resolve,reject)=>{
-       const tx=db.transaction(IDB_STORE,'readwrite');
-       tx.objectStore(IDB_STORE).put({bucket:key,items:trimmed});
-       tx.oncomplete=resolve;
-       tx.onerror=()=>reject(tx.error);
-     });
-     return;
-   }catch(e){
-     try{localStorage.setItem(key,JSON.stringify(trimmed))}catch(err){}
-   }
+ function getPdfHistory(){
+   return historyCache;
  }
 
  function base64ToBlob(base64,mime){
@@ -1522,35 +1441,17 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    return new Blob([arr],{type:mime||'application/pdf'});
  }
 
- function blobToBase64(blob){
-   return new Promise((resolve,reject)=>{
-     const reader=new FileReader();
-     reader.onload=()=>{
-       const res=String(reader.result||'');
-       const idx=res.indexOf(',');
-       resolve(idx>=0?res.slice(idx+1):res);
-     };
-     reader.onerror=reject;
-     reader.readAsDataURL(blob);
-   });
- }
-
  function collectSnapshot(){
-   const fields={},lwFields={},lwDaySums={},lwManualDates={};
+   const fields={},lwFields={},lwDaySums={};
    document.querySelectorAll('[data-field]').forEach(el=>{fields[el.dataset.field]=el.value});
-   document.querySelectorAll('[data-lw-field]').forEach(el=>{
-     lwFields[el.dataset.lwField]=el.value;
-     if(el.dataset.manualDate==='1')lwManualDates[el.dataset.lwField]=true;
-   });
+   document.querySelectorAll('[data-lw-field]').forEach(el=>{lwFields[el.dataset.lwField]=el.value});
    document.querySelectorAll('[data-lw-day-sum]').forEach(el=>{
-     const k=el.dataset.lwDaySum;
-     lwDaySums[k]={value:el.value,manual:el.dataset.manualEdited==='1'};
+     lwDaySums[el.dataset.lwDaySum]={val:el.value,manual:el.dataset.manualEdited||''};
    });
    return {
      fields,
      lwFields,
      lwDaySums,
-     lwManualDates,
      email:document.getElementById('clientEmail').value,
      sigScale:scale.value,
      sigImg:sigImg.src||'',
@@ -1560,7 +1461,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 
  async function recordPdfInHistory(blob,fileName,pagesCount){
    try{
-     const key=activeHistoryKey();
+     const fk=activeHistoryKey();
      if(formSelector.value==='lohnwoche'){
        recalcLohnwocheTotals();
        const lwName=(document.querySelector('[data-lw-field="lw_name"]')?.value||'').trim()||'Ohne Name';
@@ -1568,9 +1469,10 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        const bisV=(document.getElementById('lwBisInput')?.value||'').trim();
        const dateVal=[vomV,bisV].filter(Boolean).join(' – ');
        const totH=(document.getElementById('lwTotalHours')?.value||'0').trim()||'0';
-       const pdfBase64=await blobToBase64(blob);
        const entry={
          id:Date.now()+'_'+Math.random().toString(36).slice(2,7),
+         ts:Date.now(),
+         formKey:fk,
          createdAt:new Date().toLocaleString('de-DE'),
          fileName,
          pagesCount:pagesCount||1,
@@ -1578,12 +1480,10 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
          auftraggeber:lwName,
          dateVal,
          hoursSum:totH,
-         pdfBase64,
+         pdfBlob:blob,
          snapshot:collectSnapshot()
        };
-       const items=await getPdfHistoryAsync(key);
-       items.unshift(entry);
-       await savePdfHistoryAsync(items,key);
+       await idbPutEntry(entry);
        await renderPdfHistory();
        return;
      }
@@ -1594,9 +1494,10 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        const v=parseFloat((getFieldOnPage1('Arbeitsstunden-'+n)?.value||'').replace(',','.'));
        return acc+(isNaN(v)?0:v);
      },0);
-     const pdfBase64=await blobToBase64(blob);
      const entry={
        id:Date.now()+'_'+Math.random().toString(36).slice(2,7),
+       ts:Date.now(),
+       formKey:fk,
        createdAt:new Date().toLocaleString('de-DE'),
        fileName,
        pagesCount:pagesCount||1,
@@ -1604,101 +1505,39 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        auftraggeber:auftraggeber||'Ohne Auftraggeber',
        dateVal,
        hoursSum:hoursSum?String(parseFloat(hoursSum.toFixed(2))):'0',
-       pdfBase64,
+       pdfBlob:blob,
        snapshot:collectSnapshot()
      };
-     const items=await getPdfHistoryAsync(key);
-     items.unshift(entry);
-     await savePdfHistoryAsync(items,key);
+     await idbPutEntry(entry);
      await renderPdfHistory();
    }catch(e){}
  }
 
- const pdfPreviewModal=document.getElementById('pdfPreviewModal');
- const pdfPreviewFrame=document.getElementById('pdfPreviewFrame');
- const pdfPreviewFilename=document.getElementById('pdfPreviewFilename');
- const closePdfPreviewTopBtn=document.getElementById('closePdfPreviewTopBtn');
- const closePdfPreviewBtn=document.getElementById('closePdfPreviewBtn');
- const downloadPdfPreviewBtn=document.getElementById('downloadPdfPreviewBtn');
- let previewBlobUrl=null,previewBlobObj=null,previewFileName='Bericht.pdf';
-
- function closePdfPreviewModal(){
-   if(pdfPreviewModal)pdfPreviewModal.classList.remove('open');
-   if(pdfPreviewFrame)pdfPreviewFrame.src='about:blank';
-   document.body.style.overflow='';
-   if(previewBlobUrl){setTimeout(()=>{URL.revokeObjectURL(previewBlobUrl);previewBlobUrl=null},1000)}
-   previewBlobObj=null;
+ function getEntryBlob(item){
+   if(!item)return null;
+   if(item.pdfBlob instanceof Blob)return item.pdfBlob;
+   if(item.pdfBase64)return base64ToBlob(item.pdfBase64,'application/pdf');
+   return null;
  }
 
- function openPdfInModal(blob,name){
-   if(!pdfPreviewModal||!pdfPreviewFrame){
-     const url=URL.createObjectURL(blob);
-     window.open(url,'_blank','noopener');
-     setTimeout(()=>URL.revokeObjectURL(url),60000);
-     return;
-   }
-   if(previewBlobUrl)URL.revokeObjectURL(previewBlobUrl);
-   previewBlobObj=blob;
-   previewFileName=name||'Bericht.pdf';
-   previewBlobUrl=URL.createObjectURL(blob);
-   if(pdfPreviewFilename)pdfPreviewFilename.textContent=previewFileName;
-   pdfPreviewFrame.src=previewBlobUrl;
-   pdfPreviewModal.classList.add('open');
-   document.body.style.overflow='hidden';
- }
-
- if(closePdfPreviewTopBtn)closePdfPreviewTopBtn.addEventListener('click',closePdfPreviewModal);
- if(closePdfPreviewBtn)closePdfPreviewBtn.addEventListener('click',closePdfPreviewModal);
- if(pdfPreviewModal)pdfPreviewModal.addEventListener('click',e=>{if(e.target===pdfPreviewModal)closePdfPreviewModal()});
- if(downloadPdfPreviewBtn){
-   downloadPdfPreviewBtn.addEventListener('click',async()=>{
-     if(!previewBlobObj)return;
-     const file=new File([previewBlobObj],previewFileName,{type:'application/pdf'});
-     if(isIOS&&navigator.canShare&&navigator.canShare({files:[file]})){
-       try{await navigator.share({files:[file],title:previewFileName});return}catch(e){}
-     }
-     downloadBlob(previewBlobObj,previewFileName);
-   });
- }
-
- async function openHistoryPdf(entryId){
-   const items=await getPdfHistoryAsync();
-   const item=items.find(x=>x.id===entryId);
-   if(!item||!item.pdfBase64)return;
-   const blob=base64ToBlob(item.pdfBase64,'application/pdf');
-   // In iOS PWA verhindert das Modal ein Feststecken im PDF-Viewer ohne Zurück-Button
-   if(isIOS&&isStandalonePWA){
-     openPdfInModal(blob,item.fileName||'Bericht.pdf');
-     return;
-   }
+ function openHistoryPdf(entryId){
+   const item=getPdfHistory().find(x=>x.id===entryId);
+   const blob=getEntryBlob(item);
+   if(!blob)return;
    const url=URL.createObjectURL(blob);
-   const win=window.open(url,'_blank','noopener');
-   if(!win){
-     openPdfInModal(blob,item.fileName||'Bericht.pdf');
-   }else{
-     setTimeout(()=>URL.revokeObjectURL(url),60000);
-   }
+   window.open(url,'_blank','noopener');
+   setTimeout(()=>URL.revokeObjectURL(url),60000);
  }
 
- async function downloadHistoryPdf(entryId){
-   const items=await getPdfHistoryAsync();
-   const item=items.find(x=>x.id===entryId);
-   if(!item||!item.pdfBase64)return;
-   const blob=base64ToBlob(item.pdfBase64,'application/pdf');
-   if(isIOS&&isStandalonePWA){
-     const file=new File([blob],item.fileName||'Bericht.pdf',{type:'application/pdf'});
-     if(navigator.canShare&&navigator.canShare({files:[file]})){
-       try{await navigator.share({files:[file],title:item.fileName||'Bericht.pdf'});return}catch(e){if(e&&e.name==='AbortError')return}
-     }
-     openPdfInModal(blob,item.fileName||'Bericht.pdf');
-     return;
-   }
+ function downloadHistoryPdf(entryId){
+   const item=getPdfHistory().find(x=>x.id===entryId);
+   const blob=getEntryBlob(item);
+   if(!blob)return;
    downloadBlob(blob,item.fileName||'Bericht.pdf');
  }
 
- async function loadHistoryIntoForm(entryId){
-   const items=await getPdfHistoryAsync();
-   const item=items.find(x=>x.id===entryId);
+ function loadHistoryIntoForm(entryId){
+   const item=getPdfHistory().find(x=>x.id===entryId);
    if(!item||!item.snapshot)return;
    const s=item.snapshot;
    document.querySelectorAll('[data-field]').forEach(el=>{
@@ -1706,15 +1545,13 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    });
    document.querySelectorAll('[data-lw-field]').forEach(el=>{
      el.value=s.lwFields&&s.lwFields[el.dataset.lwField]!==undefined?s.lwFields[el.dataset.lwField]:'';
-     if(s.lwManualDates&&s.lwManualDates[el.dataset.lwField])el.dataset.manualDate='1';
-     else delete el.dataset.manualDate;
    });
    document.querySelectorAll('[data-lw-day-sum]').forEach(el=>{
-     const k=el.dataset.lwDaySum;
-     const info=s.lwDaySums&&s.lwDaySums[k];
-     if(info){
-       el.value=info.value||'';
-       if(info.manual)el.dataset.manualEdited='1';else delete el.dataset.manualEdited;
+     const entry=s.lwDaySums&&s.lwDaySums[el.dataset.lwDaySum];
+     if(entry){
+       el.value=entry.val||'';
+       if(entry.manual)el.dataset.manualEdited=entry.manual;
+       else delete el.dataset.manualEdited;
      }else{
        el.value='';delete el.dataset.manualEdited;
      }
@@ -1737,15 +1574,14 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  }
 
  async function deleteHistoryItem(entryId){
-   const key=activeHistoryKey();
-   const items=await getPdfHistoryAsync(key);
-   const filtered=items.filter(x=>x.id!==entryId);
-   await savePdfHistoryAsync(filtered,key);
+   await idbDeleteEntry(entryId);
    await renderPdfHistory();
  }
 
  async function renderPdfHistory(){
-   const items=await getPdfHistoryAsync();
+   await migrateLegacyHistoryIfAny();
+   const items=await idbGetAllForForm(activeHistoryKey());
+   historyCache=items;
    if(historyCount)historyCount.textContent=items.length+(items.length===1?' Eintrag':' Einträge');
    if(!historyList)return;
    if(!items.length){
@@ -1790,12 +1626,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  document.getElementById('clearHistoryBtn').addEventListener('click',async(e)=>{
    e.preventDefault();
    e.stopPropagation();
-   const key=activeHistoryKey();
-   const items=await getPdfHistoryAsync(key);
-   if(!items.length)return;
-   if(!confirm('Soll die gesamte PDF-Historie für dieses Formular gelöscht werden?'))return;
-   await savePdfHistoryAsync([],key);
-   try{localStorage.removeItem(key)}catch(err){}
+   if(!getPdfHistory().length)return;
+   if(!confirm('Soll die gesamte PDF-Historie auf diesem Gerät gelöscht werden?'))return;
+   for(const it of getPdfHistory()){
+     await idbDeleteEntry(it.id);
+   }
+   localStorage.removeItem(activeHistoryKey());
    await renderPdfHistory();
    showToast('PDF-Historie gelöscht.');
  });
@@ -1818,15 +1654,14 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      if(data.lwFields){
        document.querySelectorAll('[data-lw-field]').forEach(el=>{
          if(data.lwFields[el.dataset.lwField]!==undefined)el.value=data.lwFields[el.dataset.lwField];
-         if(data.lwManualDates&&data.lwManualDates[el.dataset.lwField])el.dataset.manualDate='1';
        });
      }
      if(data.lwDaySums){
        document.querySelectorAll('[data-lw-day-sum]').forEach(el=>{
-         const info=data.lwDaySums[el.dataset.lwDaySum];
-         if(info){
-           el.value=info.value||'';
-           if(info.manual)el.dataset.manualEdited='1';
+         const entry=data.lwDaySums[el.dataset.lwDaySum];
+         if(entry){
+           el.value=entry.val||'';
+           if(entry.manual)el.dataset.manualEdited=entry.manual;
          }
        });
      }
@@ -1841,16 +1676,20 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    el.addEventListener('change',()=>{syncPage2Fields();saveDraft()});
  });
 
- printBtn.addEventListener('click',()=>{
-   if(!isActiveFormReady())return;
+ document.getElementById('printBtn').addEventListener('click',()=>{
    let pageOrientStyle=document.getElementById('dynamicPrintOrientStyle');
    if(!pageOrientStyle){
      pageOrientStyle=document.createElement('style');
      pageOrientStyle.id='dynamicPrintOrientStyle';
      document.head.appendChild(pageOrientStyle);
    }
-   document.body.classList.toggle('print-landscape',formSelector.value==='lohnwoche');
-   pageOrientStyle.textContent='@page{size:A4 portrait;margin:0}';
+   if(formSelector.value==='lohnwoche'){
+     document.body.classList.add('print-landscape');
+     pageOrientStyle.textContent='@page{size:A4 portrait;margin:0}';
+   }else{
+     document.body.classList.remove('print-landscape');
+     pageOrientStyle.textContent='@page{size:A4 portrait;margin:0}';
+   }
    syncPage2Fields();
    window.print();
  });
@@ -1872,44 +1711,32 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    return 'Arbeits - Regiebericht - '+safe+'.pdf';
  }
 
- // Sichere Konvertierung zu WinAnsi + polnische Sonderzeichen (keine Kollision auf 0x82..0x91)
- const PDF_POLISH_MAP={
-   '€':0x80,
-   'Ą':0x82,'ą':0x83,'Ć':0x84,'ć':0x85,'Ę':0x86,'ę':0x87,'Ł':0x88,'ł':0x89,
-   'Ń':0x8A,'ń':0x8B,'Ś':0x8C,'ś':0x8D,'Ź':0x8E,'ź':0x8F,'Ż':0x90,'ż':0x91,'Σ':0x53
- };
- function normalizeForPdf(str){
-   return String(str||'')
-     .replace(/[\u201E\u201C\u201D]/g,'"')
-     .replace(/[\u2018\u2019\u201A]/g,"'")
-     .replace(/\u2026/g,'...')
-     .replace(/[\u2013\u2014]/g,'-')
-     .replace(/\u00A0/g,' ')
-     .replace(/\u2030/g,'o/oo')
-     .replace(/\u0160/g,'S').replace(/\u0161/g,'s')
-     .replace(/\u0152/g,'OE').replace(/\u0153/g,'oe')
-     .replace(/\u017D/g,'Z').replace(/\u017E/g,'z')
-     .replace(/[\u2020\u2021]/g,'+');
- }
- function winAnsiHex(str){
-   const norm=normalizeForPdf(str);
-   let out='';
-   for(let i=0;i<norm.length;i++){
-     const ch=norm[i];let n=PDF_POLISH_MAP[ch];
-     if(n===undefined){
-       const cp=ch.codePointAt(0);
-       // Bytes 0x81..0x91 sind durch polnische Zeichen / Steuerzeichen belegt -> fallback '?'
-       n=(cp>=0x20&&cp<=0x7E)||(cp>=0xA0&&cp<=0xFF)?cp:63;
-     }
-     out+=n.toString(16).padStart(2,'0');
-   }
-   return out.toUpperCase();
- }
-
  async function makeLohnwochePdfBlob(){
    recalcLohnwocheTotals();
+   const map={
+     '€':0x80,'‚':0x82,'ƒ':0x83,'„':0x84,'…':0x85,'†':0x86,'‡':0x87,'ˆ':0x88,'‰':0x89,'Š':0x8A,'‹':0x8B,'Œ':0x8C,'Ž':0x8E,
+     '‘':0x91,'’':0x92,'“':0x93,'”':0x94,'•':0x95,'–':0x96,'—':0x97,'˜':0x98,'™':0x99,'š':0x9A,'›':0x9B,'œ':0x9C,'ž':0x9E,'Ÿ':0x9F,
+     'Ą':0x82,'ą':0x83,'Ć':0x84,'ć':0x85,'Ę':0x86,'ę':0x87,'Ł':0x88,'ł':0x89,'Ń':0x8A,'ń':0x8B,'Ś':0x8C,'ś':0x8D,'Ź':0x8E,'ź':0x8F,'Ż':0x90,'ż':0x91,'Σ':0x53
+   };
+   function normalizeForWinAnsi(s){
+     return String(s||'')
+       .replace(/[„“”]/g,'"')
+       .replace(/[‘’‚]/g,"'")
+       .replace(/…/g,'...')
+       .replace(/[–—]/g,'-');
+   }
+   function winAnsiHex(str){
+     str=normalizeForWinAnsi(str);
+     let out='';
+     for(let i=0;i<str.length;i++){
+       const ch=str[i];let n=map[ch];
+       if(n===undefined){const cp=ch.codePointAt(0);n=cp<=255?cp:63}
+       out+=n.toString(16).padStart(2,'0');
+     }
+     return out.toUpperCase();
+   }
 
-   // A4 Portrait: 595.28 x 841.89 pt; Table width = A4 width (minus margins), Table height = 47% of A4
+   // A4 Portrait: 595.28 x 841.89 pt; Table width = A4 width (minus margins), Table height = exact 47% of A4
    const pageW=595.28,pageH=841.89;
    const marginL=14,marginR=14,marginT=16;
    const tableW=pageW-marginL-marginR;
@@ -1925,11 +1752,14 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    const bodyH=bodyYTop-bottomY-totalRowH;
    const rowH=bodyH/30;
 
+   // Columns: Datum(8.5%), von(5.8%), bis(5.8%), Reisezeit(6.8%), Std./Tag(5.0%), wo gearbeitet?(33.6%), mit wem?(9.5%), darüber Arbeitsbericht(7.5%), Abrechnungsvermerke(17.5%)
    const colRatios=[0.085,0.058,0.058,0.068,0.050,0.336,0.095,0.075,0.175];
    const colX=[marginL];
    for(let i=0;i<colRatios.length;i++)colX.push(colX[i]+tableW*colRatios[i]);
 
+   // Divider between Name and Lohnwoche sits at ~half of "wo gearbeitet?"
    const nameSplitX=colX[5]+(colX[6]-colX[5])*0.509;
+   // Thick vertical line placed AFTER "darüber Arbeitsbericht" / BEFORE Fubosol-Heiztechnik (colX[8]) down to bottomY
    const thickColX=colX[8];
 
    let c='0 0 0 RG 0 0 0 rg 1 J 1 j\n';
@@ -1941,7 +1771,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      const font=bold?'/F2':'/F1';
      c+='BT '+font+' '+size.toFixed(2)+' Tf 1 0 0 1 '+x.toFixed(2)+' '+y.toFixed(2)+' Tm <'+winAnsiHex(String(txt))+'> Tj ET\n';
    };
-   const approxW=(txt,size)=>measureTextPt(txt,size);
+   const approxW=(txt,size)=>String(txt||'').length*size*0.52;
    const pdfCenter=(txt,x1,x2,y,size,bold)=>{
      if(!txt)return;
      const w=approxW(txt,size);
@@ -1952,28 +1782,29 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      const w=approxW(txt,size);
      pdfText(txt,Math.max(marginL+1.5,x2-w-2.2),y,size,bold);
    };
-   const fitTextToWidth=(txt,maxW,size)=>{
-     let s=String(txt||'');
-     while(s.length>0&&approxW(s,size)>maxW)s=s.slice(0,-1);
-     return s;
-   };
 
+   // Shaded summary row background at bottom of table
    fillRect(marginL,bottomY,tableW,totalRowH,0.95);
+
+   // Outer border
    drawRect(marginL,bottomY,tableW,tableH,1.6);
 
+   // Top header dividers
    const yAfterTop=topY-topHeaderH;
    drawLine(marginL,yAfterTop,marginL+tableW,yAfterTop,1.6);
    drawLine(nameSplitX,topY,nameSplitX,yAfterTop,1.6);
    drawLine(thickColX,topY,thickColX,yAfterTop,1.6);
 
+   // Top header: Name (13pt label, 12pt input)
    const nameBaseY=yAfterTop+6.5;
    pdfText('Name',marginL+6,nameBaseY,13.0,true);
    const nameLineX1=marginL+48;
    const nameLineX2=nameSplitX-8;
    drawLine(marginL+6,nameBaseY-2,nameLineX2,nameBaseY-2,0.85);
    const nameVal=(document.querySelector('[data-lw-field="lw_name"]')?.value||'').trim();
-   pdfText(fitTextToWidth(nameVal,nameLineX2-nameLineX1-4,12.0),nameLineX1+3,nameBaseY,12.0,false);
+   pdfText(nameVal,nameLineX1+3,nameBaseY,12.0,false);
 
+   // Top header: Lohnwoche (13pt title) + extended vom ___ bis ___ underlines (9pt)
    pdfText('Lohnwoche',nameSplitX+6,topY-14,13.0,true);
    const lwBaseY=yAfterTop+6.5;
    pdfText('vom',nameSplitX+6,lwBaseY,9.0,false);
@@ -1991,16 +1822,19 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    const bisVal=(document.getElementById('lwBisInput')?.value||'').trim();
    pdfText(bisVal,bisLineX1+2,lwBaseY,9.0,false);
 
+   // Company info pushed to right edge
    const rightEdgeX=marginL+tableW-6;
    pdfRight('Fubosol-Heiztechnik',rightEdgeX,topY-12,7.6,true);
    pdfRight('86663 Bäumenheim',rightEdgeX,topY-23,7.6,true);
    pdfRight('Telefon 09 06/9 1011',rightEdgeX,topY-34,7.4,false);
 
+   // Column headers
    const ySub1Bottom=yAfterTop-subHeader1H;
    const ySub2Bottom=ySub1Bottom-subHeader2H;
    drawLine(marginL,ySub2Bottom,marginL+tableW,ySub2Bottom,1.6);
    drawLine(colX[1],ySub1Bottom,colX[3],ySub1Bottom,0.7);
 
+   // Vertical column lines from yAfterTop down to bottomY (thick line at colX[4] after davon Reisezeit AND at colX[8] after darüber Arbeitsbericht)
    for(let i=1;i<colX.length-1;i++){
      const topStart=(i===2)?ySub1Bottom:yAfterTop;
      const lw=(i===4||i===8)?1.6:0.65;
@@ -2023,6 +1857,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    pdfCenter('Abrechnungs-',colX[8],colX[9],ySub1Bottom+2.5,6.5,true);
    pdfCenter('vermerke',colX[8],colX[9],ySub2Bottom+2.5,6.5,true);
 
+   // 30 data rows (6 days x 5 rows)
    for(let r=1;r<=30;r++){
      const yRowBottom=bodyYTop-r*rowH;
      const isDayEnd=(r%5===0);
@@ -2055,12 +1890,13 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        if(rowHVal)pdfRight(rowHVal,colX[5],baseY,fs,false);
      }
 
-     if(woVal)pdfText(fitTextToWidth(woVal,colX[6]-colX[5]-5,fs),colX[5]+3,baseY,fs,false);
-     if(wemVal)pdfText(fitTextToWidth(wemVal,colX[7]-colX[6]-4,fs),colX[6]+2.5,baseY,fs,false);
-     if(berVal)pdfText(fitTextToWidth(berVal,colX[8]-colX[7]-4,fs),colX[7]+2.5,baseY,fs,false);
-     if(verVal)pdfText(fitTextToWidth(verVal,colX[9]-colX[8]-5,fs),colX[8]+3,baseY,fs,false);
+     if(woVal)pdfText(woVal.slice(0,43),colX[5]+3,baseY,fs,false);
+     if(wemVal)pdfText(wemVal.slice(0,12),colX[6]+2.5,baseY,fs,false);
+     if(berVal)pdfText(berVal.slice(0,10),colX[7]+2.5,baseY,fs,false);
+     if(verVal)pdfText(verVal.slice(0,24),colX[8]+3,baseY,fs,false);
    }
 
+   // Total row at bottom of table
    const totBaseY=bottomY+(totalRowH-7.5)/2+1.0;
    pdfText('Gesamtstunden',marginL+4,totBaseY,7.6,true);
    const totReise=(document.getElementById('lwTotalReise')?.value||'').trim();
@@ -2095,6 +1931,29 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 
    const base=sheetPage1.querySelector('.form-image');
    if(!base.complete||!base.naturalWidth)await new Promise((resolve,reject)=>{base.onload=resolve;base.onerror=reject});
+
+   const map={
+     '€':0x80,'‚':0x82,'ƒ':0x83,'„':0x84,'…':0x85,'†':0x86,'‡':0x87,'ˆ':0x88,'‰':0x89,'Š':0x8A,'‹':0x8B,'Œ':0x8C,'Ž':0x8E,
+     '‘':0x91,'’':0x92,'“':0x93,'”':0x94,'•':0x95,'–':0x96,'—':0x97,'˜':0x98,'™':0x99,'š':0x9A,'›':0x9B,'œ':0x9C,'ž':0x9E,'Ÿ':0x9F,
+     'Ą':0x82,'ą':0x83,'Ć':0x84,'ć':0x85,'Ę':0x86,'ę':0x87,'Ł':0x88,'ł':0x89,'Ń':0x8A,'ń':0x8B,'Ś':0x8C,'ś':0x8D,'Ź':0x8E,'ź':0x8F,'Ż':0x90,'ż':0x91
+   };
+   function normalizeForWinAnsi(s){
+     return String(s||'')
+       .replace(/[„“”]/g,'"')
+       .replace(/[‘’‚]/g,"'")
+       .replace(/…/g,'...')
+       .replace(/[–—]/g,'-');
+   }
+   function winAnsiHex(str){
+     str=normalizeForWinAnsi(str);
+     let out='';
+     for(let i=0;i<str.length;i++){
+       const ch=str[i];let n=map[ch];
+       if(n===undefined){const cp=ch.codePointAt(0);n=cp<=255?cp:63}
+       out+=n.toString(16).padStart(2,'0');
+     }
+     return out.toUpperCase();
+   }
 
    const W=1654,H=Math.round(W*3508/2481);
    const pageW=595.28,pageH=841.89;
@@ -2140,16 +1999,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        const r=el.getBoundingClientRect(),x=(r.left-sr.left)*sx,y=(r.top-sr.top)*sy,w=r.width*sx,h=r.height*sy;
        const fs=docFontPt;
        const pad=el.classList.contains('workdesc')?2.0:(el.dataset.dateField==='true'&&el.closest('.worktable')?1.8:2.8);
+       const maxChars=el.tagName==='TEXTAREA'?PDF_MAX_CHARS:Math.max(1,Math.floor((w-pad*2)/(fs*.51)));
        let lines=[];
        if(el.tagName==='TEXTAREA'){
          const rawParts=value.split(/\r?\n/);
-         for(let j=0;j<rawParts.length;j++){lines.push(...wrapLine(rawParts[j],PDF_MAX_CHARS,fs))}
-       }else{
-         let single=value;
-         const availW=Math.max(10,w-pad*2);
-         while(single.length>0&&measureTextPt(single,fs)>availW)single=single.slice(0,-1);
-         lines=[single];
-       }
+         for(let j=0;j<rawParts.length;j++){lines.push(...wrapLine(rawParts[j],maxChars))}
+       }else{lines=[value]}
        const lineH=el.tagName==='TEXTAREA'?(fs*1.15):(fs*1.28);
        let baseline=el.tagName==='TEXTAREA'?(pageH-y-fs*0.98):(pageH-(y+(h+fs*.68)/2));
        for(let i=0;i<lines.length;i++){
@@ -2202,32 +2057,17 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    setTimeout(()=>URL.revokeObjectURL(url),30000);
  }
 
- savePdfBtn.addEventListener('click',async()=>{
-   if(!isActiveFormReady())return;
-   const isArbeitsbericht=(formSelector.value==='arbeitsbericht');
+ document.getElementById('savePdfBtn').addEventListener('click',async()=>{
    try{
      const name=filename();
      const {blob,pagesCount}=await makePdfBlob();
      await recordPdfInHistory(blob,name,pagesCount);
-     if(isIOS&&isStandalonePWA){
-       const file=new File([blob],name,{type:'application/pdf'});
-       if(navigator.canShare&&navigator.canShare({files:[file]})){
-         try{
-           await navigator.share({files:[file],title:name});
-         }catch(shareErr){
-           if(!shareErr||shareErr.name!=='AbortError')openPdfInModal(blob,name);
-         }
-       }else{
-         openPdfInModal(blob,name);
-       }
-     }else{
-       downloadBlob(blob,name);
-     }
-     if(isArbeitsbericht){
+     downloadBlob(blob,name);
+     if(formSelector.value==='arbeitsbericht'){
        clearSignatureOnly();
        showToast('PDF gespeichert & in Historie abgelegt. Unterschrift gelöscht.');
      }else{
-       showToast('PDF gespeichert & in Historie abgelegt.');
+       showToast('Lohnwoche-PDF gespeichert & in Historie abgelegt.');
      }
    }
    catch(e){alert('PDF konnte nicht erstellt werden. Bitte versuchen Sie es erneut oder nutzen Sie „Drucken“.')}
@@ -2239,49 +2079,46 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  }
 
  async function sendReportViaEmail(){
-   if(!isActiveFormReady())return;
-   const isArbeitsbericht=(formSelector.value==='arbeitsbericht');
-   const isLw=(formSelector.value==='lohnwoche');
-   const client=isArbeitsbericht?document.getElementById('clientEmail').value.trim():'';
+   const client=document.getElementById('clientEmail').value.trim();
    const recipients=[OFFICE_EMAIL,client].filter(Boolean);
    const clipboardRecipients=recipients.join(', ');
    const name=filename();
+   const isLw=(formSelector&&formSelector.value==='lohnwoche');
    const mailSubject=buildMailSubject(name);
    const mailBody=isLw
      ?'Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Stundennachweis (Lohnwoche).'
      :'Guten Tag,\n\nanbei erhalten Sie den ausgefüllten Arbeits- und Regiebericht.';
 
+   await copyToClipboard(clipboardRecipients);
+   showToast('📋 Kopiert: '+clipboardRecipients+' (Im Feld „An“ einfügen)');
+
    try{
      const {blob,pagesCount}=await makePdfBlob();
      const file=new File([blob],name,{type:'application/pdf'});
-     // navigator.share vor Clipboard & FileReader ausführen, um User-Activation auf iOS zu behalten
+
      if(navigator.canShare&&navigator.canShare({files:[file]})){
-       copyToClipboard(clipboardRecipients);
-       showToast('📋 Kopiert: '+clipboardRecipients+' (Im Feld „An“ einfügen)');
        await navigator.share({
          files:[file],
          title:mailSubject,
          text:mailBody+'\n\nEmpfänger: '+clipboardRecipients
        });
        await recordPdfInHistory(blob,name,pagesCount);
-       if(isArbeitsbericht){
+       if(formSelector.value==='arbeitsbericht'){
          clearSignatureOnly();
          showToast('E-Mail vorbereitet & in Historie abgelegt. Unterschrift gelöscht.');
        }else{
-         showToast('E-Mail vorbereitet & in Historie abgelegt.');
+         showToast('Lohnwoche-E-Mail vorbereitet & in Historie abgelegt.');
        }
        return;
      }
 
-     await copyToClipboard(clipboardRecipients);
-     showToast('📋 Kopiert: '+clipboardRecipients+' (Im Feld „An“ einfügen)');
      await recordPdfInHistory(blob,name,pagesCount);
      downloadBlob(blob,name);
      const subjectParam=encodeURIComponent(mailSubject);
      const bodyParam=encodeURIComponent(mailBody+'\n(Bitte die PDF-Datei als Anhang hinzufügen.)');
      const mailtoUrl='mailto:'+recipients.map(r=>encodeURIComponent(r)).join(',')+'?subject='+subjectParam+'&body='+bodyParam;
      window.location.href=mailtoUrl;
-     if(isArbeitsbericht)clearSignatureOnly();
+     clearSignatureOnly();
    }catch(e){
      if(e&&e.name==='AbortError')return;
      alert('Die E-Mail-Freigabe war nicht möglich. Empfänger in Zwischenablage: '+clipboardRecipients);
@@ -2289,9 +2126,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  }
 
  async function sendReportViaWhatsApp(){
-   if(!isActiveFormReady())return;
-   const isArbeitsbericht=(formSelector.value==='arbeitsbericht');
-   const isLw=(formSelector.value==='lohnwoche');
+   const isLw=(formSelector&&formSelector.value==='lohnwoche');
    const name=filename();
    const title=buildMailSubject(name);
    const msgText=(isLw?'Lohnwoche / Stundennachweis: ':'Arbeits- und Regiebericht: ')+title+' ('+OFFICE_EMAIL+')';
@@ -2307,11 +2142,11 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
          text:msgText
        });
        await recordPdfInHistory(blob,name,pagesCount);
-       if(isArbeitsbericht){
+       if(formSelector.value==='arbeitsbericht'){
          clearSignatureOnly();
          showToast('WhatsApp-Freigabe geöffnet & in Historie abgelegt. Unterschrift gelöscht.');
        }else{
-         showToast('WhatsApp-Freigabe geöffnet & in Historie abgelegt.');
+         showToast('Lohnwoche-WhatsApp geöffnet & in Historie abgelegt.');
        }
        return;
      }
@@ -2320,12 +2155,8 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      downloadBlob(blob,name);
      const waUrl='https://wa.me/?text='+encodeURIComponent(msgText+' — Bitte heruntergeladene PDF anhängen.');
      window.open(waUrl,'_blank','noopener');
-     if(isArbeitsbericht){
-       clearSignatureOnly();
-       showToast('PDF heruntergeladen & WhatsApp geöffnet. Unterschrift gelöscht.');
-     }else{
-       showToast('PDF heruntergeladen & WhatsApp geöffnet.');
-     }
+     clearSignatureOnly();
+     showToast('PDF heruntergeladen & WhatsApp geöffnet. Unterschrift gelöscht.');
    }catch(e){
      if(e&&e.name==='AbortError')return;
      const waUrl='https://wa.me/?text='+encodeURIComponent(msgText);
@@ -2333,8 +2164,8 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    }
  }
 
- emailBtn.addEventListener('click',sendReportViaEmail);
- whatsappBtn.addEventListener('click',sendReportViaWhatsApp);
+ document.getElementById('emailBtn').addEventListener('click',sendReportViaEmail);
+ document.getElementById('whatsappBtn').addEventListener('click',sendReportViaWhatsApp);
 
  const zoom=document.getElementById('zoomScale'),zoomValue=document.getElementById('zoomValue'),sheetWrap=document.getElementById('sheetWrap');
  function applyZoom(keepSliderAnchored,overrideZ){
@@ -2391,16 +2222,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  if(sigPlusBtn)sigPlusBtn.addEventListener('click',()=>stepSigScale(5));
  window.addEventListener('resize',()=>{requestAnimationFrame(()=>applyZoom(false))});
  if(window.screen&&window.screen.orientation){
-   window.screen.orientation.addEventListener('change',()=>{setTimeout(()=>applyZoom(false),120)});
+   window.screen.orientation.addEventListener('change',()=>{setTimeout(applyZoom,120)});
  }
 
  modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
- document.addEventListener('keydown',e=>{
-   if(e.key==='Escape'){
-     if(modal.classList.contains('open'))closeModal();
-     if(pdfPreviewModal&&pdfPreviewModal.classList.contains('open'))closePdfPreviewModal();
-   }
- });
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
 
  /* --- Schwebende Spracheingabe & Sprachbefehle (DE / PL) --- */
  const floatingVoicePill=document.getElementById('floatingVoicePill');
@@ -2419,28 +2246,12 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
  let pillManualPos=null;
  let isDraggingPill=false,dragOffsetX=0,dragOffsetY=0;
 
- function getVisualBounds(){
-   const vv=window.visualViewport;
-   if(vv){
-     return{
-       left:vv.offsetLeft,
-       top:vv.offsetTop,
-       right:vv.offsetLeft+vv.width,
-       bottom:vv.offsetTop+vv.height,
-       width:vv.width,
-       height:vv.height
-     };
-   }
-   return{left:0,top:0,right:window.innerWidth,bottom:window.innerHeight,width:window.innerWidth,height:window.innerHeight};
- }
-
  function clampPillCoords(left,top){
    const pillW=floatingVoicePill.offsetWidth||120;
    const pillH=floatingVoicePill.offsetHeight||34;
-   const vb=getVisualBounds();
    return{
-     left:Math.round(Math.max(vb.left+6,Math.min(vb.right-pillW-6,left))),
-     top:Math.round(Math.max(vb.top+6,Math.min(vb.bottom-pillH-6,top)))
+     left:Math.round(Math.max(6,Math.min(window.innerWidth-pillW-6,left))),
+     top:Math.round(Math.max(6,Math.min(window.innerHeight-pillH-6,top)))
    };
  }
 
@@ -2457,10 +2268,9 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    }
    const pillW=floatingVoicePill.offsetWidth||120;
    const pillH=floatingVoicePill.offsetHeight||34;
-   const vb=getVisualBounds();
    let left=rect.right-pillW-4;
    let top=rect.top-pillH-4;
-   if(top<vb.top+6)top=Math.min(vb.bottom-pillH-6,rect.bottom+4);
+   if(top<6)top=Math.min(window.innerHeight-pillH-6,rect.bottom+4);
    const c=clampPillCoords(left,top);
    floatingVoicePill.style.left=c.left+'px';
    floatingVoicePill.style.top=c.top+'px';
@@ -2493,7 +2303,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
 
      const onMove=(ev)=>{
        const dx=ev.clientX-startX,dy=ev.clientY-startY;
-       if(!moved&&Math.hypot(dx,dy)<8)return;
+       if(!moved&&Math.hypot(dx,dy)<6)return;
        moved=true;
        isDraggingPill=true;
        const c=clampPillCoords(ev.clientX-dragOffsetX,ev.clientY-dragOffsetY);
@@ -2502,7 +2312,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        floatingVoicePill.style.top=c.top+'px';
      };
 
-     const onUp=()=>{
+     const onUp=(ev)=>{
        window.removeEventListener('pointermove',onMove);
        window.removeEventListener('pointerup',onUp);
        window.removeEventListener('pointercancel',onUp);
@@ -2512,7 +2322,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
            clickEv.preventDefault();
          };
          floatingVoicePill.addEventListener('click',suppressClick,{capture:true,once:true});
-         setTimeout(()=>{floatingVoicePill.removeEventListener('click',suppressClick,true)},120);
+         setTimeout(()=>floatingVoicePill.removeEventListener('click',suppressClick,{capture:true}),250);
        }
        setTimeout(()=>{isDraggingPill=false},30);
      };
@@ -2563,32 +2373,29 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    });
  });
 
- const repositionPillIfVisible=()=>{
+ window.addEventListener('scroll',()=>{
    if(floatingVoicePill&&floatingVoicePill.classList.contains('visible')&&lastActiveTextTarget){
      positionFloatingVoicePill(lastActiveTextTarget);
    }
- };
- window.addEventListener('scroll',repositionPillIfVisible,true);
- window.addEventListener('resize',repositionPillIfVisible);
- if(window.visualViewport){
-   window.visualViewport.addEventListener('resize',repositionPillIfVisible);
-   window.visualViewport.addEventListener('scroll',repositionPillIfVisible);
- }
+ },true);
+ window.addEventListener('resize',()=>{
+   if(floatingVoicePill&&floatingVoicePill.classList.contains('visible')&&lastActiveTextTarget){
+     positionFloatingVoicePill(lastActiveTextTarget);
+   }
+ });
 
- function applyVoiceCommands(rawText,isLiveKeyboard,counterObj){
+ function applyVoiceCommands(rawText,isLiveKeyboard){
    if(!rawText)return rawText;
    let t=rawText;
-   let counterRef=counterObj||{val:listCounter};
 
    const numRegex=/(?:^|\s)(?:nummerierung|aufzählung|punktowanie|numerowanie)(?=$|\s|[.,!?;:])/gi;
    t=t.replace(numRegex,(match,offset,fullStr)=>{
      const prefix=fullStr.slice(0,offset);
      const needsNewline=prefix.length>0&&!prefix.endsWith('\n');
-     const item=(needsNewline?'\n':'')+counterRef.val+'. ';
-     counterRef.val++;
+     const item=(needsNewline?'\n':'')+listCounter+'. ';
+     listCounter++;
      return item;
    });
-   if(!counterObj)listCounter=counterRef.val;
 
    t=t.replace(/(?:^|\s)(?:spiegelstrich|bindestrich|punkt od myślnika|podpunkt|myślnik)(?=$|\s|[.,!?;:])/gi,(match,offset,fullStr)=>{
      const prefix=fullStr.slice(0,offset);
@@ -2596,7 +2403,9 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      return (needsNewline?'\n':'')+'- ';
    });
 
+   // Time range separator: "bis" / "do" between times (e.g. "12:30 bis 13" or "7:30 do 12") -> "-"
    t=t.replace(/(\d{1,2}(?:[:.]\d{2})?)\s+(?:bis|do)\s+(\d{1,2}(?:[:.]\d{2})?)/gi,'$1-$2');
+
    t=t.replace(/(?:^|\s)(?:neue zeile|neuer absatz|absatz|nowa linia|nowy wiersz|enter)(?=$|\s|[.,!?;:])/gi,'\n');
 
    if(!isLiveKeyboard){
@@ -2633,6 +2442,31 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    });
  });
 
+ function insertDictatedSegment(rawTranscript){
+   const targetEl=(lastActiveTextTarget&&document.body.contains(lastActiveTextTarget))?lastActiveTextTarget:workdescPage1;
+   const current=targetEl.value||'';
+   let combined=current;
+   if(combined&&!combined.endsWith('\n')&&!combined.endsWith(' ')&&!/^(?:punkt|kropka|komma|przecinek|doppelpunkt|dwukropek|semikolon|średnik|fragezeichen|znak zapytania|ausrufezeichen|wykrzyknik|neue zeile|nowa linia|spiegelstrich|myślnik|nummerierung|punktowanie|numerowanie)/i.test(rawTranscript.trim())){
+     combined+=' ';
+   }
+   combined+=rawTranscript.trim();
+   isApplyingVoiceTransform=true;
+   targetEl.value=applyVoiceCommands(combined,false);
+   isApplyingVoiceTransform=false;
+
+   if(targetEl===workdescPage1||targetEl===workdescPage2){
+     enforcePage1Overflow(targetEl===workdescPage1);
+     if(lastActiveTextTarget)positionFloatingVoicePill(lastActiveTextTarget);
+   }else if(targetEl.dataset.syncField){
+     const src=getFieldOnPage1(targetEl.dataset.syncField);
+     if(src)src.value=targetEl.value;
+     syncPage2Fields();
+   }else{
+     syncPage2Fields();
+   }
+   saveDraft();
+ }
+
  const SpeechRecognitionAPI=window.SpeechRecognition||window.webkitSpeechRecognition;
  let recognition=null,isRecording=false,manualStop=false;
 
@@ -2662,19 +2496,16 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    let liveBaseText='';
    let liveBaseCounter=1;
    let liveBaseTarget=null;
-   let livePage1Full=false;
-   let lastSpeechActivity=0;
 
    function clearSilenceTimer(){
      if(silenceTimer){clearTimeout(silenceTimer);silenceTimer=null}
    }
 
    function resetSilenceTimer(){
-     lastSpeechActivity=Date.now();
      clearSilenceTimer();
      if(!isRecording)return;
      silenceTimer=setTimeout(()=>{
-       if(isRecording&&(Date.now()-lastSpeechActivity)>=3800){
+       if(isRecording){
          manualStop=true;
          try{recognition.stop()}catch(e){}
          showToast('Automatisch gestoppt (4 Sek. Stille).');
@@ -2682,150 +2513,104 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
      },4000);
    }
 
-   function syncLiveTargetValue(targetEl,fullTextVal){
+   let lastHeardAt=0;
+   function syncLiveTargetValue(targetEl,textVal){
      if(!targetEl)return;
      isApplyingVoiceTransform=true;
+     targetEl.value=textVal;
+     isApplyingVoiceTransform=false;
      if(targetEl===workdescPage1||targetEl===workdescPage2){
-       if(targetEl===workdescPage1){
-         const allLines=getCanonicalLines(fullTextVal);
-         if(allLines.length>PDF_MAX_LINES){
-           workdescPage1.value=allLines.slice(0,PDF_MAX_LINES).join('\n');
-           workdescPage2.value=allLines.slice(PDF_MAX_LINES).join('\n');
-           syncPage2Fields();
-           sheetPage2.classList.remove('hidden-page');
-           if(page1Badge)page1Badge.hidden=false;
-           applyZoom();
-           if(!livePage1Full){
-             livePage1Full=true;
-             showToast('Seite 2 automatisch geöffnet – Text wird dort fortgesetzt.');
-           }
-           lastActiveTextTarget=workdescPage2;
-           positionFloatingVoicePill(workdescPage2);
-         }else{
-           workdescPage1.value=fullTextVal;
-           enforcePage1Overflow(false);
-           positionFloatingVoicePill(workdescPage1);
-         }
-       }else{
-         workdescPage2.value=fullTextVal;
-         enforcePage1Overflow(false);
-         positionFloatingVoicePill(workdescPage2);
+       const overflowed=enforcePage1Overflow(targetEl===workdescPage1);
+       if(overflowed&&targetEl===workdescPage1){
+         // Switch active live target to Page 2 so subsequent interim/final updates never duplicate text on Page 2
+         liveBaseTarget=workdescPage2;
+         lastActiveTextTarget=workdescPage2;
+         liveBaseText=workdescPage2.value||'';
        }
+       if(lastActiveTextTarget)positionFloatingVoicePill(lastActiveTextTarget);
      }else if(targetEl.dataset.syncField){
-       targetEl.value=fullTextVal;
        const src=getFieldOnPage1(targetEl.dataset.syncField);
        if(src)src.value=targetEl.value;
        syncPage2Fields();
      }else{
-       targetEl.value=fullTextVal;
        syncPage2Fields();
      }
-     isApplyingVoiceTransform=false;
      saveDraft();
    }
 
-   function buildCombinedText(baseText,segment,counterObj){
+   function buildCombinedText(baseText,segment){
      let combined=baseText||'';
      const trimmed=(segment||'').trim();
-     if(!trimmed)return applyVoiceCommands(combined,false,counterObj);
+     if(!trimmed)return applyVoiceCommands(combined,false);
      if(combined&&!combined.endsWith('\n')&&!combined.endsWith(' ')&&!/^(?:punkt|kropka|komma|przecinek|doppelpunkt|dwukropek|semikolon|średnik|fragezeichen|znak zapytania|ausrufezeichen|wykrzyknik|neue zeile|nowa linia|spiegelstrich|myślnik|nummerierung|punktowanie|numerowanie|bis|do)/i.test(trimmed)){
        combined+=' ';
      }
      combined+=trimmed;
-     return applyVoiceCommands(combined,false,counterObj);
+     return applyVoiceCommands(combined,false);
    }
 
    recognition.onstart=()=>{
-     const wasAlreadyRecording=isRecording;
      isRecording=true;
-     if(!wasAlreadyRecording){
-       liveBaseTarget=(lastActiveTextTarget&&document.body.contains(lastActiveTextTarget)&&isDictationAllowedField(lastActiveTextTarget))?lastActiveTextTarget:workdescPage1;
-       if(liveBaseTarget===workdescPage1){
-         const p1=(workdescPage1.value||'').trim();
-         const p2=(workdescPage2.value||'').trim();
-         liveBaseText=[p1,p2].filter(Boolean).join('\n');
-         livePage1Full=p2.length>0;
-       }else{
-         liveBaseText=liveBaseTarget.value||'';
-         livePage1Full=false;
-       }
-       liveBaseCounter=listCounter;
-       resetSilenceTimer();
-     }else{
-       // Nach internem Browser-Restart aktuellen Pufferstand beibehalten und Stille-Timer weiterlaufen lassen
-       const remaining=Math.max(200,4000-(Date.now()-lastSpeechActivity));
-       clearSilenceTimer();
-       silenceTimer=setTimeout(()=>{
-         if(isRecording&&(Date.now()-lastSpeechActivity)>=3800){
-           manualStop=true;
-           try{recognition.stop()}catch(e){}
-           showToast('Automatisch gestoppt (4 Sek. Stille).');
-         }
-       },remaining);
-     }
+     if(!lastHeardAt)lastHeardAt=Date.now();
+     liveBaseTarget=(lastActiveTextTarget&&document.body.contains(lastActiveTextTarget)&&isDictationAllowedField(lastActiveTextTarget))?lastActiveTextTarget:workdescPage1;
+     liveBaseText=liveBaseTarget.value||'';
+     liveBaseCounter=listCounter;
      dictateBtn.classList.add('recording');
      dictateBtn.innerHTML=STOP_SVG;
      if(liveBaseTarget)positionFloatingVoicePill(liveBaseTarget);
+     resetSilenceTimer();
    };
 
    recognition.onresult=(event)=>{
+     lastHeardAt=Date.now();
      resetSilenceTimer();
-     const targetEl=(liveBaseTarget&&document.body.contains(liveBaseTarget))?liveBaseTarget:workdescPage1;
+     let targetEl=(liveBaseTarget&&document.body.contains(liveBaseTarget))?liveBaseTarget:workdescPage1;
      let interimPart='';
      for(let i=event.resultIndex;i<event.results.length;i++){
        const tr=(event.results[i][0]&&event.results[i][0].transcript)?event.results[i][0].transcript.trim():'';
        if(!tr)continue;
        if(event.results[i].isFinal){
-         const cObj={val:liveBaseCounter};
-         liveBaseText=buildCombinedText(liveBaseText,tr,cObj);
-         liveBaseCounter=cObj.val;
+         liveBaseText=buildCombinedText(liveBaseText,tr);
+         liveBaseCounter=listCounter;
        }else{
          interimPart=(interimPart?(interimPart+' '+tr):tr);
        }
      }
      listCounter=liveBaseCounter;
-     const previewCounter={val:liveBaseCounter};
-     const previewText=interimPart
-       ?buildCombinedText(liveBaseText,interimPart,previewCounter)
-       :applyVoiceCommands(liveBaseText,false,previewCounter);
+     const previewText=interimPart?buildCombinedText(liveBaseText,interimPart):applyVoiceCommands(liveBaseText,false);
      syncLiveTargetValue(targetEl,previewText);
    };
 
    recognition.onspeechstart=()=>{
-     resetSilenceTimer();
-   };
-
-   recognition.onsoundstart=()=>{
+     lastHeardAt=Date.now();
      resetSilenceTimer();
    };
 
    recognition.onerror=(event)=>{
+     clearSilenceTimer();
      if(event.error==='not-allowed'||event.error==='service-not-allowed'){
        manualStop=true;
-       clearSilenceTimer();
        showToast('Mikrofonzugriff blockiert – nutzen Sie alternativ das Mikrofon der Tastatur.');
      }
    };
 
    recognition.onend=()=>{
+     clearSilenceTimer();
+     const silentMs=Date.now()-(lastHeardAt||0);
      if(isRecording&&!manualStop){
-       if((Date.now()-lastSpeechActivity)>=3800){
-         manualStop=true;
-       }else{
-         setTimeout(()=>{
-           if(isRecording&&!manualStop){
-             try{recognition.start()}catch(e){
-               isRecording=false;
-               clearSilenceTimer();
-               dictateBtn.classList.remove('recording');
-               dictateBtn.innerHTML=MIC_SVG;
-             }
-           }
-         },120);
+       if(silentMs>=3800){
+         isRecording=false;
+         dictateBtn.classList.remove('recording');
+         dictateBtn.innerHTML=MIC_SVG;
+         showToast('Automatisch gestoppt (4 Sek. Stille).');
          return;
        }
+       setTimeout(()=>{
+         if(!isRecording||manualStop)return;
+         try{recognition.start()}catch(e){}
+       },120);
+       return;
      }
-     clearSilenceTimer();
      isRecording=false;
      dictateBtn.classList.remove('recording');
      dictateBtn.innerHTML=MIC_SVG;
@@ -2838,6 +2623,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
        try{recognition.stop()}catch(e){}
      }else{
        manualStop=false;
+       lastHeardAt=Date.now();
        recognition.lang=currentDictateLang;
        try{recognition.start()}catch(e){
          showToast('Spracherkennung konnte nicht gestartet werden. Bitte Tastatur-Mikrofon verwenden.');
@@ -2944,7 +2730,7 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    const cleanFirst=(cfg.defaultTechFirstName||'').trim();
    const cleanLast=(cfg.defaultTechLastName||'').trim();
    const payload={fontPt:cleanPt,defaultTechFirstName:cleanFirst,defaultTechLastName:cleanLast};
-   try{localStorage.setItem(SETTINGS_STORAGE_KEY,JSON.stringify(payload))}catch(e){}
+   localStorage.setItem(SETTINGS_STORAGE_KEY,JSON.stringify(payload));
    defaultTechFirstName=cleanFirst;
    defaultTechLastName=cleanLast;
    applyDocumentFontSize(cleanPt);
@@ -3159,18 +2945,17 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
            if(!isNaN(manualH)&&manualH>0)daySum+=manualH;
          }
        }else{
+         // 5th row of each day displays the day total (or adds its own von-bis if filled)
          if(!isNaN(dur)&&dur>0)daySum+=dur;
          const daySumEl=document.querySelector('[data-lw-day-sum="'+day+'"]');
          if(daySumEl){
            if(daySum>0){
              daySumEl.value=formatDec(daySum);
-             delete daySumEl.dataset.manualEdited;
            }else if(!daySumEl.dataset.manualEdited){
              daySumEl.value='';
            }else{
              const manualDay=parseDecimalHours(daySumEl.value);
              if(!isNaN(manualDay)&&manualDay>0)daySum=manualDay;
-             else if(!daySumEl.value.trim())delete daySumEl.dataset.manualEdited;
            }
          }
        }
@@ -3195,4 +2980,80 @@ main{max-width:1000px;margin:6px auto;padding:0 max(6px,env(safe-area-inset-righ
    const iso=toISODate(vomEl.value);
    if(!iso)return;
    const [yy,mm,dd]=iso.split('-').map(Number);
-   const start=new
+   const start=new Date(yy,mm-1,dd);
+   if(isNaN(start.getTime()))return;
+
+   const addDays=(base,days)=>{
+     const d=new Date(base.getFullYear(),base.getMonth(),base.getDate()+days);
+     return String(d.getDate()).padStart(2,'0')+'.'+String(d.getMonth()+1).padStart(2,'0')+'.'+String(d.getFullYear()).slice(-2);
+   };
+
+   const bisEl=document.getElementById('lwBisInput');
+   if(bisEl){
+     bisEl.value=addDays(start,5);
+   }
+   for(let day=1;day<=6;day++){
+     const dayDateEl=document.querySelector('[data-lw-day-date="'+day+'"]');
+     if(dayDateEl){
+       dayDateEl.value=addDays(start,day-1);
+     }
+   }
+ }
+
+ const lwVomEl=document.getElementById('lwVomInput');
+ if(lwVomEl){
+   lwVomEl.addEventListener('change',()=>{
+     autoPopulateWeekDatesFromVom();
+     saveDraft();
+   });
+   lwVomEl.addEventListener('blur',()=>{
+     autoPopulateWeekDatesFromVom();
+     saveDraft();
+   });
+ }
+
+ document.querySelectorAll('[data-lw-field],[data-lw-day-sum]').forEach(el=>{
+   el.addEventListener('blur',()=>{
+     const k=el.dataset.lwField||'';
+     if(k.startsWith('lw_von_')||k.startsWith('lw_bis_')){
+       el.value=formatSingleTimeToken(el.value);
+     }else if(k.startsWith('lw_reise_')){
+       const rVal=parseDecimalHours(el.value);
+       if(!isNaN(rVal)&&rVal>0)el.value=formatDec(rVal);
+     }
+     recalcLohnwocheTotals();
+     saveDraft();
+   });
+   el.addEventListener('input',()=>{
+     if(el.hasAttribute('data-lw-day-sum'))el.dataset.manualEdited='1';
+     recalcLohnwocheTotals();
+     saveDraft();
+   });
+   el.addEventListener('change',()=>{
+     recalcLohnwocheTotals();
+     saveDraft();
+   });
+ });
+
+
+ loadUserSettings();
+ loadDraft();
+ applyDefaultTechnicianIfEmpty();
+ applyDefaultLohnwocheNameIfEmpty();
+ recalcLohnwocheTotals();
+ renderPdfHistory();
+ updateScale();
+ applyZoom();
+})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker zarejestrowany!', reg.scope))
+        .catch(err => console.log('Błąd rejestracji SW:', err));
+    });
+  }
+</script>
+</body>
+</html>

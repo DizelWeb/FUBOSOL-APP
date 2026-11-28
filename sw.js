@@ -1,10 +1,11 @@
-﻿const CACHE_NAME = 'fubosol-app-v20';
+const CACHE_NAME = 'fubosol-app-v1';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './form-arbeitsbericht.png'
+  './form-arbeitsbericht.png',
+  './form-bilder.png'
 ];
 
 self.addEventListener('install', (event) => {
